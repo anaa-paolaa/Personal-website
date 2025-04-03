@@ -1,2 +1,2 @@
 # Personal-website
-A website for my personal info and projects
+This is the github repository for the source code of my personal website.
