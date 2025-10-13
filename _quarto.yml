@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "Ana Valladares"
+  page-footer: "Made with 💕, Quarto and RStudio"
+  navbar:
+    logo: "images/logo.png"
+    right:
+      - href: about.qmd
+        icon: person-circle
+      - href: projects.qmd
+        icon: puzzle-fill
+      - href: blog.qmd
+        icon: chat-heart-fill
+      
+
+format:
+  html:
+    theme: [minty, styles.scss]
+    toc: true
+    css: styles.css
+    
+editor: visual
+
+babelquarto:
+  languagecodes:
+  - name: es
+    text: "Español"
+  - name: en
+    text: "English"
+  - name: fr
+    text: "Français"
+  mainlanguage: 'fr'
+  languages: ['es', 'en']
+title-es: Ana Valladares
+title-en: Ana Valladares
+description-es: Mi sitio web
+description-en: My website
+author-es: Ana V
+author-en: Ana V
+lang: fr

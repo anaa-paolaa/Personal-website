@@ -1,0 +1,43 @@
+---
+title: "Sobre mí"
+subtitle: "Mente curiosa, analista confiable 🔍📊 | Expatriada en Madagascar 🇲🇬"
+image: images/Ana.PNG
+about:
+  template: jolla
+  links:
+    - icon: envelope-at-fill
+      text: Correo
+      href: anapaodares@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/anapaolavalladares/
+    - icon: github
+      text: GitHub
+      href: https://github.com/anaa-paolaa
+---
+
+Hola, soy Ana, una mexicana anclada en Madagascar —por ahora—. Soy una mujer de muchas pasiones, donde destacan la creatividad, la lógica y el arte de transformar.\
+
+Aquí comparto algunas de ellas, para que me conozcas mejor.
+
+::: panel-tabset
+## **Análisis de datos**
+
+La curiosidad no mató al gato; para mí, explorar es una necesidad. Me encanta ver cómo, explorando datos, estos se transforman en conocimiento, en mejores decisiones y en claridad.\
+Mi experiencia se basa en la programación, la estadística y la reproducibilidad de los datos, practicada en varios proyectos internacionales: desde la genómica hasta el análisis de imágenes. Me he desarrollado trabajando con múltiples lenguajes de programación (R, Python, SQL) y herramientas de visualización (Tableau, Shiny, Quarto) y me motivan los retos con los datos.
+
+## **Bio y tech**
+
+Graduada en biotecnología con maestría en mejoramiento genético vegetal, mis proyectos recientes han estado vinculados al mundo de la agricultura y, más allá, al de la innovación y la tecnología.\
+Creo que los avances pueden ser muy alentadores, pero también plantean desafíos éticos. Me encanta aprender cómo aprovechar mejor la tecnología, reflexionar sobre su impacto y pensar en cómo avanzar juntos de forma responsable.
+
+## **Aprendizaje continuo**
+
+Amo aprender, en la ciencia y en la vida. Desde idiomas (hablo español, inglés, francés, italiano y ahora un poco de malgache) hasta geografía. También disfruto explorar nuevas culturas y lugares, es por eso que ando por Madagascar.
+
+## **Hobbies**
+
+Mis pasatiempos incluyen el baile, la pintura, el deporte y la lectura. Me encanta retarme y probar cosas nuevas: ahora mismo el voleibol y el buceo.
+:::
+
+## ***¡Conectemos!***

@@ -1,0 +1,11 @@
+/* css styles */
+.masking-container {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: 0;
+  background: #222;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}

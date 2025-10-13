@@ -1,0 +1,27 @@
+---
+title: "Blog"
+---
+
+Here I want to share with you some tips about data analysis in R, Python or whatever I am using/learning... some coding tricks and some reflections as well (with a pinch of creativity).
+
+:::: {.alert .alert-dismissible .alert-warning}
+<button type="button" class="btn-close" data-bs-dismiss="alert">
+
+</button>
+
+<h4 class="alert-heading">
+
+::: {.alert .alert-dismissible .alert-warning}
+🚧👷🏽‍♀️ Heads up!
+:::
+
+</h4>
+
+<p class="mb-0">
+
+This blog is still under construction...
+
+Stay tuned!
+
+</p>
+::::

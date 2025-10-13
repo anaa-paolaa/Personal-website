@@ -1,0 +1,106 @@
+/*-- scss:defaults --*/
+
+// Base Colors
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dd6f5d !default;
+$orange:  #f7c1b3 !default;
+$yellow:  #ffce67 !default;
+$green:   #56cc9d !default;
+$teal:    #20c997 !default;
+$cyan:    #6cc3d5 !default;
+
+/*-- scss:rules --*/
+
+/// about.qmd (Home/About Page)
+/* Source: All CSS in this section (Index.qmd) was adapted from Jadey Ryan's website - https://github.com/jadeynryan/jadey_website/blob/main/assets/styling/theme.scss */
+
+/// Headers
+h1 {
+  color: $gray-800;
+}
+
+h2 {
+  color: $black;
+}
+
+h3 {
+  color: $primary;
+}
+
+h4, h5 {
+  color: $red;
+}
+
+h6 {
+  color: $black;
+}
+
+//// About Links
+div.quarto-about-jolla .about-link {
+  color: $primary;
+  font-size: 1em;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+//// About circular logo
+.navbar-brand img {
+      border-radius: 70%;
+      height: 90px; /* Adjust as needed */
+      width: 30px;  /* Adjust as needed */
+    }
+
+//// About Links Hover
+div.quarto-about-jolla .about-link:hover {
+  background-color:$primary;
+  color: $white;
+}
+
+//// About Links Buttons
+div.quarto-post .listing-categories .listing-category, .quarto-category, .btn {
+  opacity: 0.8 !important;
+  color: $secondary;
+  border-color: $secondary;
+  text-align: center;
+  border-style: solid;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn {
+  opacity: 1 !important;
+  padding: 0.5em;
+  border-radius: 6px;
+}
+
+//// About animated text-align
+.masking-container {
+  .masked-text {
+    font-size: 8rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-size: 200%; /* Enlarged for smooth animation */
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+  }
+
+  @keyframes animate-background {
+      0% {
+          background-position: 0 50%;
+      }
+      100% {
+          background-position: 100% 50%;
+      }
+    }
+}
+

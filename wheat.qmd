@@ -1,0 +1,25 @@
+---
+title: "Le blé, R et ma passion pour les données"
+description: "Job et thèse de master"
+author: Ana Valladares
+date: "2022-11-22"
+image: /images/wheat.PNG
+image-alt: "Screenshot of wheat project"
+categories:
+  - RStudio
+  - Data handling
+  - Biostatistique
+  - Agronomie
+---
+
+Au cours de mon mémoire de master et de mon premier emploi en Europe, j’ai travaillé sur l’un des aliments de base les plus emblématiques du continent : **le blé**.
+
+Mes années de recherche sur le blé m’ont apporté bien plus que des résultats scientifiques : elles m’ont fait découvrir **R**.
+
+**La mission :** analyser des données agroclimatiques et issues de capteurs pour comprendre la résilience à la sécheresse et améliorer le rendement en grain.\
+
+Ces projets m’ont appris que les données ne sont jamais abstraites : elles sont la clé pour repenser et adapter nos systèmes alimentaires face au changement climatique.
+
+📄 Vous pouvez retrouver ici quelques-uns de mes articles scientifiques :
+
+[Frontiers paper](https://doi.org/10.3389/fpls.2023.1253385)

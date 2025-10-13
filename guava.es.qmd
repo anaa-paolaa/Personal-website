@@ -1,0 +1,24 @@
+---
+title: "Pasar de pixeles a guayabas"
+description: "Proyecto freelancer"
+author: Ana Valladares
+date: "2024-01-21"
+image: /images/guava.PNG
+image-alt: "Screenshot of guava project"
+categories:
+  - Python
+  - PlantCV
+  - Jupyter
+  - Machine learning
+  - R
+---
+
+Los proyectos freelance muchas veces te llevan a mundos inesperados—el mío me llevó directo a la **visión computacional**.
+
+Con una empresa productora de frutas en México, he estado desarrollando un **pipeline de análisis de imágenes en Python** para un programa de mejoramiento de guayaba.\
+
+**El reto:** diseñar un sistema automatizado que mida, analice y clasifique con precisión distintos rasgos de la guayaba.
+
+En el camino descubrí herramientas que nunca había usado, como [PlantCV](https://plantcv.org/) (un paquete de análisis de imágenes de código abierto, específico de plantas), además de fortalecer mis habilidades en Python.
+
+Ha sido un camino sinuoso pero enriquecedor, que me enseñó lo versátiles que pueden ser los datos cuando se combinan con las imágenes y por su puesto, la creatividad.

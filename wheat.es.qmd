@@ -1,0 +1,23 @@
+---
+title: "El trigo, R y mi historia de amor con los datos"
+description: "Trabajo y tesis de máster"
+author: Ana Valladares
+date: "2022-11-22"
+image: /images/wheat.PNG
+image-alt: "Screenshot of wheat project"
+categories:
+  - RStudio
+  - Manejo de datos
+  - Bioestadística
+  - Agronomía
+---
+
+Durante mi tesis de maestría y mi primer trabajo en Europa, trabajé con uno de sus alimentos básicos más emblemáticos: **el trigo**. Mis años en la investigación del trigo me dejaron mucho más que resultados científicos: me regalaron **R**.
+
+L**a misión:** analizar datos agroclimáticos y de sensores para comprender la resiliencia a la sequía y mejorar el rendimiento del grano.\
+
+Estos proyectos me enseñaron que los datos no son abstractos: son la clave para repensar y adaptar nuestros sistemas alimentarios frente al cambio climático.
+
+📄 Aquí puedes consultar algunos artículos científicos que publiqué:
+
+[Frontiers paper](https://doi.org/10.3389/fpls.2023.1253385)

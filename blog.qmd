@@ -1,0 +1,27 @@
+---
+title: "Blog"
+---
+
+Ici je veux vous partager des conseils en analyse de données, des astuces de code et quelques réflexions (avec une petite touche de créativité).
+
+:::: {.alert .alert-dismissible .alert-warning}
+<button type="button" class="btn-close" data-bs-dismiss="alert">
+
+</button>
+
+<h4 class="alert-heading">
+
+::: {.alert .alert-dismissible .alert-warning}
+🚧👷🏽‍♀️ Attention!
+:::
+
+</h4>
+
+<p class="mb-0">
+
+Ce blog est encore en construction...
+
+À très vite !
+
+</p>
+::::

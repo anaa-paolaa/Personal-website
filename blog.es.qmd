@@ -1,0 +1,27 @@
+---
+title: "Blog"
+---
+
+Aquí les compartiré consejos de análisis de datos en R o en Python, trucos de programación y reflexiones, con un toque de creatividad.
+
+:::: {.alert .alert-dismissible .alert-warning}
+<button type="button" class="btn-close" data-bs-dismiss="alert">
+
+</button>
+
+<h4 class="alert-heading">
+
+::: {.alert .alert-dismissible .alert-warning}
+🚧👷🏽‍♀️ ¡Atención!
+:::
+
+</h4>
+
+<p class="mb-0">
+
+Este blog sigue en construcción...
+
+¡Nos vemos pronto, no te lo pierdas!
+
+</p>
+::::

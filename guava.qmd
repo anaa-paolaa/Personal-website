@@ -1,0 +1,24 @@
+---
+title: "Des pixels aux goyaves"
+description: "Projet freelance"
+author: Ana Valladares
+date: "2024-01-21"
+image: /images/guava.PNG
+image-alt: "Screenshot of guava project"
+categories:
+  - Python
+  - PlantCV
+  - Jupyter
+  - Machine learning
+  - R
+---
+
+Les projets freelance vous mènent parfois vers des univers inattendus—le mien m’a conduit directement à la **vision par ordinateur**.
+
+Avec une entreprise productrice de fruits au Mexique, j’ai travaillé au développement d’un **pipeline d’analyse d’images en Python** pour un programme de sélection de goyaves.\
+
+**Le défi :** concevoir un système automatisé capable de mesurer, analyser et classer avec précision différents caractères de la goyave.
+
+Au passage, j’ai découvert des outils que je ne connaissais pas, comme [PlantCV](https://plantcv.org/) (un logiciel open source d’analyse d’images, spécialement conçu pour les sciences végétales), tout en renforçant mes compétences en Python.
+
+Ce fut un parcours sinueux mais riche, qui m’a appris à quel point les données peuvent être polyvalentes lorsqu’elles se marient à la créativité.
