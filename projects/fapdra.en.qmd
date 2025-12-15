@@ -1,0 +1,25 @@
+---
+title: "Stats training with APDRA"
+description: "Training"
+author: Ana Valladares
+date: "2025-12-01"
+image: /images/apdra.PNG
+image-alt: "Formation-apdra picture"
+categories:
+  - Data handling
+  - Biostatistics
+  - RStudio
+  - Pisciculture
+---
+
+We’re wrapping up the year with a project that was both challenging, motivating, and truly rewarding. My first training as the coach (hopefully, the first one from many others to come).
+
+It was a statistics training called ***Stats sans stress***, because statistics are not meant to stress us out — they’re meant to **help us make sense of data**.
+
+The training took place in Antsirabe, Madagascar, with technical evaluation officers from APDRA (*Association Pisciculture et Développement Rural in Africa*).
+
+We worked on data management and cleaning, as well as the foundations of essential statistical tests, always tailored to the group’s real needs. We explored lots of fish-related data 🐟 and dove into this fascinating world to turn numbers into clear, meaningful stories backed by solid statistics.
+
+Because data do tell stories — and learning how to read them can be both **useful and fun**.
+
+If you’d like to learn how to work with data in a clear, useful, and stress-free way with your team, feel free to get in touch.

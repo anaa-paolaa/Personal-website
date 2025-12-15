@@ -1,0 +1,25 @@
+---
+title: "Formation en stats avec APDRA"
+description: "Formation"
+author: Ana Valladares
+date: "2025-12-01"
+image: /images/apdra.PNG
+image-alt: "Formation-apdra picture"
+categories:
+  - Data handling
+  - Biostatistique
+  - RStudio
+  - Pisciculture
+---
+
+Nous terminons l’année avec un projet à la fois stimulant,motivant et vraiment chouette. Ma première formation, en tant que formatrice (et j'espère la première de beacoup plus à venir).
+
+Il s’agissait d’une formation en statistique intitulée ***Stats sans stress***, parce que non : les statistiques ne sont pas là pour nous stresser, mais pour **nous aider à mieux comprendre**.
+
+La formation s’est déroulée à Antsirabe, Madagascar, auprès des responsables techniques de suivi-évaluation de l’APDRA (*Association Pisciculture et Développement Rural en Afrique*).
+
+Nous avons travaillé sur la gestion et le nettoyage des données, ainsi que sur les bases des tests statistiques les plus essentiels, toujours adaptés aux besoins concrets du groupe. Beaucoup de données piscicoles ont été analysées 🐟, et nous nous sommes plongés dans ce monde passionnant pour transformer les chiffres en histoires claires, utiles et statistiquement solides.
+
+Parce que oui, les données racontent des histoires — et on peut apprendre à les lire *sans stress, et avec plaisir*.
+
+Si vous souhaitez, vous aussi, apprendre à travailler avec les données de manière claire, utile et sans stress avec votre équipe, n’hésitez pas à me contacter.
