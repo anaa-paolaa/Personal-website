@@ -40,3 +40,6 @@ description-en: My website
 author-es: Ana V
 author-en: Ana V
 lang: fr
+
+execute:
+  freeze: auto
