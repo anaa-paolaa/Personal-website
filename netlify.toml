@@ -1,3 +1,9 @@
 [build]
-  command = "Rscript -e \"install.packages('babelquarto', repos='https://cloud.r-project.org')\" && Rscript -e \"babelquarto::render_website()\""
   publish = "_site"
+  command = """
+  Rscript -e "install.packages('babelquarto', repos='https://cloud.r-project.org')" &&
+  Rscript -e "babelquarto::render()"
+  """
+
+[build.environment]
+  BABELQUARTO_CI_URL = "https://anavalladares.netlify.app"
