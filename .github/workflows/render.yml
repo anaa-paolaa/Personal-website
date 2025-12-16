@@ -25,11 +25,6 @@ jobs:
         with:
           version: pre-release
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          cache-version: 3
-          extra-packages: local::.
-
       # Render website (all languages)
       - name: Render website with babelquarto
         run: Rscript -e 'babelquarto::render_website()'
