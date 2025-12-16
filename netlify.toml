@@ -1,2 +1,3 @@
-[[plugins]]
-package = "@quarto/netlify-plugin-quarto"
+[build]
+  command = "Rscript -e \"install.packages('babelquarto', repos='https://cloud.r-project.org')\" && Rscript -e \"babelquarto::render()\""
+  publish = "_site"
