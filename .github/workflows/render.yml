@@ -33,7 +33,7 @@ jobs:
 
       # Render website (all languages)
       - name: Render website with babelquarto
-        run: Rscript -e "babelquarto::render()"
+        run: Rscript -e "babelquarto::render_website()"
         env:
           BABELQUARTO_CI_URL: https://anavalladares.netlify.app
 
