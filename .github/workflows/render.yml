@@ -23,18 +23,18 @@ jobs:
           
       - name: Install system dependencies
         run: sudo apt-get update && sudo apt-get install -y libcurl4-gnutls-dev
-
-      - name: Set up R dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2 
-        with: 
-          packages: |
-            github::ropensci-review-tools/babelquarto@a485fea
-            
+      
       # Setup Quarto
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: '1.4.555'
+          
+      - name: Set up R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2 
+        with: 
+          packages: |
+            github::ropensci-review-tools/babelquarto@a485fea
 
       # Render website (all languages)
       - name: Render website with babelquarto
