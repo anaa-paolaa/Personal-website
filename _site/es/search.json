@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Proyectos",
+    "section": "",
+    "text": "Te muestro aquí un poco de mis proyectos a lo largo de mi gran aventura con los datos, las formaciones que doy, etc etc.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormación Stats en el APDRA\n\n\n\nManejo de datos\n\n\nBioestadística\n\n\nPiscicultura\n\n\nRStudio\n\n\n\nFormación\n\n\n\n1 dic 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizar la pérdida de bosques con Tableau\n\n\n\nTableau\n\n\nData viz\n\n\nData gathering\n\n\n\nProyecto personal\n\n\n\n12 sept 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPasar de pixeles a guayabas\n\n\n\nPython\n\n\nPlantCV\n\n\nJupyter\n\n\nMachine learning\n\n\nR\n\n\n\nProyecto freelancer\n\n\n\n21 ene 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEl trigo, R y mi historia de amor con los datos\n\n\n\nRStudio\n\n\nManejo de datos\n\n\nBioestadística\n\n\nAgronomía\n\n\n\nTrabajo y tesis de máster\n\n\n\n22 nov 2022\n\n\n\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Aquí les compartiré consejos de análisis de datos en R o en Python, trucos de programación y reflexiones, con un toque de creatividad.\n\n\n\n\n\n🚧👷🏽‍♀️ ¡Atención!\n\n\n\nEste blog sigue en construcción…\n¡Nos vemos pronto, no te lo pierdas!"
+  },
+  {
+    "objectID": "projects/forests.html",
+    "href": "projects/forests.html",
+    "title": "Visualizar la pérdida de bosques con Tableau",
+    "section": "",
+    "text": "En mi camino por explorar el Data Storytelling, decidí trabajar con datos de Madagascar, el país donde vivo actualmente. Uno de los problemas ambientales más graves es la deforestación, que no son solo cifras: es una amenaza para la biodiversidad, las comunidades y el futuro de la isla.\nComo parte de un curso de Tableau (que encontré en Coursera, donde hay muchísimas opciones), diseñé tableros interactivos que muestran la pérdida de cobertura forestal a lo largo del tiempo y por región.\n\nEl objetivo: sensibilizar sobre la dramática pérdida de bosques en Madagascar.\nEste proyecto me enseñó el poder de la visualización de datos como narrativa, capaz de ir más allá de las cifras, provocar reflexión e incluso motivar a la acción."
+  },
+  {
+    "objectID": "projects/fapdra.html",
+    "href": "projects/fapdra.html",
+    "title": "Formación Stats en el APDRA",
+    "section": "",
+    "text": "Cerramos este año con un proyecto tan retador como motivador. Mi primera formación como coach-claro-, yo espero que la primera de muchas otras.\nSe trató de una formación en estadística llamada “Stats sans stress”, porque no: las estadísticas no están hechas para estresarnos, sino para ayudarnos a entender mejor el mundo.\nLa formación tuvo lugar en Antsirabe, Madagascar, y estuvo dirigida a responsables técnicos de evaluación del APDRA (Association Pisciculture et Développement Rural en Afrique).\nTrabajamos desde el manejo y la limpieza de datos, hasta las bases de los tests estadísticos más esenciales, siempre adaptados a las necesidades reales del grupo. Analizamos muchos (muchísimos 🐟) datos de peces y nos sumergimos en este mundo tan fascinante para transformar números en historias con sentido y con peso estadístico.\nPorque sí: los datos también cuentan historias, y aprender a escucharlas puede ser tan útil como divertido.\nSi tienes duda de cómo puedo ayudar a tu equipo con este tipo de formación, no dudes en contactarme."
+  },
+  {
+    "objectID": "projects/guava.html",
+    "href": "projects/guava.html",
+    "title": "Pasar de pixeles a guayabas",
+    "section": "",
+    "text": "Los proyectos freelance muchas veces te llevan a mundos inesperados—el mío me llevó directo a la visión computacional.\nCon una empresa productora de frutas en México, he estado desarrollando un pipeline de análisis de imágenes en Python para un programa de mejoramiento de guayaba.\n\nEl reto: diseñar un sistema automatizado que mida, analice y clasifique con precisión distintos rasgos de la guayaba.\nEn el camino descubrí herramientas que nunca había usado, como PlantCV (un paquete de análisis de imágenes de código abierto, específico de plantas), además de fortalecer mis habilidades en Python.\nHa sido un camino sinuoso pero enriquecedor, que me enseñó lo versátiles que pueden ser los datos cuando se combinan con las imágenes y por su puesto, la creatividad."
+  },
+  {
+    "objectID": "projects/wheat.html",
+    "href": "projects/wheat.html",
+    "title": "El trigo, R y mi historia de amor con los datos",
+    "section": "",
+    "text": "Durante mi tesis de maestría y mi primer trabajo en Europa, trabajé con uno de sus alimentos básicos más emblemáticos: el trigo. Mis años en la investigación del trigo me dejaron mucho más que resultados científicos: me regalaron R.\nLa misión: analizar datos agroclimáticos y de sensores para comprender la resiliencia a la sequía y mejorar el rendimiento del grano.\n\nEstos proyectos me enseñaron que los datos no son abstractos: son la clave para repensar y adaptar nuestros sistemas alimentarios frente al cambio climático.\n📄 Aquí puedes consultar algunos artículos científicos que publiqué:\nFrontiers paper"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "¡Hola y bienvenido!",
+    "section": "",
+    "text": "Transformar datos nunca había sido tan\n\n\n\nDivertido\n\n\n\n\nClaro\n\n\n\n\nFácil\n\n\n\npara todos tus proyectos\n\n\n\nMe alegra mucho que estés aquí 🌸\nBienvenid@ a mi sitio personal — un pequeño espacio donde comparto mi amor por los datos, la creatividad y la enseñanza.\nAquí encontrarás contenido sobre R, Python, ciencia de datos y otras cosas que voy explorando en el camino.\nSi quieres saber cómo puedo ayudarte, aquí te muestro mis servicios:\n\n\n\n\n📊 Análisis de datos\n\n\n\nAprovechemos tus datos con estadísticas, gráficos e ideas prácticas — siempre buscando resultados reproducibles y automáticos.\n\n\n\n\n\n\n\n🎓 Formaciones\n\n\n\nTalleres y formaciones en R, Python o gestión de datos (lo que requieras) — para que optimices tus análisis y ganes confianza en tus habilidades.\n\n\n\n\n\n\n\n💡 Blog y tips\n\n\n\nEn mi blog comparto recursos, tutoriales y reflexiones — desde trucos de código hasta ideas que me inspiran a seguir aprendiendo juntos.\n\n\n\n\n\nSiéntete libre de explorar mi sitio y contactarme, estaré feliz de conectar. ¡Nos vemos!\n“Transformando datos complejos en algo simple, útil y confiable para todos.”"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre mí",
+    "section": "",
+    "text": "Hola, soy Ana, una mexicana anclada en Madagascar —por ahora—. Soy una mujer de muchas pasiones, donde destacan la creatividad, la lógica y el arte de transformar.\nAquí comparto algunas de ellas, para que me conozcas mejor."
+  },
+  {
+    "objectID": "about.html#conectemos",
+    "href": "about.html#conectemos",
+    "title": "Sobre mí",
+    "section": "¡Conectemos!",
+    "text": "¡Conectemos!"
+  }
+]
