@@ -39,15 +39,12 @@ jobs:
       # Render website (all languages)
       - name: Render website with babelquarto
         run: Rscript -e 'babelquarto::render_website()'
-
-      # Commit generated _site
-      - name: Achive site render
-        uses: actions/upload-artifact@v4
-        with:
-          name: site_render
-          path: _site/
-      - name: Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: netlify
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        
+     # Commit _site for Netlify
+      - name: Commit rendered site
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add _site
+          git commit -m "Render website (_site)" || echo "No changes"
+          git push
