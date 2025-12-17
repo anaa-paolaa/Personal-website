@@ -5,7 +5,7 @@ website:
   title: "Ana Valladares"
   page-footer: "Made with 💕, Quarto and RStudio"
   navbar:
-    logo: "images/logo.png"
+    logo: "images/logo.PNG"
     right:
       - href: about.qmd
         icon: person-circle
