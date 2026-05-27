@@ -1,0 +1,26 @@
+---
+title: "R training at dP SPAD"
+description: "Training"
+author: Ana Valladares
+date: "2026-05-01"
+image: /images/Cirad.PNG
+image-alt: "Formation-cirad picture"
+categories:
+  - Data handling
+  - Biostatistics
+  - RStudio
+---
+
+**Stats without stress? Oh yes, it’s a match… and we are still going!**
+
+From April 13th to 17th, the [dP SPAD](https://www.dp-spad.org/) (Research and Training Platform in Partnership "High-Altitude Production Systems and Sustainability") in Ambatobe, Madagascar, hosted an intensive week on R, RStudio, and data analysis. But wait, we didn't stop there!
+
+This wasn’t just a one-week workshop; it is an **ongoing learning journey**. One month later, the adventure continues with 10 brilliant PhD students from dP SPAD, CIRAD (French Agricultural Research Centre for International Development), and their partners.
+
+Through online follow-ups and personalized 1-on-1 mentoring, we are breaking down every function and fine-tuning every script to fit their exact research data.
+
+Because let’s be honest: programming in R and statistics shouldn't be so stressful. They are here to make your data speak beautifully!
+
+Kudos to these amazing researchers for their hard work and dedication.
+
+**Want to transform how your team works with data?** If you’d like to learn how to work with data in a clear, useful, and stress-free way with your team, feel free to get in touch.
