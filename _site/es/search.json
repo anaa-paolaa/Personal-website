@@ -23,7 +23,7 @@
   {
     "objectID": "projects/fspad.html",
     "href": "projects/fspad.html",
-    "title": "Formación Stats en el APDRA",
+    "title": "Formación R en el Dp SPAD",
     "section": "",
     "text": "¿Estadísticas sin estrés? Sí, existe… ¡y la aventura continúa!\nDel 13 al 17 de abril nos reunimos en el dP SPAD (Dispositivo de Investigación y Enseñanza en Cooperación «Sistemas de Producción de Altitud y Sostenibilidad») en Ambatobe, Madagascar, para dominar las bases de R y RStudio. ¡Pero tan sólo fue el punto de partida!\nEsto no fue un curso de una semana y ya; es un proceso de mentoría continua. Un mes después, sigo acompañando a 10 brillantes doctorantes del dP SPAD, del CIRAD (Centro de Cooperación Internacional en Investigación Agronómica para el Desarrollo) y sus centros colaboradores mediante sesiones online y mentorías individuales.\n¿Nuestro método? Entender cada función, analizar cada línea del código y aplicarlo directamente a los datos reales de sus investigaciones.\nPorque la programación en R y la estadística no tienen por qué ser una pesadilla; están aquí para darnos claridad y potenciar la ciencia.\n¡Un aplauso enorme a estos investigadores por su gran compromiso!\n¿Y a ti, te gustaría que tu equipo también aprenda a trabajar con datos de forma clara, útil y sin dramas? Si tienes duda de cómo puedo ayudar a tu equipo con este tipo de formación, no dudes en contactarme."
   },
@@ -40,6 +40,13 @@
     "title": "Blog",
     "section": "",
     "text": "Aquí les compartiré consejos de análisis de datos en R o en Python, trucos de programación y reflexiones, con un toque de creatividad.\n\n\n\n\n\n🚧👷🏽‍♀️ ¡Atención!\n\n\n\nEste blog sigue en construcción…\n¡Nos vemos pronto, no te lo pierdas!"
+  },
+  {
+    "objectID": "projects/fapdra.html",
+    "href": "projects/fapdra.html",
+    "title": "Formación Stats en el APDRA",
+    "section": "",
+    "text": "Cerramos este año con un proyecto tan retador como motivador. Mi primera formación como coach-claro-, yo espero que la primera de muchas otras.\nSe trató de una formación en estadística llamada “Stats sans stress”, porque no: las estadísticas no están hechas para estresarnos, sino para ayudarnos a entender mejor el mundo.\nLa formación tuvo lugar en Antsirabe, Madagascar, y estuvo dirigida a responsables técnicos de evaluación del APDRA (Association Pisciculture et Développement Rural en Afrique).\nTrabajamos desde el manejo y la limpieza de datos, hasta las bases de los tests estadísticos más esenciales, siempre adaptados a las necesidades reales del grupo. Analizamos muchos (muchísimos 🐟) datos de peces y nos sumergimos en este mundo tan fascinante para transformar números en historias con sentido y con peso estadístico.\nPorque sí: los datos también cuentan historias, y aprender a escucharlas puede ser tan útil como divertido.\nSi tienes duda de cómo puedo ayudar a tu equipo con este tipo de formación, no dudes en contactarme."
   },
   {
     "objectID": "projects/guava.html",
@@ -60,6 +67,6 @@
     "href": "projects.html",
     "title": "Proyectos",
     "section": "",
-    "text": "Te muestro aquí un poco de mis proyectos a lo largo de mi gran aventura con los datos, las formaciones que doy, etc etc.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormación Stats en el APDRA\n\n\n\nManejo de datos\n\n\nBioestadística\n\n\nRStudio\n\n\n\nFormación\n\n\n\n1 dic 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizar la pérdida de bosques con Tableau\n\n\n\nTableau\n\n\nData viz\n\n\nData gathering\n\n\n\nProyecto personal\n\n\n\n12 sept 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPasar de pixeles a guayabas\n\n\n\nPython\n\n\nPlantCV\n\n\nJupyter\n\n\nMachine learning\n\n\nR\n\n\n\nProyecto freelancer\n\n\n\n21 ene 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEl trigo, R y mi historia de amor con los datos\n\n\n\nRStudio\n\n\nManejo de datos\n\n\nBioestadística\n\n\nAgronomía\n\n\n\nTrabajo y tesis de máster\n\n\n\n22 nov 2022\n\n\n\n\n\n\n\n\nNo hay resultados"
+    "text": "Te muestro aquí un poco de mis proyectos a lo largo de mi gran aventura con los datos, las formaciones que doy, etc etc.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormación R en el Dp SPAD\n\n\n\nManejo de datos\n\n\nBioestadística\n\n\nRStudio\n\n\n\nFormación\n\n\n\n1 may 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormación Stats en el APDRA\n\n\n\nManejo de datos\n\n\nBioestadística\n\n\nPiscicultura\n\n\nRStudio\n\n\n\nFormación\n\n\n\n1 dic 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualizar la pérdida de bosques con Tableau\n\n\n\nTableau\n\n\nData viz\n\n\nData gathering\n\n\n\nProyecto personal\n\n\n\n12 sept 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPasar de pixeles a guayabas\n\n\n\nPython\n\n\nPlantCV\n\n\nJupyter\n\n\nMachine learning\n\n\nR\n\n\n\nProyecto freelancer\n\n\n\n21 ene 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEl trigo, R y mi historia de amor con los datos\n\n\n\nRStudio\n\n\nManejo de datos\n\n\nBioestadística\n\n\nAgronomía\n\n\n\nTrabajo y tesis de máster\n\n\n\n22 nov 2022\n\n\n\n\n\n\n\n\nNo hay resultados"
   }
 ]
