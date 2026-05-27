@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "projects/forests.html",
+    "href": "projects/forests.html",
+    "title": "Raconter l’histoire des forêts avec Tableau",
+    "section": "",
+    "text": "Dans mon exploration du Data Storytelling, j’ai choisi de travailler avec des données de Madagascar, le pays où je vis actuellement. L’un des enjeux environnementaux les plus préoccupants est la déforestation, qui n’est pas seulement une suite de chiffres, mais une menace pour la biodiversité, les communautés et l’avenir de l’île.\nDans le cadre d’un cours sur Tableau (que j’ai trouvé à Coursera), j’ai créé des tableaux de bord interactifs illustrant la perte de couverture forestière au fil du temps et selon les régions.\n\nL’objectif : sensibiliser à la disparition dramatique des forêts malgaches.\nCe projet m’a montré comment la visualisation de données peut raconter des histoires, dépasser les statistiques, éveiller des consciences et -parfois -j’espère que peux inspirer l’action."
+  },
+  {
+    "objectID": "projects/wheat.html",
+    "href": "projects/wheat.html",
+    "title": "Le blé, R et ma passion pour les données",
+    "section": "",
+    "text": "Au cours de mon mémoire de master et de mon premier emploi en Europe, j’ai travaillé sur l’un des aliments de base les plus emblématiques du continent : le blé.\nMes années de recherche sur le blé m’ont apporté bien plus que des résultats scientifiques : elles m’ont fait découvrir R.\nLa mission : analyser des données agroclimatiques et issues de capteurs pour comprendre la résilience à la sécheresse et améliorer le rendement en grain.\n\nCes projets m’ont appris que les données ne sont jamais abstraites : elles sont la clé pour repenser et adapter nos systèmes alimentaires face au changement climatique.\n📄 Vous pouvez retrouver ici quelques-uns de mes articles scientifiques :\nFrontiers paper"
+  },
+  {
+    "objectID": "projects/fapdra.html",
+    "href": "projects/fapdra.html",
+    "title": "Formation en stats avec APDRA",
+    "section": "",
+    "text": "Nous terminons l’année avec un projet à la fois stimulant,motivant et vraiment chouette. Ma première formation, en tant que formatrice (et j’espère la première de beacoup plus à venir).\nIl s’agissait d’une formation en statistique intitulée Stats sans stress, parce que non : les statistiques ne sont pas là pour nous stresser, mais pour nous aider à mieux comprendre.\nLa formation s’est déroulée à Antsirabe, Madagascar, auprès des responsables techniques de suivi-évaluation de l’APDRA (Association Pisciculture et Développement Rural en Afrique).\nNous avons travaillé sur la gestion et le nettoyage des données, ainsi que sur les bases des tests statistiques les plus essentiels, toujours adaptés aux besoins concrets du groupe. Beaucoup de données piscicoles ont été analysées 🐟, et nous nous sommes plongés dans ce monde passionnant pour transformer les chiffres en histoires claires, utiles et statistiquement solides.\nParce que oui, les données racontent des histoires — et on peut apprendre à les lire sans stress, et avec plaisir.\nSi vous souhaitez, vous aussi, apprendre à travailler avec les données de manière claire, utile et sans stress avec votre équipe, n’hésitez pas à me contacter."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Coucou et bienvenue!",
+    "section": "",
+    "text": "Rendre tes données\n\n\n\naccesibles\n\n\n\n\nclaires\n\n\n\n\nplus fun\n\n\n\npour booster tes projets!\n\n\n\nJe suis ravie que tu sois ici ! 🌸\nBienvenue sur mon site personnel — un petit espace où je partage mon amour pour les données, la créativité et l’enseignement.\nIci, tu trouveras du contenu sur R, Python, la science des données et d’autres choses que j’explore.\nSi tu es curieux·se de savoir comment je peux t’aider, voici mes services :\n\n\n\n\n📊 Analyse de données\n\n\n\nValorisons vos données avec statistiques, graphiques et idées claires — toujours avec des résultats reproductibles et automatisés.\n\n\n\n\n\n\n\n🎓 Formations\n\n\n\nAteliers et formations en R, Python ou gestion de données — pour optimiser vos analyses et développer vos compétences en toute confiance.\n\n\n\n\n\n\n\n💡 Blog et conseils\n\n\n\nSur mon blog, je partage ressources, tutos et réflexions — des astuces de code aux idées qui m’inspirent.\n\n\n\n\n\nN’hésite pas à explorer mon site et à me contacter, je serai ravie d’échanger avec toi. – À bientôt !\n“Rendre les données complexes simples, utiles et fiables pour tous.”"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Ici je veux vous partager des conseils en analyse de données, des astuces de code et quelques réflexions (avec une petite touche de créativité).\n\n\n\n\n\n🚧👷🏽‍♀️ Attention!\n\n\n\nCe blog est encore en construction…\nÀ très vite !"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "À propos",
@@ -14,39 +49,11 @@
     "text": "Connectons-nous!"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Coucou et bienvenue!",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projets",
     "section": "",
-    "text": "Rendre tes données\n\n\n\naccesibles\n\n\n\n\nclaires\n\n\n\n\nplus fun\n\n\n\npour booster tes projets!\n\n\n\nJe suis ravie que tu sois ici ! 🌸\nBienvenue sur mon site personnel — un petit espace où je partage mon amour pour les données, la créativité et l’enseignement.\nIci, tu trouveras du contenu sur R, Python, la science des données et d’autres choses que j’explore.\nSi tu es curieux·se de savoir comment je peux t’aider, voici mes services :\n\n\n\n\n📊 Analyse de données\n\n\n\nValorisons vos données avec statistiques, graphiques et idées claires — toujours avec des résultats reproductibles et automatisés.\n\n\n\n\n\n\n\n🎓 Formations\n\n\n\nAteliers et formations en R, Python ou gestion de données — pour optimiser vos analyses et développer vos compétences en toute confiance.\n\n\n\n\n\n\n\n💡 Blog et conseils\n\n\n\nSur mon blog, je partage ressources, tutos et réflexions — des astuces de code aux idées qui m’inspirent.\n\n\n\n\n\nN’hésite pas à explorer mon site et à me contacter, je serai ravie d’échanger avec toi. – À bientôt !\n“Rendre les données complexes simples, utiles et fiables pour tous.”"
-  },
-  {
-    "objectID": "projects/fspad.html",
-    "href": "projects/fspad.html",
-    "title": "Formation R au dP SPAD",
-    "section": "",
-    "text": "Les statistiques sans stress ? Oui, c’est possible… et ça continue !\nDu 13 au 17 avril, le dP SPAD (Dispositif de recherche et d’enseignement en Partenariat « Systèmes de Production d’Altitude et Durabilité ») à Ambatobe (Madagascar) a vibré au rythme du langage R et de RStudio. Mais, ce n’était que le début de l’aventure !\nPlus qu’une simple formation intensive en présentiel, il s’agit d’un véritable accompagnement sur mesure qui bat son plein.\nDepuis un mois, je poursuis ce voyage avec 10 doctorants exceptionnels du dP SPAD, CIRAD (Centre de coopération internationale en recherche agronomique pour le développement) et de leurs partenaires à travers des sessions en ligne et du mentorat individuel.\nNotre secret ? Décortiquer chaque fonction et chaque ligne de code pour les appliquer directement à leurs propres données de recherche.\nParce que non, la programmation en R et les statistiques ne sont pas là pour nous stresser, mais pour libérer le potentiel de notre recherche !\nUn immense bravo à ces chercheurs pour leur rigueur et leur énergie.\nEt vous ? Si vous souhaitez, vous aussi, apprendre à travailler avec les données de manière claire, utile et sans stress avec votre équipe, n’hésitez pas à me contacter."
-  },
-  {
-    "objectID": "projects/wheat.html",
-    "href": "projects/wheat.html",
-    "title": "Le blé, R et ma passion pour les données",
-    "section": "",
-    "text": "Au cours de mon mémoire de master et de mon premier emploi en Europe, j’ai travaillé sur l’un des aliments de base les plus emblématiques du continent : le blé.\nMes années de recherche sur le blé m’ont apporté bien plus que des résultats scientifiques : elles m’ont fait découvrir R.\nLa mission : analyser des données agroclimatiques et issues de capteurs pour comprendre la résilience à la sécheresse et améliorer le rendement en grain.\n\nCes projets m’ont appris que les données ne sont jamais abstraites : elles sont la clé pour repenser et adapter nos systèmes alimentaires face au changement climatique.\n📄 Vous pouvez retrouver ici quelques-uns de mes articles scientifiques :\nFrontiers paper"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Ici je veux vous partager des conseils en analyse de données, des astuces de code et quelques réflexions (avec une petite touche de créativité).\n\n\n\n\n\n🚧👷🏽‍♀️ Attention!\n\n\n\nCe blog est encore en construction…\nÀ très vite !"
-  },
-  {
-    "objectID": "projects/fapdra.html",
-    "href": "projects/fapdra.html",
-    "title": "Formation en stats avec APDRA",
-    "section": "",
-    "text": "Nous terminons l’année avec un projet à la fois stimulant,motivant et vraiment chouette. Ma première formation, en tant que formatrice (et j’espère la première de beacoup plus à venir).\nIl s’agissait d’une formation en statistique intitulée Stats sans stress, parce que non : les statistiques ne sont pas là pour nous stresser, mais pour nous aider à mieux comprendre.\nLa formation s’est déroulée à Antsirabe, Madagascar, auprès des responsables techniques de suivi-évaluation de l’APDRA (Association Pisciculture et Développement Rural en Afrique).\nNous avons travaillé sur la gestion et le nettoyage des données, ainsi que sur les bases des tests statistiques les plus essentiels, toujours adaptés aux besoins concrets du groupe. Beaucoup de données piscicoles ont été analysées 🐟, et nous nous sommes plongés dans ce monde passionnant pour transformer les chiffres en histoires claires, utiles et statistiquement solides.\nParce que oui, les données racontent des histoires — et on peut apprendre à les lire sans stress, et avec plaisir.\nSi vous souhaitez, vous aussi, apprendre à travailler avec les données de manière claire, utile et sans stress avec votre équipe, n’hésitez pas à me contacter."
+    "text": "C’est ici où je vais te montrer un peu de ma life comment coder/formatrice/analyste/…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormation R au dP SPAD\n\n\n\nData handling\n\n\nBiostatistique\n\n\nRStudio\n\n\n\nFormation\n\n\n\n1 mai 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormation en stats avec APDRA\n\n\n\nData handling\n\n\nBiostatistique\n\n\nRStudio\n\n\nPisciculture\n\n\n\nFormation\n\n\n\n1 déc. 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRaconter l’histoire des forêts avec Tableau\n\n\n\nTableau\n\n\nData viz\n\n\nData gathering\n\n\n\nProjet personnel\n\n\n\n12 sept. 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDes pixels aux goyaves\n\n\n\nPython\n\n\nPlantCV\n\n\nJupyter\n\n\nMachine learning\n\n\nR\n\n\n\nProjet freelance\n\n\n\n21 janv. 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLe blé, R et ma passion pour les données\n\n\n\nRStudio\n\n\nData handling\n\n\nBiostatistique\n\n\nAgronomie\n\n\n\nJob et thèse de master\n\n\n\n22 nov. 2022\n\n\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "projects/guava.html",
@@ -56,17 +63,10 @@
     "text": "Les projets freelance vous mènent parfois vers des univers inattendus—le mien m’a conduit directement à la vision par ordinateur.\nAvec une entreprise productrice de fruits au Mexique, j’ai travaillé au développement d’un pipeline d’analyse d’images en Python pour un programme de sélection de goyaves.\n\nLe défi : concevoir un système automatisé capable de mesurer, analyser et classer avec précision différents caractères de la goyave.\nAu passage, j’ai découvert des outils que je ne connaissais pas, comme PlantCV (un logiciel open source d’analyse d’images, spécialement conçu pour les sciences végétales), tout en renforçant mes compétences en Python.\nCe fut un parcours sinueux mais riche, qui m’a appris à quel point les données peuvent être polyvalentes lorsqu’elles se marient à la créativité."
   },
   {
-    "objectID": "projects/forests.html",
-    "href": "projects/forests.html",
-    "title": "Raconter l’histoire des forêts avec Tableau",
+    "objectID": "projects/fspad.html",
+    "href": "projects/fspad.html",
+    "title": "Formation R au dP SPAD",
     "section": "",
-    "text": "Dans mon exploration du Data Storytelling, j’ai choisi de travailler avec des données de Madagascar, le pays où je vis actuellement. L’un des enjeux environnementaux les plus préoccupants est la déforestation, qui n’est pas seulement une suite de chiffres, mais une menace pour la biodiversité, les communautés et l’avenir de l’île.\nDans le cadre d’un cours sur Tableau (que j’ai trouvé à Coursera), j’ai créé des tableaux de bord interactifs illustrant la perte de couverture forestière au fil du temps et selon les régions.\n\nL’objectif : sensibiliser à la disparition dramatique des forêts malgaches.\nCe projet m’a montré comment la visualisation de données peut raconter des histoires, dépasser les statistiques, éveiller des consciences et -parfois -j’espère que peux inspirer l’action."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projets",
-    "section": "",
-    "text": "C’est ici où je vais te montrer un peu de ma life comment coder/formatrice/analyste/…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormation R au dP SPAD\n\n\n\nData handling\n\n\nBiostatistique\n\n\nRStudio\n\n\n\nFormation\n\n\n\n1 mai 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFormation en stats avec APDRA\n\n\n\nData handling\n\n\nBiostatistique\n\n\nRStudio\n\n\nPisciculture\n\n\n\nFormation\n\n\n\n1 déc. 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRaconter l’histoire des forêts avec Tableau\n\n\n\nTableau\n\n\nData viz\n\n\nData gathering\n\n\n\nProjet personnel\n\n\n\n12 sept. 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDes pixels aux goyaves\n\n\n\nPython\n\n\nPlantCV\n\n\nJupyter\n\n\nMachine learning\n\n\nR\n\n\n\nProjet freelance\n\n\n\n21 janv. 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLe blé, R et ma passion pour les données\n\n\n\nRStudio\n\n\nData handling\n\n\nBiostatistique\n\n\nAgronomie\n\n\n\nJob et thèse de master\n\n\n\n22 nov. 2022\n\n\n\n\n\n\n\n\nAucun article correspondant"
+    "text": "Les statistiques sans stress ? Oui, c’est possible… et ça continue !\nDu 13 au 17 avril, le dP SPAD (Dispositif de recherche et d’enseignement en Partenariat « Systèmes de Production d’Altitude et Durabilité ») à Ambatobe (Madagascar) a vibré au rythme du langage R et de RStudio. Mais, ce n’était que le début de l’aventure !\nPlus qu’une simple formation intensive en présentiel, il s’agit d’un véritable accompagnement sur mesure qui bat son plein.\nDepuis un mois, je poursuis ce voyage avec 10 doctorants exceptionnels du dP SPAD, CIRAD (Centre de coopération internationale en recherche agronomique pour le développement) et de leurs partenaires à travers des sessions en ligne et du mentorat individuel.\nNotre secret ? Décortiquer chaque fonction et chaque ligne de code pour les appliquer directement à leurs propres données de recherche.\nParce que non, la programmation en R et les statistiques ne sont pas là pour nous stresser, mais pour libérer le potentiel de notre recherche !\nUn immense bravo à ces chercheurs pour leur rigueur et leur énergie.\nEt vous ? Si vous souhaitez, vous aussi, apprendre à travailler avec les données de manière claire, utile et sans stress avec votre équipe, n’hésitez pas à me contacter."
   }
 ]
