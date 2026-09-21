@@ -1,0 +1,115 @@
+---
+title: "¡Hola y bienvenido!"
+---
+
+:::::::::: animated-text
+Transformar datos nunca había sido tan
+
+::::::::: flip
+<div>
+
+<div>
+
+Divertido
+
+</div>
+
+</div>
+
+<div>
+
+<div>
+
+Claro
+
+</div>
+
+</div>
+
+<div>
+
+<div>
+
+Fácil
+
+</div>
+
+</div>
+:::::::::
+
+para todos tus proyectos
+::::::::::
+
+::::::::::::::::: grid
+::: g-col-12
+Me alegra mucho que estés aquí 🌸
+
+Bienvenid\@ a mi sitio personal — un espacio donde comparto mi amor por los datos, la creatividad y, por supuesto, por la enseñanza.
+
+Aquí encontrarás contenido sobre R, Python, ciencia de datos y otras cosas que voy explorando en el camino.
+
+Si quieres saber cómo puedo ayudarte, aquí te muestro mis servicios:
+:::
+
+:::::: {.g-col-12 .g-col-md-4}
+::::: {.card .text-white .bg-secondary}
+::: card-header
+📊 Análisis de datos
+:::
+
+::: card-body
+<p class="card-text">
+
+Aprovechemos tus datos con estadísticas, gráficos e ideas prácticas — siempre buscando resultados reproducibles y automáticos.
+
+</p>
+:::
+:::::
+::::::
+
+:::::: {.g-col-12 .g-col-md-4}
+::::: {.card .text-white .bg-info}
+::: card-header
+🎓 Formaciones
+:::
+
+::: card-body
+<p class="card-text">
+
+Talleres y formaciones en R, Python o gestión de datos (lo que requieras) — para que optimices tus análisis y ganes confianza en tus habilidades.
+
+</p>
+:::
+:::::
+::::::
+
+:::::: {.g-col-12 .g-col-md-4}
+::::: {.card .text-white .bg-success}
+::: card-header
+💡 Blog y tips
+:::
+
+::: card-body
+<p class="card-text">
+
+En mi blog comparto recursos, tutoriales y reflexiones — desde trucos de código hasta ideas que me inspiran a seguir aprendiendo juntos.
+
+</p>
+:::
+:::::
+::::::
+
+::: g-col-12
+Siéntete libre de explorar mi sitio y contactarme, estaré feliz de conectar. ¡Nos vemos!
+
+*"Transformando datos complejos en algo simple, útil y confiable para todos."*
+:::
+:::::::::::::::::
+
+```{=html}
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/anapaodares/30min?primary_color=26c595', text: '📅 ¿Platicamos?', color: '#15d3a6', textColor: '#ffffff', branding: false }); }</script>
+<!-- Calendly badge widget end -->
+```

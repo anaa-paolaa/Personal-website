@@ -1,0 +1,107 @@
+---
+title: "Le blé, R et ma passion pour les données"
+author: Ana Valladares
+date: "2026-09-10"
+image: /images/wheat.PNG
+image-alt: "Screenshot of wheat project"
+categories:
+  - Data viz
+  - Communication
+  - Visualisation des données
+---
+
+Conoces tus datos al dedillo. Los has estado mirando durante semanas, quizás meses. Así que cuando armas un gráfico, el mensaje te parece obvio.
+
+Pero aquí está la trampa: **tu audiencia no ha vivido con tus datos como tú.** Lo que para ti, como experto/a, es cristalino, puede ser completamente confuso para ellos.
+
+Una buena visualización de datos no se trata de mostrar todo lo que encontraste, sino de simplificar y contar una historia que tu audiencia pueda seguir de verdad. Aquí tienes 5 consejos para lograrlo.
+
+#### 1. Conoce la diferencia: gráficos exploratorios vs. explicativos
+
+Empecemos por aquí, porque esto cambia todo lo demás.
+
+Los **gráficos exploratorios** son para ti. Te ayudan a ver los primeros patrones y tendencias en tus datos — valores atípicos, errores, unidades inconsistentes, distribuciones. Piensa en histogramas, boxplots, diagramas de dispersión. Rápidos, sin pulir, informativos. Nadie más necesita verlos.
+
+Los **gráficos explicativos** son para tu audiencia. Son los que pules y publicas — en un informe, una presentación, un artículo. Su único trabajo es transmitir un punto y llevar a tu audiencia directo a la conclusión. Si ignoras esta diferencia, corres el riesgo de mostrar gráficos exploratorios sin pulir a personas que no tienen el contexto para leerlos — y terminas haciéndole perder el tiempo a todos, incluido el tuyo.
+
+👉 Regla general: si es exploratorio, mantenlo rápido y sin pulir. Si es explicativo, cada elemento debe ganarse su lugar — y usa un lenguaje firme y seguro a su alrededor.
+
+![](/images/expvsexpl.png){fig-align="center"}
+
+#### 2. Aclara tu mensaje primero
+
+Antes de abrir tu herramienta de graficación, pregúntate:
+
+-   ¿Qué quiero que mi audiencia reaccione a ver?
+
+-   ¿Qué representan realmente estas variables, en términos simples?
+
+-   ¿Quién es mi audiencia, y qué sabe ya
+
+-   ¿Cuál es el hallazgo crítico — lo único que deben llevarse?
+
+Una vez que tengas claro tu mensaje, usa tu gráfico para reforzarlo: agrega líneas objetivo, líneas de referencia o anotaciones que apunten directo a tu conclusión. Pero no te excedas — una anotación en cada punto de datos le quita sentido al propósito.
+
+#### 3. Elige el gráfico correcto para cada caso
+
+No todos los hallazgos necesitan un gráfico. A veces un solo número, una frase corta o una tabla simple comunica más rápido — un porcentaje solo puede tener más impacto que un gráfico alrededor de él.
+
+Cuando sí necesites un gráfico, deja que tu objetivo decida el tipo:
+
+-   **Comparar categorías** (más grande vs. más pequeño): los gráficos de barras verticales funcionan bien para pocas categorías; ordénalas de forma ascendente o descendente si ayuda a la historia.
+
+-   **Comparar muchas categorías, o sin un orden natural**: las barras horizontales escalan mejor y se mantienen legibles.
+
+-   **Mostrar cambios en el tiempo** (crecimiento, declive, tendencias): los gráficos de líneas son la opción clásica.
+
+-   **Mostrar partes de un total**: las barras apiladas funcionan bien, especialmente entre categorías o en el tiempo.
+
+-   **Mostrar una sola proporción** (esta parte vs. el resto): los famosos gráficos de pastel (pie charts) — sí, esos tan criticados. Tienen mala fama porque comparar el tamaño de las porciones no es muy objetivo, y se vuelven ilegibles con más de 5–6 porciones. Pero para una sola proporción, bien etiquetada, todavía cumplen su función.
+
+#### 4. Simplifica, simplifica, simplifica
+
+La sobrecomplicación es la forma más rápida de perder a tu audiencia. Ten cuidado con:
+
+-   Demasiadas líneas en un mismo gráfico
+
+-   Demasiados colores
+
+-   Los **efectos 3D** — distorsionan la percepción y hacen que comparar sea genuinamente más difícil. Evítalos, siempre.
+
+Pregúntate: ¿qué aporta realmente cada elemento? Si la respuesta es "nada", elimínalo.
+
+Algunos hábitos prácticos:
+
+-   Conserva solo las etiquetas que tu audiencia realmente necesita.
+
+-   Elimina las líneas de cuadrícula y el ruido visual innecesario — simplifica lo que está detrás de tus datos, no solo los datos en sí.
+
+-   Empieza tu eje en 0 — a menos que tengas una razón específica y justificada para hacer zoom (por ejemplo, para resaltar un cambio marcado que comienza en un punto determinado).
+
+-   Usa las etiquetas con inteligencia — deben aclarar, no saturar.
+
+#### 5. Usa el color con intención
+
+El color es una de tus herramientas más poderosas — y una de las más mal utilizadas. Olvídate de la paleta arcoíris y de tus colores favoritos. En su lugar, usa el color de forma estratégica para resaltar tu hallazgo, no para decorar tu gráfico.
+
+Algunos principios:
+
+-   Piensa en el contraste — tu dato clave debe destacar visualmente.
+
+-   Ten en cuenta el contexto: el rojo suele leerse como "peligro" o "alerta", así que úsalo de forma deliberada, no por defecto. Tonos neutros como gris, negro o azul suelen ser una base más segura.
+
+-   Sea cual sea tu elección, **mantén la consistencia** — la misma categoría debe tener siempre el mismo color a lo largo de tu informe o panel.
+
+------------------------------------------------------------------------
+
+¿Quieres pasar de gráficos "suficientes" a visuales que realmente hagan que la gente actúe sobre tus datos? Ofrezco formación y acompañamiento individual en R, Python y visualización de datos — adaptado a tu campo, tus datos y tus objetivos.
+
+Así que si quieres pasar de esto a esto...
+
+**¡Contáctame para planear una sesión!**
+
+Referencias : 
+
+-   CartONG, 2022. Boîte à outils visualisation de données. \[en ligne : <https://cartong.pages.gitlab.cartong.org/learning-corner/fr/8_further_data_visualization>\]
+
+-   Storytelling data blog : <http://storytellingwithdata.com/blog>

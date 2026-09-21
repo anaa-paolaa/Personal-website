@@ -1,0 +1,23 @@
+---
+title: "Wheat, R and love for data"
+description: "Thesis and job"
+author: Ana Valladares
+date: "2022-12-31"
+image: /images/wheat.PNG
+image-alt: "Screenshot of wheat"
+categories:
+  - RStudio
+  - Data handling
+  - Biostatistics
+  - Agronomy
+---
+
+During my master’s thesis and my first job in Europe, I worked with one of its most iconic staple foods: **wheat**. My years in wheat research gave me much more than scientific results—they gave me **R**.
+
+**The mission:** analyze agro-climatic, sensor-based data and genetic data to understand plant resilience and improve grain yield.\
+
+These projects taught me that data is never abstract—it is the key to rethinking and adapting our food systems in the face of climate change.
+
+📄 I’ve published some scientific articles that you can explore here:
+
+[Frontiers paper](https://doi.org/10.3389/fpls.2023.1253385)

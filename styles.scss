@@ -1,0 +1,151 @@
+/*-- scss:defaults --*/
+
+// Base Colors
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dd6f5d !default;
+$orange:  #f7c1b3 !default;
+$yellow:  #ffce67 !default;
+$green:   #56cc9d !default;
+$teal:    #20c997 !default;
+$cyan:    #6cc3d5 !default;
+
+/*-- scss:rules --*/
+
+/// about.qmd (Home/About Page)
+/* Source: All CSS in this section (Index.qmd) was adapted from Jadey Ryan's website - https://github.com/jadeynryan/jadey_website/blob/main/assets/styling/theme.scss */
+
+/// Headers
+h1 {
+  color: $gray-800;
+}
+
+h2 {
+  color: $black;
+}
+
+h3 {
+  color: $primary;
+}
+
+h4, h5 {
+  color: $red;
+}
+
+h6 {
+  color: $black;
+}
+
+//// About Links
+div.quarto-about-jolla .about-link {
+  color: $primary;
+  font-size: 1em;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+//// About circular logo
+.navbar-brand img {
+      border-radius: 70%;
+      height: 90px; /* Adjust as needed */
+      width: 30px;  /* Adjust as needed */
+    }
+
+//// About Links Hover
+div.quarto-about-jolla .about-link:hover {
+  background-color:$primary;
+  color: $white;
+}
+
+//// About Links Buttons
+div.quarto-post .listing-categories .listing-category, .quarto-category, .btn {
+  opacity: 0.8 !important;
+  color: $secondary;
+  border-color: $secondary;
+  text-align: center;
+  border-style: solid;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn {
+  opacity: 1 !important;
+  padding: 0.5em;
+  border-radius: 6px;
+}
+
+//// About animated text-align
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+.animated-text {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #343a40;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 80px 0 60px;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+
+  .flip {
+    height: 60px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+    > div > div {
+      color: #fff;
+      padding: 6px 14px;
+      height: 48px;
+      margin-bottom: 48px;
+      display: inline-block;
+      border-radius: 10px;
+      font-size: 32px;
+    }
+
+    div:first-child {
+      animation: show 6s linear infinite;
+    }
+
+    div div {
+      background: #78c2ad;
+    }
+
+    div:first-child div {
+      background: #6cc3d5;
+    }
+
+    div:last-child div {
+      background: #f3969a;
+    }
+  }
+
+  @keyframes show {
+    0% { margin-top: -252px; }
+    5% { margin-top: -168px; }
+    33% { margin-top: -168px; }
+    38% { margin-top: -84px; }
+    66% { margin-top: -84px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -252px; }
+  }
+}
+
+//// About animated card flip
+.card {
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover animation */
+.card:hover {
+  transform: translateY(-6px); /* cute lift effect */
+  filter: brightness(1.15);    /* brightens the color */
+}

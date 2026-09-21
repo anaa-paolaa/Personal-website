@@ -1,0 +1,16 @@
+---
+title: "Blog"
+listing:
+  contents: blogs
+  type: grid
+  fields: 
+    - title
+    - description
+    - date
+    - image
+    - categories
+  categories: true
+  sort: "date desc" 
+---
+
+Aquí les compartiré consejos de análisis de datos en R o en Python, trucos de programación y reflexiones, buenas referencias, y todo con un toque de creatividad.

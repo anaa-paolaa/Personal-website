@@ -1,0 +1,43 @@
+---
+title: "À propos"
+subtitle: "Esprit curieux, analyste fiable 🔍📊 | Expatriée à Madagascar 🇲🇬"
+image: images/Ana.PNG
+about:
+  template: jolla
+  links:
+    - icon: envelope-at-fill
+      text: Courriel
+      href: anapaodares@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/anapaolavalladares/
+    - icon: github
+      text: GitHub
+      href: https://github.com/anaa-paolaa
+---
+
+Bonjour, je suis Ana, une mexicaine à Madagascar —pour l’instant—. Je suis une femme aux multiples passions, guidée par la créativité, la logique et l’envie de transformer.\
+
+Ici, j’en partage quelques-unes, pour mieux me connaître.
+
+::: panel-tabset
+## **Analyse de données**
+
+La curiosité n’a pas tué le chat ; pour moi, explorer est une vraie nécessité. J’adore voir comment l’exploration des données peut se transformer en connaissance, en décisions plus claires et en compréhension.\
+Mon expertise repose sur la programmation, la statistique et la reproductibilité des données, que j’ai pratiquées dans divers projets internationaux, de la génomique à l’analyse d’images. J’ai développé mes compétences avec plusieurs langages de programmation (R, Python, SQL) et outils de visualisation (Tableau, Shiny, Quarto).
+
+## **Bio & tech**
+
+Diplômée en biotechnologie et titulaire d’un master en amélioration génétique végétale, mes projets récents sont liés à l’agriculture, mais aussi plus largement à l’innovation et à la technologie.\
+Les avancées technologiques peuvent être porteuses d’espoir mais aussi poser des défis éthiques. J’aime apprendre à mieux utiliser ces technologies, réfléchir à leur impact et envisager comment avancer ensemble de manière responsable.
+
+## **Apprentissage continu**
+
+J’aime apprendre, en science comme dans la vie. Des langues (je parle espagnol, anglais, français, italien et maintenant un peu de malgache) jusqu’à la géographie. J’aime aussi découvrir de nouvelles cultures et de nouveaux lieux - c'est pour ça que je kiffe Mada!.
+
+## **Loisirs**
+
+Mes loisirs incluent la danse, la peinture, le sport et la lecture. J’aime me lancer des défis et essayer de nouvelles choses : en ce moment, le volley et la plongée.
+:::
+
+## ***Connectons-nous!***

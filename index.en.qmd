@@ -1,0 +1,115 @@
+---
+title: "Hello and welcome!"
+---
+
+:::::::::: animated-text
+Making data
+
+::::::::: flip
+<div>
+
+<div>
+
+Fun
+
+</div>
+
+</div>
+
+<div>
+
+<div>
+
+Clear
+
+</div>
+
+</div>
+
+<div>
+
+<div>
+
+Easy
+
+</div>
+
+</div>
+:::::::::
+
+for all your projects!
+::::::::::
+
+::::::::::::::::: grid
+::: g-col-12
+Hey, I’m so glad you’re here! 🌸
+
+Welcome to my personal website — a space where I share my love for data, creativity, and of course, teaching.
+
+Here you’ll find content about R, Python, data science, and other things I explore along the way.
+
+If you’re curious about how I can help you, here’s what I offer:
+:::
+
+:::::: {.g-col-12 .g-col-md-4}
+::::: {.card .text-white .bg-secondary}
+::: card-header
+📊 Data analysis
+:::
+
+::: card-body
+<p class="card-text">
+
+Data analysis & visualization: let’s unlock the value of your data with statistics, graphs, and insights, always aiming for results that are reproducible and automated.
+
+</p>
+:::
+:::::
+::::::
+
+:::::: {.g-col-12 .g-col-md-4}
+::::: {.card .text-white .bg-info}
+::: card-header
+🎓 Trainings
+:::
+
+::: card-body
+<p class="card-text">
+
+Workshops and trainings in R, Python, or data management, designed to help you optimize your analyses and grow your skills with confidence.
+
+</p>
+:::
+:::::
+::::::
+
+:::::: {.g-col-12 .g-col-md-4}
+::::: {.card .text-white .bg-success}
+::: card-header
+💡 Tips & Blog
+:::
+
+::: card-body
+<p class="card-text">
+
+On my blog, I share resources, tutorials, and reflections.It’s my way of passing along what has helped me, hoping it inspires you too.
+
+</p>
+:::
+:::::
+::::::
+
+::: g-col-12
+Feel free to look around, discover my work, and contact me anytime — I’d be happy to connect.
+
+*"Making complex data simple, useful, and reliable for everyone"*
+:::
+:::::::::::::::::
+
+```{=html}
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/anapaodares/30min?primary_color=26c595', text: '📅 Let\'s chat!', color: '#15d3a6', textColor: '#ffffff', branding: false }); }</script>
+<!-- Calendly badge widget end -->
+```

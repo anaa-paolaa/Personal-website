@@ -1,0 +1,12 @@
+---
+title: "Le blé, R et ma passion pour les données"
+author: Ana Valladares
+date: "2026-09-16"
+image: /images/wheat.PNG
+image-alt: "Screenshot of wheat project"
+categories:
+  - RStudio
+  - Data handling
+  - Biostatistique
+  - Agronomie
+---

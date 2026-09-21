@@ -1,0 +1,45 @@
+---
+title: "About me"
+subtitle: "Curious mind, passionate analyst 🔍📊 | Expat at Madagascar 🇲🇬"
+image: images/Ana.PNG
+about:
+  template: jolla
+  links:
+    - icon: envelope-at-fill
+      text: Email
+      href: anapaodares@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/anapaolavalladares/
+    - icon: github
+      text: GitHub
+      href: https://github.com/anaa-paolaa
+---
+
+Hi, I’m Ana, a Mexican currently at Madagascar —for now—. I’m a woman of many passions, led by creativity, logic, and the joy of transformation.
+
+Here I share some of them, so you can get to know me better.
+
+::: panel-tabset
+## **Data analysis**
+
+Curiosity didn’t kill the cat—for me, exploring is a necessity. I love seeing how digging into data can turn into knowledge, clearer decisions, and better understanding.
+
+My expertise lies in programming, statistics, and data reproducibility, which I’ve practiced across international projects, from genomics to image analysis. I’ve developed skills in multiple programming languages (R, Python, SQL) and visualization tools (Tableau, Shiny, Quarto) and I love data challenges.
+
+## **Bio & tech**
+
+With a degree in Biotechnology and a Master’s in Plant Breeding, my most recent projects have been linked to agriculture and, more broadly, to innovation and technology.\
+Advances in tech can be both inspiring and risky, which is why I enjoy staying informed, learning how to make better use of technologies, reflecting on ethics, and exploring how we can move forward together.
+
+## **Continous Learning**
+
+I love learning—both in science and in life. From languages (I speak Spanish, English, French, Italian, and now a bit of Malagasy) to geography.\
+I also love exploring new cultures and places, that's what brought me to Mada in the 1st place.
+
+## **Hobbies**
+
+My hobbies include dancing, painting, sports, and reading. I enjoy challenging myself with new things, right now it’s volleyball and diving.
+:::
+
+### ***Let's connect!***

@@ -1,0 +1,20 @@
+---
+title: "Raconter l’histoire des forêts avec Tableau"
+description: "Projet personnel"
+author: Ana Valladares
+date: "2024-09-12"
+image: /images/forests.PNG
+image-alt: "Screenshot of tableau project"
+categories:
+  - Tableau
+  - Data viz
+  - Data gathering
+---
+
+Dans mon exploration du **Data Storytelling**, j’ai choisi de travailler avec des données de Madagascar, le pays où je vis actuellement. L’un des enjeux environnementaux les plus préoccupants est la **déforestation**, qui n’est pas seulement une suite de chiffres, mais une menace pour la biodiversité, les communautés et l’avenir de l’île.
+
+Dans le cadre d’un cours sur Tableau (que j'ai trouvé à Coursera), j’ai créé des **tableaux de bord interactifs** illustrant la perte de couverture forestière au fil du temps et selon les régions.\
+
+**L’objectif :** sensibiliser à la disparition dramatique des forêts malgaches.
+
+Ce projet m’a montré comment la **visualisation de données peut raconter des histoires**, dépasser les statistiques, éveiller des consciences et -parfois -j'espère que peux inspirer l’action.

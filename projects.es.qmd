@@ -1,0 +1,15 @@
+---
+title: "Proyectos"
+listing:
+  contents: projects
+  type: grid
+  fields: 
+    - title
+    - date
+    - image
+    - categories
+  categories: true
+  sort: "date desc" 
+---
+
+Te muestro aquí un poco de mis proyectos a lo largo de mi gran aventura con los datos, las formaciones que doy, mi vida como freelancer en Mada, etc, etc, etc...
