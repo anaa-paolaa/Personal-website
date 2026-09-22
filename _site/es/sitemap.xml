@@ -2,38 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/es/blog.html</loc>
-    <lastmod>2026-09-18T08:54:42.491Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.674Z</lastmod>
   </url>
   <url>
     <loc>/es/index.html</loc>
-    <lastmod>2026-09-18T08:54:42.536Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.806Z</lastmod>
   </url>
   <url>
     <loc>/es/projects/fapdra.html</loc>
-    <lastmod>2026-09-18T08:54:42.540Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.808Z</lastmod>
   </url>
   <url>
     <loc>/es/projects/guava.html</loc>
-    <lastmod>2026-09-18T08:54:42.544Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.811Z</lastmod>
   </url>
   <url>
     <loc>/es/projects/forests.html</loc>
-    <lastmod>2026-09-18T08:54:42.541Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.809Z</lastmod>
+  </url>
+  <url>
+    <loc>/es/blogs/Errors.html</loc>
+    <lastmod>2026-09-22T15:06:48.675Z</lastmod>
+  </url>
+  <url>
+    <loc>/es/blogs/Viz.html</loc>
+    <lastmod>2026-09-22T15:06:48.676Z</lastmod>
+  </url>
+  <url>
+    <loc>/es/projects/botany1.html</loc>
+    <lastmod>2026-09-22T15:06:48.807Z</lastmod>
   </url>
   <url>
     <loc>/es/projects/wheat.html</loc>
-    <lastmod>2026-09-18T08:54:42.546Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.812Z</lastmod>
   </url>
   <url>
     <loc>/es/projects/fspad.html</loc>
-    <lastmod>2026-09-18T08:54:42.543Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.810Z</lastmod>
   </url>
   <url>
     <loc>/es/projects.html</loc>
-    <lastmod>2026-09-18T08:54:42.547Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.814Z</lastmod>
   </url>
   <url>
     <loc>/es/about.html</loc>
-    <lastmod>2026-09-18T08:54:42.490Z</lastmod>
+    <lastmod>2026-09-22T15:06:48.673Z</lastmod>
   </url>
 </urlset>

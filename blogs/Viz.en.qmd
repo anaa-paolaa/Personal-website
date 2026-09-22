@@ -1,9 +1,9 @@
 ---
-title: "Good Data Viz: 5 Tips to Make Your Charts Actually Communicate"
+title: "Data Viz: 5 Tips to Make Your Charts Talk"
 author: Ana Valladares
 date: "2026-09-10"
-image: /images/wheat.PNG
-image-alt: "Screenshot of wheat project"
+image: /images/expvsexpl.png
+image-alt: "canva image by me"
 categories:
   - Data viz
   - Communication
@@ -15,7 +15,7 @@ But here's the catch: **your audience hasn't lived with your data like you have.
 
 Good data visualization isn't about showing everything you found, **it's about simplifying and telling a story your audience can actually follow**. Here are 5 tips to get there.
 
-### **1. Know the Difference: Exploratory vs. Explanatory Charts**
+#### **1. Know the Difference: Exploratory vs. Explanatory Charts**
 
 Let's dig into this first, because it changes everything else.
 
@@ -23,25 +23,23 @@ Let's dig into this first, because it changes everything else.
 
 **Explanatory charts** are for your audience. These are the ones you polish and publish — in a report, a presentation, a paper. Their only job is to make a point and lead your audience straight to the takeaway. If you skip this distinction, you risk showing raw exploratory charts to people who don't have the context to read them — and you waste everyone's time, including your own.
 
-👉 Rule of thumb: if it's exploratory, keep it messy and fast. If it's explanatory, make every element earn its place — and use strong, confident language around it.
+👉 Rule of thumb: if it's exploratory, keep it messy and fast. If it's explanatory, make every element earn its place and use strong, confident language around it.
 
-![](/images/expvsexpl.png){fig-align="center"}
+![](/images/expvsexpl.png){fig-align="center" width="632"}
 
-### **2. Clarify Your Message First**
+#### **2. Clarify Your Message First**
 
 Before you even open your plotting library, ask yourself:
-
--   What do I want my audience to react to?
 
 -   What do these variables actually represent, in plain terms?
 
 -   Who is my audience, and what do they already know?
 
--   Which finding is critical — the one thing they should walk away with?
+-   What do I want my audience to react to? Which takeaway?
 
 Once you know your message, use your chart to reinforce it: add target lines, reference lines, or annotations that point straight at your takeaway. Just don't overdo it — an annotation on every data point defeats the purpose.
 
-### **3. Choose the Right Chart for the Job**
+#### **3. Choose the Right Chart for the Job**
 
 Not every finding needs a chart. Sometimes a single number, a short sentence, or a simple table communicates faster — a percentage on its own can be more impactful than a graph around it.
 
@@ -57,7 +55,7 @@ When you do need a chart, let your goal decide the type:
 
 -   **Showing a single proportion (this part vs. the rest):** pie charts — yes, the famous, often-criticized pie chart. They get a bad reputation because comparing slice sizes isn't very objective, and they fall apart with more than 5–6 slices. But for one proportion, clearly labeled, they can still do the job.
 
-### **4. Simplify, Simplify, Simplify**
+#### **4. Simplify, Simplify, Simplify**
 
 Overcomplication is the fastest way to lose your audience. Watch out for:
 
@@ -79,7 +77,7 @@ Practical habits:
 
 -   Use labels intelligently — they should clarify, not clutter.
 
-### **5. Use Color With Intention**
+#### **5. Use Color With Intention**
 
 Color is one of your most powerful tools — and one of the most misused. Skip the rainbow palette and your personal favorites. Instead, use color strategically to highlight your insight, not to decorate your chart.
 
@@ -87,18 +85,22 @@ A few principles:
 
 -   Think about contrast — your key data point should visually stand out.
 
--   Be mindful of context: red often reads as "danger" or "alert," so use it deliberately, not by default. Neutral tones like gray, black, or blue are often safer as your base palette.
+-   Be mindful of context: red often reads as "danger" or "alert," so use it deliberately, not by default. **Neutral tones like gray, black, or blue are often safer as your base palette.**
 
 -   Whatever you choose, **stay consistent** — the same category should always get the same color throughout your report or dashboard.
 
-**Want to go from "good enough" charts to visuals that actually make people act on your data?** I offer training and one-on-one coaching in R, Python, and data visualization — tailored to your field, your data, and your goals.
+**Want to go from "good enough" charts to visuals that actually make people act on your data?** I offer training and one-on-one coaching in R, Python, and data visualization tailored to your field, your data, and your goals.
 
-So if you want to pass from this to this
+So if you want to pass from this to this :
 
-Get in touch to plan a session !
+![](/images/graph.png){fig-align="center" width="535"}
+
+**Get in touch to plan a session !**
 
 References : 
 
 -   CartONG, 2022. Boîte à outils visualisation de données. \[en ligne : <https://cartong.pages.gitlab.cartong.org/learning-corner/fr/8_further_data_visualization>\]
 
 -   Storytelling data blog : <http://storytellingwithdata.com/blog>
+
+-   This post was written with the help of Claude (Anthropic's AI), based on my own original ideas and experience.

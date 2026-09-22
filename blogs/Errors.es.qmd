@@ -1,0 +1,76 @@
+---
+title: "6 errores típicos de R que todos cometemos y cómo arreglarlos"
+author: Ana Valladares
+date: "2026-09-22"
+image: /images/org.png
+image-alt: "Errors in R"
+categories:
+  - RStudio
+  - Data handling
+---
+
+Recuerdo cuando estaba empezando con R: estaba muy entusiasmada, pero los errores en mi código eran tan frecuentes que estuve a punto de rendirme. A veces, incluso prefería seguir trabajando en Excel, ¡a sabiendas de que me costaría muchas más horas que simplemente solucionar mi código!
+
+Si esto te suena familiar, **no estás solo.** La mayoría de los errores en R se reducen a un puñado de problemas recurrentes. Aquí tienes 6 de los más comunes y, por supuesto, cómo evitarlos.
+
+#### **1. Empieza con datos bien formateados**
+
+Antes de escribir una sola línea de código, asegúrate de que tus datos estén estructurados correctamente. Nombres de columnas confusos, celdas combinadas, formatos inconsistentes o tipos de datos mezclados en una misma columna son la receta perfecta para pasar horas depurando errores más adelante. U**n conjunto de datos limpio y ordenado desde el principio te ahorrará mucho más tiempo** del que te cuesta prepararlo.
+
+Intenta seguir estas reglas:
+
+-   **Una fila** = un individuo estadístico (persona, objeto de estudio, etc.).
+
+-   **Una columna** = una variable = una información.
+
+-   **¡Nada de celdas combinadas!** Olvídate de Excel por un momento, ¡por favor!
+
+#### **2. Cuidado con los nombres (y con lo que realmente has ejecutado)**
+
+Escribir mal una función, una variable, un conjunto de datos o el nombre de un paquete es una de las fuentes de error más comunes (y que más se pasan por alto). Si estás seguro de haberlo escrito todo correctamente pero sigues recibiendo el mensaje `"object '...' not found"`, comprueba primero una cosa: ¿realmente has ejecutado el código que lo define?
+
+El punto clave a recordar es este: escribir código en un script de R no significa que se haya ejecutado. A diferencia de la consola, un script solo funciona cuando haces clic en "Run" (o usas el atajo de teclado). Hasta entonces, R no tiene ni idea de que ese objeto existe.
+
+![](/images/Run.png){fig-align="center"}
+
+#### **3. Escribe tu código en un script, no en la consola**
+
+Escribir código directamente en la consola puede parecer rápido y tentador, especialmente para comprobaciones puntuales. Sin embargo, no es un buen hábito para el trabajo real, ya que nada de lo que ejecutes allí se guarda. Un enfoque mucho mejor es escribir el código en un script de R. Si lo ejecutas desde ahí, podrás guardar tu trabajo, volver a ejecutarlo más tarde y compartirlo con otros (incluido tu "yo del futuro", que te lo agradecerá).
+
+#### **4. Revisa si faltan paréntesis, corchetes o comillas**
+
+Un pequeño error tipográfico puede detener por completo tu script. Uno de los culpables más habituales es la falta de un paréntesis de cierre `)`, una llave `}`, un corchete `]` o unas comillas. Lamentablemente, necesitas mucha concentración para detectarlos; normalmente R intenta avisarte, ¡pero debes estar muy atento!
+
+#### **5. Aprende a leer los mensajes de error de R**
+
+Los mensajes de error de R pueden parecer crípticos al principio, pero la mayoría intenta decirte algo muy específico. Aquí tienes una guía rápida de los que te encontrarás con más frecuencia:
+
+-   `"could not find function '...'"`: Por lo general, significa que el paquete no está cargado o que has escrito mal el nombre de la función. Por ejemplo, escribir `boxsplot()` en lugar de `boxplot()` provocará exactamente este error.
+
+-   `"object not found"`: El objeto al que haces referencia aún no existe o está vacío (consulta el consejo nº 2).
+
+-   `"cannot open the connection"`: Esto suele significar una de dos cosas: R no encuentra el archivo (a menudo por un error tipográfico en la ruta del archivo) o un paquete no se pudo cargar porque falta una dependencia del sistema.
+
+-   `"non-numeric argument to a binary operator"`: Estás mezclando tipos de datos en un cálculo, como intentar hacer matemáticas con un número y un valor de texto (character).
+
+Otra cosa a tener en cuenta: R distingue entre mayúsculas y minúsculas. Para R, `Data` y `data` son dos objetos completamente diferentes; un pequeño detalle que causa una cantidad sorprendente de dolores de cabeza.
+
+#### **6. Mantén organizado tu directorio de trabajo**
+
+![¡Por favor, no tengas el escritorio tan desordenado como el de la izquierda!](/images/org.png){fig-align="center" width="612"}
+
+Un directorio de trabajo caótico hace que todo sea más difícil: encontrar archivos, cargar scripts o importar datos. Tómate el tiempo necesario para organizar la carpeta de tu proyecto desde el principio. Disponer de carpetas separadas para los datos brutos, los scripts y los resultados te ayudará enormemente a evitar errores del tipo `"cannot open the connection"`.
+
+Depurar errores es una parte normal del aprendizaje en R, e incluso los usuarios experimentados se topan con ellos con regularidad. La diferencia radica en saber leer el mensaje y saber dónde buscar. Al final, **¡la práctica es lo que necesitas para dominarlo todo!** Así que no te preocupes: cuanto más escribas tus scripts, más aprenderás de ellos.
+
+¿Quieres apoyo personalizado para resolver tus errores de R y avanzar en tus análisis? Ofrezco formación y asesoría personalizada en R y análisis de datos, adaptada a tus propios datos y objetivos.
+
+**¡Ponte en contacto conmigo para planificar una sesión!**
+
+Referencias :
+
+-   Camila Vargas Poulsen, Casey Ohara, Shayna Sura (2024), NCEAS coreR for Delta Science Program, October 2024, NCEAS Learning Hub. URL <https://learning.nceas.ucsb.edu/2024-10-coreR>.
+
+-   Antoine Soetewey’s Stats and R blog at : https://statsandr.com/
+
+-   Este post lo escribí con la ayuda de Claude (la IA de Anthropic), a partir de mis propias ideas y experiencia.

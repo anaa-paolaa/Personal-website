@@ -1,9 +1,9 @@
 ---
-title: "Le blé, R et ma passion pour les données"
+title: "Data Viz : 5 astuces para faire parler vos graphiques"
 author: Ana Valladares
 date: "2026-09-10"
-image: /images/wheat.PNG
-image-alt: "Screenshot of wheat project"
+image: /images/expvsexpl.png
+image-alt: "canva image by me"
 categories:
   - Data viz
   - Communication
@@ -12,9 +12,11 @@ categories:
 
 Vous connaissez vos données par cœur. Vous les avez regardées pendant des semaines, parfois des mois. Alors quand vous créez un graphique, le message vous paraît évident.
 
-Mais voici le piège : **votre public n'a pas vécu avec vos données comme vous.** Ce qui est limpide pour vous, l'expert·e, peut être complètement confus pour lui.
+Mais voici le piège : **votre public n'a pas vécu avec vos données comme vous.** Ce qui est très clair pour vous, l'expert·e, peut être complètement confus pour lui.
 
-Une bonne visualisation de données ne consiste pas à tout montrer ce que vous avez trouvé — il s'agit de simplifier et de raconter une histoire que votre public peut vraiment suivre. Voici 5 conseils pour y arriver.
+Une bonne visualisation de données ne consiste pas à tout montrer ce que vous avez trouvé, il s'agit de simplifier et de raconter une histoire que votre public peut vraiment suivre.
+
+Voici 5 conseils pour y arriver.
 
 #### 1. Comprendre la différence : graphiques exploratoires vs. explicatifs
 
@@ -24,27 +26,25 @@ Les **graphiques exploratoires** sont pour vous. Ils vous aident à repérer les
 
 Les **graphiques explicatifs** sont pour votre public. Ce sont ceux que vous peaufinez et publiez — dans un rapport, une présentation, un article. Leur seul rôle est de faire passer un message et de mener votre public droit au point essentiel. Si vous ignorez cette distinction, vous risquez de montrer des graphiques exploratoires bruts à des personnes qui n'ont pas le contexte pour les lire — et vous perdez le temps de tout le monde, y compris le vôtre.
 
-👉 Règle simple : si c'est exploratoire, gardez-le brut et rapide. Si c'est explicatif, chaque élément doit mériter sa place — et utilisez un langage fort et assuré autour.
+👉 Règle simple : si c'est exploratoire, gardez-le brut et rapide. Si c'est explicatif, chaque élément doit mériter sa place.
 
-![](/images/expvsexpl.png){fig-align="center"}
+![](/images/expvsexpl.png){fig-align="center" width="586"}
 
 #### 2. Clarifiez votre message d'abord
 
 Avant même d'ouvrir votre outil de visualisation, posez-vous ces questions :
 
--   Qu'est-ce que je veux que mon public retienne ?
-
 -   Que représentent réellement ces variables, en termes simples ?
 
 -   Qui est mon public, et que sait-il déjà ?
 
--   Quel résultat est essentiel — la seule chose qu'ils doivent retenir ?
+-   Qu'est-ce que je veux que mon public retienne ?
 
 Une fois votre message clair, utilisez votre graphique pour le renforcer : ajoutez des lignes cibles, des repères ou des annotations qui pointent directement vers votre message clé. Mais n'en abusez pas — une annotation sur chaque point de donnée fait perdre tout son sens à la démarche.
 
 #### 3. Choisissez le bon graphique pour la tâche
 
-Tous les résultats n'ont pas besoin d'un graphique. Parfois, un simple chiffre, une phrase courte ou un tableau simple communique plus vite — un pourcentage seul peut avoir plus d'impact qu'un graphique autour.
+Tous les résultats n'ont pas besoin d'un graphique. Parfois, un simple chiffre, une phrase courte ou un tableau simple communique plus vite, un pourcentage seul peut avoir plus d'impact qu'un graphique autour.
 
 Quand un graphique est nécessaire, laissez votre objectif décider du type :
 
@@ -82,21 +82,23 @@ Quelques réflexes pratiques :
 
 #### 5. Utilisez la couleur avec intention
 
-La couleur est l'un de vos outils les plus puissants — et l'un des plus mal utilisés. Oubliez la palette arc-en-ciel et vos couleurs préférées. Utilisez plutôt la couleur de façon stratégique pour mettre en valeur votre message, pas pour décorer votre graphique.
+La couleur est l'un de vos outils les plus puissants et l'un des plus mal utilisés. Oubliez la palette arc-en-ciel et vos couleurs préférées. Utilisez plutôt la couleur de façon stratégique pour mettre en valeur votre message, pas pour décorer votre graphique.
 
 Quelques principes :
 
--   Pensez au contraste — votre donnée clé doit ressortir visuellement.
+-   Pensez au contraste : votre donnée clé doit ressortir visuellement.
 
--   Soyez attentif·ve au contexte : le rouge évoque souvent le « danger » ou l'alerte, à utiliser donc de façon volontaire, pas par défaut. Des tons neutres comme le gris, le noir ou le bleu sont souvent plus sûrs comme palette de base.
+-   Soyez attentif·ve au contexte : le rouge évoque souvent le « danger » ou l'alerte, à utiliser donc de façon volontaire, pas par défaut. **Des tons neutres comme le gris, le noir ou le bleu sont souvent plus sûrs comme palette de base.**
 
--   Quel que soit votre choix, **restez cohérent·e** — la même catégorie doit toujours avoir la même couleur tout au long de votre rapport ou tableau de bord.
+-   Quel que soit votre choix, **restez cohérent·e** : la même catégorie doit toujours avoir la même couleur tout au long de votre rapport ou tableau de bord.
 
 ------------------------------------------------------------------------
 
 Envie de passer de graphiques « suffisants » à des visuels qui poussent réellement les gens à agir sur vos données ? Je propose des formations et un accompagnement individuel en R, Python et visualisation de données — adaptés à votre domaine, vos données et vos objectifs.
 
 Alors, si vous voulez passer de ça à ça...
+
+![](/images/graph.png){fig-align="center" width="520"}
 
 **Contactez-moi pour planifier une session !**
 
@@ -105,3 +107,5 @@ References : 
 -   CartONG, 2022. Boîte à outils visualisation de données. \[en ligne : <https://cartong.pages.gitlab.cartong.org/learning-corner/fr/8_further_data_visualization>\]
 
 -   Storytelling data blog : <http://storytellingwithdata.com/blog>
+
+-   Ce post a été co-écrit avec Claude (l'IA d'Anthropic), à partir de mes idées originales et de mon expérience personnelle.

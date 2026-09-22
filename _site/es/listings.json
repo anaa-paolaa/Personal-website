@@ -1,7 +1,15 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/blogs/Errors.html",
+      "/blogs/Viz.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
+      "/projects/botany1.html",
       "/projects/fspad.html",
       "/projects/fapdra.html",
       "/projects/forests.html",
