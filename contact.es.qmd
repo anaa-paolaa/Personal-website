@@ -23,8 +23,8 @@ Aquí es donde puedes encontrarme :
 
 <a href="mailto:anapaodares@gmail.com" class="btn btn-outline-secondary" role="button"> <i class="bi bi-envelope-at-fill"></i> Email </a>
 
-<a href="https://linkedin.com" target="_blank" class="btn btn-outline-secondary" role="button"> <i class="bi bi-linkedin"></i> LinkedIn </a>
+<a href="https://www.linkedin.com/in/anapaolavalladares/" target="_blank" class="btn btn-outline-secondary" role="button"> <i class="bi bi-linkedin"></i> LinkedIn </a>
 
-<a href="https://github.com" target="_blank" class="btn btn-outline-secondary" role="button"> <i class="bi bi-github"></i> GitHub </a>
+<a href="https://github.com/anaa-paolaa" target="_blank" class="btn btn-outline-secondary" role="button"> <i class="bi bi-github"></i> GitHub </a>
 :::
 ::::
