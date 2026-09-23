@@ -40,7 +40,7 @@ Easy
 for all your projects!
 ::::::::::
 
-::::::::::::::::: grid
+:::::::::::::::: grid
 ::: g-col-12
 Hey, I’m so glad you’re here! 🌸
 
@@ -92,19 +92,23 @@ Workshops and trainings in R, Python, or data management, designed to help you o
 ::: card-body
 <p class="card-text">
 
-On my blog, I share resources, tutorials, and reflections.It’s my way of passing along what has helped me, hoping it inspires you too.
+On my <a href="projects.qmd" style="color: #0056b3; text-decoration: underline;">blog</a>, I share resources, tutorials, and reflections.It’s my way of passing along what has helped me, hoping it inspires you too.
 
 </p>
 :::
 :::::
 ::::::
+::::::::::::::::
+
 
 ::: g-col-12
+
+
+
 Feel free to look around, discover my work, and contact me anytime — I’d be happy to connect.
 
 *"Making complex data simple, useful, and reliable for everyone"*
 :::
-:::::::::::::::::
 
 ```{=html}
 <!-- Calendly badge widget begin -->

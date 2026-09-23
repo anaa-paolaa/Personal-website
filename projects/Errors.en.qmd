@@ -1,5 +1,6 @@
 ---
 title: "6 Common R Errors and How to Fix Them"
+description: "Blog post"
 author: Ana Valladares
 date: "2026-09-22"
 image: /images/org.png

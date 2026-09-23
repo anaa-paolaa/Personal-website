@@ -12,7 +12,7 @@ website:
         icon: person-circle
       - href: projects.qmd
         icon: puzzle-fill
-      - href: blog.qmd
+      - href: contact.qmd
         icon: chat-heart-fill
       
 

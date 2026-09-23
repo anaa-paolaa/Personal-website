@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="alternate" hreflang="fr" href="/blogs/Errors.html" />
-<link rel="alternate" hreflang="es" href="/es/blogs/Errors.es.html" />
-<link rel="alternate" hreflang="en" href="/en/blogs/Errors.en.html" />
+<link rel="alternate" hreflang="fr" href="/projects/Viz.html" />
+<link rel="alternate" hreflang="es" href="/es/projects/Viz.es.html" />
+<link rel="alternate" hreflang="en" href="/en/projects/Viz.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.24">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Ana Valladares">
-<title>Débuter sur R : Les 6 erreurs les plus fréquentes – Ana Valladares</title>
+<meta name="dcterms.date" content="2026-09-10">
+<meta name="description" content="Blog post">
+<title>Data Viz: 5 Tips to Make Your Charts Talk – Ana Valladares</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,17 +44,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Pas de résultats",
-    "search-matching-documents-text": "documents trouvés",
-    "search-copy-link-title": "Copier le lien vers la recherche",
-    "search-hide-matches-text": "Cacher les correspondances additionnelles",
-    "search-more-match-text": "correspondance de plus dans ce document",
-    "search-more-matches-text": "correspondances de plus dans ce document",
-    "search-clear-button-title": "Effacer",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Annuler",
-    "search-submit-button-title": "Envoyer",
-    "search-label": "Recherche"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script><link rel="stylesheet" href="../styles.css">
 </head>
@@ -67,32 +69,32 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Ana Valladares</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Français</button><ul class="dropdown-menu" id="languages-links">
-<li><a class="dropdown-item" href="/en/blogs/Errors.html" id="language-link-en">English</a></li>
-<li><a class="dropdown-item" href="/es/blogs/Errors.html" id="language-link-es">Español</a></li>
+<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> English</button><ul class="dropdown-menu" id="languages-links">
+<li><a class="dropdown-item" href="/es/projects/Viz.html" id="language-link-es">Español</a></li>
+<li><a class="dropdown-item" href="/projects/Viz.html" id="language-link-fr">Français</a></li>
 </ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../about.html"> <i class="bi bi-person-circle" role="img">
 </i> 
-<span class="menu-text">À propos</span></a>
+<span class="menu-text">About me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../projects.html"> <i class="bi bi-puzzle-fill" role="img">
 </i> 
-<span class="menu-text">Projets</span></a>
+<span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html"> <i class="bi bi-chat-heart-fill" role="img">
+    <a class="nav-link" href="../contact.html"> <i class="bi bi-chat-heart-fill" role="img">
 </i> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
 </div> <!-- /navcollapse -->
@@ -107,28 +109,33 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Débuter sur R : Les 6 erreurs les plus fréquentes</h1>
+<h1 class="title">Data Viz: 5 Tips to Make Your Charts Talk</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">RStudio</div>
-    <div class="quarto-category">Data handling</div>
+    <div class="quarto-category">Data viz</div>
+    <div class="quarto-category">Communication</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Blog post
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Auteur·rice</div>
+    <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
              <p>Ana Valladares </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Date de publication</div>
+    <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22 septembre 2026</p>
+      <p class="date">September 10, 2026</p>
     </div>
   </div>
   
@@ -137,50 +144,69 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><p>Je me souviens de mes débuts avec R : j’étais très enthousiaste, mais les erreurs dans mon code étaient si fréquentes que j’ai failli abandonner. Parfois, je préférais même continuer sur Excel, tout en sachant que cela me prendrait beaucoup plus de temps que de simplement corriger mon code !</p>
-<p>Si cette situation vous semble familière, rassurez-vous : <strong>vous n’êtes pas seul</strong>. La plupart des erreurs sur R proviennent d’une poignée de problèmes récurrents.</p>
-<p>Voici 6 des erreurs les plus courantes et, bien sûr, les solutions pour les éviter.</p>
-<section id="commencez-avec-des-données-bien-formatées" class="level4"><h4 class="anchored" data-anchor-id="commencez-avec-des-données-bien-formatées"><strong>1. Commencez avec des données bien formatées</strong></h4>
-<p>Avant d’écrire la moindre ligne de code, assurez-vous que vos données sont correctement structurées. Des noms de colonnes désordonnés, des cellules fusionnées, des formats incohérents ou des types de données mixtes au sein d’une même colonne sont la recette idéale pour passer des heures à déboguer plus tard. <strong>Un ensemble de données propre et bien rangé dès le départ vous fera gagner beaucoup plus de temps</strong> qu’il ne vous en aura coûté à préparer.</p>
-<p>Essayez de suivre ces règles :</p>
-<ul>
-<li><p><strong>Une ligne</strong> = un individu statistique (une personne, un objet d’étude, etc.).</p></li>
-<li><p><strong>Une colonne</strong> = une variable = une information.</p></li>
-<li><p><strong>Pas de cellules fusionnées !</strong> Oubliez les réflexes d’Excel, s’il vous plaît !</p></li>
-</ul></section><section id="attention-aux-noms-et-à-ce-que-vous-avez-réellement-exécuté" class="level4"><h4 class="anchored" data-anchor-id="attention-aux-noms-et-à-ce-que-vous-avez-réellement-exécuté"><strong>2. Attention aux noms (et à ce que vous avez réellement exécuté)</strong></h4>
-<p>L’une des sources d’erreur les plus fréquentes (et les plus négligées) est la mauvaise orthographe d’une fonction, d’une variable, d’un jeu de données ou d’un nom de package. Si vous êtes certain d’avoir tout orthographié correctement et que vous obtenez malgré tout le message <code>"object '...' not found"</code>, vérifiez d’abord une chose : avez-vous réellement exécuté le code qui définit cet objet ?</p>
-<p>Voici la règle d’or à retenir : écrire du code dans un script R ne signifie pas qu’il a été exécuté. Contrairement à la console, un script ne tourne que lorsque vous cliquez sur “Run” (ou utilisez le raccourci clavier). Tant que ce n’est pas fait, R n’a aucune idée de l’existence de cet objet.</p>
+</header><p>You know your data inside out. You’ve been staring at it for weeks, maybe months. So when you build a chart, the message feels obvious to you.</p>
+<p>But here’s the catch: <strong>your audience hasn’t lived with your data like you have.</strong> What’s crystal clear to you as the expert can be completely confusing to them.</p>
+<p>Good data visualization isn’t about showing everything you found, <strong>it’s about simplifying and telling a story your audience can actually follow</strong>. Here are 5 tips to get there.</p>
+<section id="know-the-difference-exploratory-vs.-explanatory-charts" class="level4"><h4 class="anchored" data-anchor-id="know-the-difference-exploratory-vs.-explanatory-charts"><strong>1. Know the Difference: Exploratory vs. Explanatory Charts</strong></h4>
+<p>Let’s dig into this first, because it changes everything else.</p>
+<p><strong>Exploratory charts</strong> are for you. They help you see first patterns and trends in your data — outliers, errors, unit mismatches, distributions. Think histograms, boxplots, scatterplots. Messy, quick, informative. Nobody else needs to see these.</p>
+<p><strong>Explanatory charts</strong> are for your audience. These are the ones you polish and publish — in a report, a presentation, a paper. Their only job is to make a point and lead your audience straight to the takeaway. If you skip this distinction, you risk showing raw exploratory charts to people who don’t have the context to read them — and you waste everyone’s time, including your own.</p>
+<p>👉 Rule of thumb: if it’s exploratory, keep it messy and fast. If it’s explanatory, make every element earn its place and use strong, confident language around it.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../images/Run.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figure class="figure"><p><img src="../images/expvsexpl.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="632"></p>
 </figure>
 </div>
-</section><section id="écrivez-votre-code-dans-un-script-pas-dans-la-console" class="level4"><h4 class="anchored" data-anchor-id="écrivez-votre-code-dans-un-script-pas-dans-la-console"><strong>3. Écrivez votre code dans un script, pas dans la console</strong></h4>
-<p>Taper du code directement dans la console peut sembler rapide et tentant, surtout pour des vérifications ponctuelles. Cependant, ce n’est pas une bonne habitude pour un travail sérieux, car rien de ce que vous y exécutez n’est sauvegardé. La meilleure approche consiste à écrire votre code dans un script R. En l’exécutant depuis le script, vous pourrez sauvegarder votre travail, le rejouer plus tard et le partager avec d’autres (y compris avec votre “moi futur”, qui vous en remerciera).</p>
-</section><section id="vérifiez-les-parenthèses-crochets-ou-guillemets-manquants" class="level4"><h4 class="anchored" data-anchor-id="vérifiez-les-parenthèses-crochets-ou-guillemets-manquants"><strong>4. Vérifiez les parenthèses, crochets ou guillemets manquants</strong></h4>
-<p>Une simple petite erreur de frappe peut paralyser l’intégralité de votre script. Parmi les coupables les plus habituels, on retrouve l’oubli d’une parenthèse fermante <code>)</code>, d’une accolade <code>}</code>, d’un crochet <code>]</code> ou de guillemets. C’est malheureusement une question de vigilance pour les détecter. En général, R essaie de vous alerter, mais vous devez rester très attentif !</p>
-</section><section id="apprenez-à-lire-les-messages-derreur-de-r" class="level4"><h4 class="anchored" data-anchor-id="apprenez-à-lire-les-messages-derreur-de-r"><strong>5. Apprenez à lire les messages d’erreur de R</strong></h4>
-<p>Les messages d’erreur de R peuvent sembler cryptiques au début, mais la plupart d’entre eux tentent de vous dire quelque chose de très précis. Voici un guide rapide des messages que vous rencontrerez le plus souvent :</p>
+</section><section id="clarify-your-message-first" class="level4"><h4 class="anchored" data-anchor-id="clarify-your-message-first"><strong>2. Clarify Your Message First</strong></h4>
+<p>Before you even open your plotting library, ask yourself:</p>
 <ul>
-<li><p><code>"could not find function '...'"</code> : Cela signifie généralement que le package n’est pas chargé ou que vous avez mal orthographié le nom de la fonction. Par exemple, taper <code>boxsplot()</code> au lieu de <code>boxplot()</code> déclenchera exactement cette erreur.</p></li>
-<li><p><code>"object not found"</code> : L’objet auquel vous faites référence n’existe pas encore ou est vide (voir le conseil n°2).</p></li>
-<li><p><code>"cannot open the connection"</code> : Cela traduit souvent deux situations : soit R ne trouve pas le fichier (souvent une faute de frappe dans le chemin d’accès), soit un package n’a pas pu être chargé car une dépendance système est manquante.</p></li>
-<li><p><code>"non-numeric argument to a binary operator"</code> : Vous mélangez les types de données dans un calcul, comme essayer de faire des mathématiques avec un nombre et une chaîne de caractères.</p></li>
+<li><p>What do these variables actually represent, in plain terms?</p></li>
+<li><p>Who is my audience, and what do they already know?</p></li>
+<li><p>What do I want my audience to react to? Which takeaway?</p></li>
 </ul>
-<p>Une dernière chose à garder à l’esprit : R est sensible à la casse (majuscules/minuscules). Pour R, <code>Data</code> et <code>data</code> sont deux objets totalement différents — un petit détail qui cause un nombre surprenant de maux de tête.</p>
-</section><section id="gardez-votre-répertoire-de-travail-organisé" class="level4"><h4 class="anchored" data-anchor-id="gardez-votre-répertoire-de-travail-organisé"><strong>6. Gardez votre répertoire de travail organisé</strong></h4>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../images/org.png" class="img-fluid figure-img" width="595"></p>
-<figcaption>S’il vous plaît, n’ayez pas un bureau encombré comme celui de gauche !</figcaption></figure>
-</div>
-<p>Un répertoire de travail en désordre complique absolument tout : trouver des fichiers, appeler des scripts, charger des données. Prenez le temps d’organiser le dossier de votre projet dès le départ. Créer des dossiers distincts pour les données brutes, les scripts et les résultats vous évitera bien des erreurs du type <code>"cannot open the connection"</code>.</p>
-<p>Le débogage fait partie intégrante de l’apprentissage de R, et même les utilisateurs expérimentés rencontrent ces erreurs régulièrement. La différence réside simplement dans la capacité à lire le message et à savoir où chercher. Au bout du compte, c’est la pratique qui vous permettra de tout maîtriser ! Ne vous inquiétez donc pas : plus vous écrirez de scripts, plus vous apprendrez de vos erreurs !</p>
-<p>Vous souhaitez un accompagnement personnalisé pour résoudre vos erreurs R et mener à bien vos analyses ? Je propose des formations et du coaching individuel en R et en analyse de données, adaptés à vos données et à vos objectifs.</p>
-<p><strong>Contactez-moi pour planifier une session !</strong></p>
-<p>References :</p>
+<p>Once you know your message, use your chart to reinforce it: add target lines, reference lines, or annotations that point straight at your takeaway. Just don’t overdo it — an annotation on every data point defeats the purpose.</p>
+</section><section id="choose-the-right-chart-for-the-job" class="level4"><h4 class="anchored" data-anchor-id="choose-the-right-chart-for-the-job"><strong>3. Choose the Right Chart for the Job</strong></h4>
+<p>Not every finding needs a chart. Sometimes a single number, a short sentence, or a simple table communicates faster — a percentage on its own can be more impactful than a graph around it.</p>
+<p>When you do need a chart, let your goal decide the type:</p>
 <ul>
-<li><p>Camila Vargas Poulsen, Casey Ohara, Shayna Sura (2024), NCEAS coreR for Delta Science Program, October 2024, NCEAS Learning Hub. URL <a href="https://learning.nceas.ucsb.edu/2024-10-coreR" class="uri">https://learning.nceas.ucsb.edu/2024-10-coreR</a>.</p></li>
-<li><p>Antoine Soetewey’s Stats and R blog at : https://statsandr.com/</p></li>
-<li><p>Ce post a été co-écrit avec Claude (l’IA d’Anthropic), à partir de mes idées originales et de mon expérience personnelle.</p></li>
+<li><p><strong>Comparing categories (bigger vs. smaller):</strong> vertical bar charts work well for a few categories; order them ascending or descending when it helps the story.</p></li>
+<li><p><strong>Comparing many categories, or categories without a natural order:</strong> horizontal bar charts scale better and stay readable.</p></li>
+<li><p><strong>Showing change over time (growth, decline, trends):</strong> line charts are the go-to.</p></li>
+<li><p><strong>Showing parts of a whole:</strong> stacked bars work well, especially across categories or time.</p></li>
+<li><p><strong>Showing a single proportion (this part vs. the rest):</strong> pie charts — yes, the famous, often-criticized pie chart. They get a bad reputation because comparing slice sizes isn’t very objective, and they fall apart with more than 5–6 slices. But for one proportion, clearly labeled, they can still do the job.</p></li>
+</ul></section><section id="simplify-simplify-simplify" class="level4"><h4 class="anchored" data-anchor-id="simplify-simplify-simplify"><strong>4. Simplify, Simplify, Simplify</strong></h4>
+<p>Overcomplication is the fastest way to lose your audience. Watch out for:</p>
+<ul>
+<li><p>Too many lines on one chart</p></li>
+<li><p>Too many colors</p></li>
+<li><p><strong>3D effects</strong> — they distort perception and make comparison genuinely harder. Avoid them, always.</p></li>
+</ul>
+<p>Ask yourself: what does each element actually contribute? If the answer is “nothing,” cut it.</p>
+<p>Practical habits:</p>
+<ul>
+<li><p>Keep only the labels your audience actually needs.</p></li>
+<li><p>Remove gridlines and background noise you don’t need — simplify what’s behind your data, not just the data itself.</p></li>
+<li><p>Start your axis at 0 — unless you have a specific, well-justified reason to zoom in (e.g., highlighting a sharp change starting at a specific point).</p></li>
+<li><p>Use labels intelligently — they should clarify, not clutter.</p></li>
+</ul></section><section id="use-color-with-intention" class="level4"><h4 class="anchored" data-anchor-id="use-color-with-intention"><strong>5. Use Color With Intention</strong></h4>
+<p>Color is one of your most powerful tools — and one of the most misused. Skip the rainbow palette and your personal favorites. Instead, use color strategically to highlight your insight, not to decorate your chart.</p>
+<p>A few principles:</p>
+<ul>
+<li><p>Think about contrast — your key data point should visually stand out.</p></li>
+<li><p>Be mindful of context: red often reads as “danger” or “alert,” so use it deliberately, not by default. <strong>Neutral tones like gray, black, or blue are often safer as your base palette.</strong></p></li>
+<li><p>Whatever you choose, <strong>stay consistent</strong> — the same category should always get the same color throughout your report or dashboard.</p></li>
+</ul>
+<p><strong>Want to go from “good enough” charts to visuals that actually make people act on your data?</strong> I offer training and one-on-one coaching in R, Python, and data visualization tailored to your field, your data, and your goals.</p>
+<p>So if you want to pass from this to this :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="../images/graph.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="535"></p>
+</figure>
+</div>
+<p><strong>Get in touch to plan a session !</strong></p>
+<p>References : </p>
+<ul>
+<li><p>CartONG, 2022. Boîte à outils visualisation de données. [en ligne : <a href="https://cartong.pages.gitlab.cartong.org/learning-corner/fr/8_further_data_visualization" class="uri">https://cartong.pages.gitlab.cartong.org/learning-corner/fr/8_further_data_visualization</a>]</p></li>
+<li><p>Storytelling data blog : <a href="http://storytellingwithdata.com/blog" class="uri">http://storytellingwithdata.com/blog</a></p></li>
+<li><p>This post was written with the help of Claude (Anthropic’s AI), based on my own original ideas and experience.</p></li>
 </ul></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -206,12 +232,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copié");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copié");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -254,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("\/en");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<link rel="alternate" hreflang="fr" href="/blogs/Errors.html" />
-<link rel="alternate" hreflang="es" href="/es/blogs/Errors.es.html" />
-<link rel="alternate" hreflang="en" href="/en/blogs/Errors.en.html" />
+<link rel="alternate" hreflang="fr" href="/projects/Errors.html" />
+<link rel="alternate" hreflang="es" href="/es/projects/Errors.es.html" />
+<link rel="alternate" hreflang="en" href="/en/projects/Errors.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.24">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Ana Valladares">
-<title>6 errores típicos de R que todos cometemos y cómo arreglarlos – Ana Valladares</title>
+<meta name="description" content="Blog post">
+<title>Débuter sur R : Les 6 erreurs les plus fréquentes – Ana Valladares</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,17 +43,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script><link rel="stylesheet" href="../styles.css">
 </head>
@@ -67,32 +68,32 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Ana Valladares</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Buscar"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Español</button><ul class="dropdown-menu" id="languages-links">
-<li><a class="dropdown-item" href="/en/blogs/Errors.html" id="language-link-en">English</a></li>
-<li><a class="dropdown-item" href="/blogs/Errors.html" id="language-link-fr">Français</a></li>
+<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Français</button><ul class="dropdown-menu" id="languages-links">
+<li><a class="dropdown-item" href="/en/projects/Errors.html" id="language-link-en">English</a></li>
+<li><a class="dropdown-item" href="/es/projects/Errors.html" id="language-link-es">Español</a></li>
 </ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../about.html"> <i class="bi bi-person-circle" role="img">
 </i> 
-<span class="menu-text">Sobre mí</span></a>
+<span class="menu-text">À propos</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../projects.html"> <i class="bi bi-puzzle-fill" role="img">
 </i> 
-<span class="menu-text">Proyectos</span></a>
+<span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html"> <i class="bi bi-chat-heart-fill" role="img">
+    <a class="nav-link" href="../contact.html"> <i class="bi bi-chat-heart-fill" role="img">
 </i> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
 </div> <!-- /navcollapse -->
@@ -107,28 +108,33 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">6 errores típicos de R que todos cometemos y cómo arreglarlos</h1>
+<h1 class="title">Débuter sur R : Les 6 erreurs les plus fréquentes</h1>
   <div class="quarto-categories">
     <div class="quarto-category">RStudio</div>
     <div class="quarto-category">Data handling</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Blog post
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-heading">Auteur·rice</div>
     <div class="quarto-title-meta-contents">
              <p>Ana Valladares </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-heading">Date de publication</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">22 de septiembre de 2026</p>
+      <p class="date">22 septembre 2026</p>
     </div>
   </div>
   
@@ -137,49 +143,50 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><p>Recuerdo cuando estaba empezando con R: estaba muy entusiasmada, pero los errores en mi código eran tan frecuentes que estuve a punto de rendirme. A veces, incluso prefería seguir trabajando en Excel, ¡a sabiendas de que me costaría muchas más horas que simplemente solucionar mi código!</p>
-<p>Si esto te suena familiar, <strong>no estás solo.</strong> La mayoría de los errores en R se reducen a un puñado de problemas recurrentes. Aquí tienes 6 de los más comunes y, por supuesto, cómo evitarlos.</p>
-<section id="empieza-con-datos-bien-formateados" class="level4"><h4 class="anchored" data-anchor-id="empieza-con-datos-bien-formateados"><strong>1. Empieza con datos bien formateados</strong></h4>
-<p>Antes de escribir una sola línea de código, asegúrate de que tus datos estén estructurados correctamente. Nombres de columnas confusos, celdas combinadas, formatos inconsistentes o tipos de datos mezclados en una misma columna son la receta perfecta para pasar horas depurando errores más adelante. U<strong>n conjunto de datos limpio y ordenado desde el principio te ahorrará mucho más tiempo</strong> del que te cuesta prepararlo.</p>
-<p>Intenta seguir estas reglas:</p>
+</header><p>Je me souviens de mes débuts avec R : j’étais très enthousiaste, mais les erreurs dans mon code étaient si fréquentes que j’ai failli abandonner. Parfois, je préférais même continuer sur Excel, tout en sachant que cela me prendrait beaucoup plus de temps que de simplement corriger mon code !</p>
+<p>Si cette situation vous semble familière, rassurez-vous : <strong>vous n’êtes pas seul</strong>. La plupart des erreurs sur R proviennent d’une poignée de problèmes récurrents.</p>
+<p>Voici 6 des erreurs les plus courantes et, bien sûr, les solutions pour les éviter.</p>
+<section id="commencez-avec-des-données-bien-formatées" class="level4"><h4 class="anchored" data-anchor-id="commencez-avec-des-données-bien-formatées"><strong>1. Commencez avec des données bien formatées</strong></h4>
+<p>Avant d’écrire la moindre ligne de code, assurez-vous que vos données sont correctement structurées. Des noms de colonnes désordonnés, des cellules fusionnées, des formats incohérents ou des types de données mixtes au sein d’une même colonne sont la recette idéale pour passer des heures à déboguer plus tard. <strong>Un ensemble de données propre et bien rangé dès le départ vous fera gagner beaucoup plus de temps</strong> qu’il ne vous en aura coûté à préparer.</p>
+<p>Essayez de suivre ces règles :</p>
 <ul>
-<li><p><strong>Una fila</strong> = un individuo estadístico (persona, objeto de estudio, etc.).</p></li>
-<li><p><strong>Una columna</strong> = una variable = una información.</p></li>
-<li><p><strong>¡Nada de celdas combinadas!</strong> Olvídate de Excel por un momento, ¡por favor!</p></li>
-</ul></section><section id="cuidado-con-los-nombres-y-con-lo-que-realmente-has-ejecutado" class="level4"><h4 class="anchored" data-anchor-id="cuidado-con-los-nombres-y-con-lo-que-realmente-has-ejecutado"><strong>2. Cuidado con los nombres (y con lo que realmente has ejecutado)</strong></h4>
-<p>Escribir mal una función, una variable, un conjunto de datos o el nombre de un paquete es una de las fuentes de error más comunes (y que más se pasan por alto). Si estás seguro de haberlo escrito todo correctamente pero sigues recibiendo el mensaje <code>"object '...' not found"</code>, comprueba primero una cosa: ¿realmente has ejecutado el código que lo define?</p>
-<p>El punto clave a recordar es este: escribir código en un script de R no significa que se haya ejecutado. A diferencia de la consola, un script solo funciona cuando haces clic en “Run” (o usas el atajo de teclado). Hasta entonces, R no tiene ni idea de que ese objeto existe.</p>
+<li><p><strong>Une ligne</strong> = un individu statistique (une personne, un objet d’étude, etc.).</p></li>
+<li><p><strong>Une colonne</strong> = une variable = une information.</p></li>
+<li><p><strong>Pas de cellules fusionnées !</strong> Oubliez les réflexes d’Excel, s’il vous plaît !</p></li>
+</ul></section><section id="attention-aux-noms-et-à-ce-que-vous-avez-réellement-exécuté" class="level4"><h4 class="anchored" data-anchor-id="attention-aux-noms-et-à-ce-que-vous-avez-réellement-exécuté"><strong>2. Attention aux noms (et à ce que vous avez réellement exécuté)</strong></h4>
+<p>L’une des sources d’erreur les plus fréquentes (et les plus négligées) est la mauvaise orthographe d’une fonction, d’une variable, d’un jeu de données ou d’un nom de package. Si vous êtes certain d’avoir tout orthographié correctement et que vous obtenez malgré tout le message <code>"object '...' not found"</code>, vérifiez d’abord une chose : avez-vous réellement exécuté le code qui définit cet objet ?</p>
+<p>Voici la règle d’or à retenir : écrire du code dans un script R ne signifie pas qu’il a été exécuté. Contrairement à la console, un script ne tourne que lorsque vous cliquez sur “Run” (ou utilisez le raccourci clavier). Tant que ce n’est pas fait, R n’a aucune idée de l’existence de cet objet.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure"><p><img src="../images/Run.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-</section><section id="escribe-tu-código-en-un-script-no-en-la-consola" class="level4"><h4 class="anchored" data-anchor-id="escribe-tu-código-en-un-script-no-en-la-consola"><strong>3. Escribe tu código en un script, no en la consola</strong></h4>
-<p>Escribir código directamente en la consola puede parecer rápido y tentador, especialmente para comprobaciones puntuales. Sin embargo, no es un buen hábito para el trabajo real, ya que nada de lo que ejecutes allí se guarda. Un enfoque mucho mejor es escribir el código en un script de R. Si lo ejecutas desde ahí, podrás guardar tu trabajo, volver a ejecutarlo más tarde y compartirlo con otros (incluido tu “yo del futuro”, que te lo agradecerá).</p>
-</section><section id="revisa-si-faltan-paréntesis-corchetes-o-comillas" class="level4"><h4 class="anchored" data-anchor-id="revisa-si-faltan-paréntesis-corchetes-o-comillas"><strong>4. Revisa si faltan paréntesis, corchetes o comillas</strong></h4>
-<p>Un pequeño error tipográfico puede detener por completo tu script. Uno de los culpables más habituales es la falta de un paréntesis de cierre <code>)</code>, una llave <code>}</code>, un corchete <code>]</code> o unas comillas. Lamentablemente, necesitas mucha concentración para detectarlos; normalmente R intenta avisarte, ¡pero debes estar muy atento!</p>
-</section><section id="aprende-a-leer-los-mensajes-de-error-de-r" class="level4"><h4 class="anchored" data-anchor-id="aprende-a-leer-los-mensajes-de-error-de-r"><strong>5. Aprende a leer los mensajes de error de R</strong></h4>
-<p>Los mensajes de error de R pueden parecer crípticos al principio, pero la mayoría intenta decirte algo muy específico. Aquí tienes una guía rápida de los que te encontrarás con más frecuencia:</p>
+</section><section id="écrivez-votre-code-dans-un-script-pas-dans-la-console" class="level4"><h4 class="anchored" data-anchor-id="écrivez-votre-code-dans-un-script-pas-dans-la-console"><strong>3. Écrivez votre code dans un script, pas dans la console</strong></h4>
+<p>Taper du code directement dans la console peut sembler rapide et tentant, surtout pour des vérifications ponctuelles. Cependant, ce n’est pas une bonne habitude pour un travail sérieux, car rien de ce que vous y exécutez n’est sauvegardé. La meilleure approche consiste à écrire votre code dans un script R. En l’exécutant depuis le script, vous pourrez sauvegarder votre travail, le rejouer plus tard et le partager avec d’autres (y compris avec votre “moi futur”, qui vous en remerciera).</p>
+</section><section id="vérifiez-les-parenthèses-crochets-ou-guillemets-manquants" class="level4"><h4 class="anchored" data-anchor-id="vérifiez-les-parenthèses-crochets-ou-guillemets-manquants"><strong>4. Vérifiez les parenthèses, crochets ou guillemets manquants</strong></h4>
+<p>Une simple petite erreur de frappe peut paralyser l’intégralité de votre script. Parmi les coupables les plus habituels, on retrouve l’oubli d’une parenthèse fermante <code>)</code>, d’une accolade <code>}</code>, d’un crochet <code>]</code> ou de guillemets. C’est malheureusement une question de vigilance pour les détecter. En général, R essaie de vous alerter, mais vous devez rester très attentif !</p>
+</section><section id="apprenez-à-lire-les-messages-derreur-de-r" class="level4"><h4 class="anchored" data-anchor-id="apprenez-à-lire-les-messages-derreur-de-r"><strong>5. Apprenez à lire les messages d’erreur de R</strong></h4>
+<p>Les messages d’erreur de R peuvent sembler cryptiques au début, mais la plupart d’entre eux tentent de vous dire quelque chose de très précis. Voici un guide rapide des messages que vous rencontrerez le plus souvent :</p>
 <ul>
-<li><p><code>"could not find function '...'"</code>: Por lo general, significa que el paquete no está cargado o que has escrito mal el nombre de la función. Por ejemplo, escribir <code>boxsplot()</code> en lugar de <code>boxplot()</code> provocará exactamente este error.</p></li>
-<li><p><code>"object not found"</code>: El objeto al que haces referencia aún no existe o está vacío (consulta el consejo nº 2).</p></li>
-<li><p><code>"cannot open the connection"</code>: Esto suele significar una de dos cosas: R no encuentra el archivo (a menudo por un error tipográfico en la ruta del archivo) o un paquete no se pudo cargar porque falta una dependencia del sistema.</p></li>
-<li><p><code>"non-numeric argument to a binary operator"</code>: Estás mezclando tipos de datos en un cálculo, como intentar hacer matemáticas con un número y un valor de texto (character).</p></li>
+<li><p><code>"could not find function '...'"</code> : Cela signifie généralement que le package n’est pas chargé ou que vous avez mal orthographié le nom de la fonction. Par exemple, taper <code>boxsplot()</code> au lieu de <code>boxplot()</code> déclenchera exactement cette erreur.</p></li>
+<li><p><code>"object not found"</code> : L’objet auquel vous faites référence n’existe pas encore ou est vide (voir le conseil n°2).</p></li>
+<li><p><code>"cannot open the connection"</code> : Cela traduit souvent deux situations : soit R ne trouve pas le fichier (souvent une faute de frappe dans le chemin d’accès), soit un package n’a pas pu être chargé car une dépendance système est manquante.</p></li>
+<li><p><code>"non-numeric argument to a binary operator"</code> : Vous mélangez les types de données dans un calcul, comme essayer de faire des mathématiques avec un nombre et une chaîne de caractères.</p></li>
 </ul>
-<p>Otra cosa a tener en cuenta: R distingue entre mayúsculas y minúsculas. Para R, <code>Data</code> y <code>data</code> son dos objetos completamente diferentes; un pequeño detalle que causa una cantidad sorprendente de dolores de cabeza.</p>
-</section><section id="mantén-organizado-tu-directorio-de-trabajo" class="level4"><h4 class="anchored" data-anchor-id="mantén-organizado-tu-directorio-de-trabajo"><strong>6. Mantén organizado tu directorio de trabajo</strong></h4>
+<p>Une dernière chose à garder à l’esprit : R est sensible à la casse (majuscules/minuscules). Pour R, <code>Data</code> et <code>data</code> sont deux objets totalement différents — un petit détail qui cause un nombre surprenant de maux de tête.</p>
+</section><section id="gardez-votre-répertoire-de-travail-organisé" class="level4"><h4 class="anchored" data-anchor-id="gardez-votre-répertoire-de-travail-organisé"><strong>6. Gardez votre répertoire de travail organisé</strong></h4>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../images/org.png" class="img-fluid figure-img" width="612"></p>
-<figcaption>¡Por favor, no tengas el escritorio tan desordenado como el de la izquierda!</figcaption></figure>
+<figure class="figure"><p><img src="../images/org.png" class="img-fluid figure-img" width="595"></p>
+<figcaption>S’il vous plaît, n’ayez pas un bureau encombré comme celui de gauche !</figcaption></figure>
 </div>
-<p>Un directorio de trabajo caótico hace que todo sea más difícil: encontrar archivos, cargar scripts o importar datos. Tómate el tiempo necesario para organizar la carpeta de tu proyecto desde el principio. Disponer de carpetas separadas para los datos brutos, los scripts y los resultados te ayudará enormemente a evitar errores del tipo <code>"cannot open the connection"</code>.</p>
-<p>Depurar errores es una parte normal del aprendizaje en R, e incluso los usuarios experimentados se topan con ellos con regularidad. La diferencia radica en saber leer el mensaje y saber dónde buscar. Al final, <strong>¡la práctica es lo que necesitas para dominarlo todo!</strong> Así que no te preocupes: cuanto más escribas tus scripts, más aprenderás de ellos.</p>
-<p>¿Quieres apoyo personalizado para resolver tus errores de R y avanzar en tus análisis? Ofrezco formación y asesoría personalizada en R y análisis de datos, adaptada a tus propios datos y objetivos.</p>
-<p><strong>¡Ponte en contacto conmigo para planificar una sesión!</strong></p>
-<p>Referencias :</p>
+<p>Un répertoire de travail en désordre complique absolument tout : trouver des fichiers, appeler des scripts, charger des données. Prenez le temps d’organiser le dossier de votre projet dès le départ. Créer des dossiers distincts pour les données brutes, les scripts et les résultats vous évitera bien des erreurs du type <code>"cannot open the connection"</code>.</p>
+<p>Le débogage fait partie intégrante de l’apprentissage de R, et même les utilisateurs expérimentés rencontrent ces erreurs régulièrement. La différence réside simplement dans la capacité à lire le message et à savoir où chercher. Au bout du compte, c’est la pratique qui vous permettra de tout maîtriser ! Ne vous inquiétez donc pas : plus vous écrirez de scripts, plus vous apprendrez de vos erreurs !</p>
+<p>Vous souhaitez un accompagnement personnalisé pour résoudre vos erreurs R et mener à bien vos analyses ? Je propose des formations et du coaching individuel en R et en analyse de données, adaptés à vos données et à vos objectifs.</p>
+<p><strong>Contactez-moi pour planifier une session !</strong></p>
+<p>References :</p>
 <ul>
 <li><p>Camila Vargas Poulsen, Casey Ohara, Shayna Sura (2024), NCEAS coreR for Delta Science Program, October 2024, NCEAS Learning Hub. URL <a href="https://learning.nceas.ucsb.edu/2024-10-coreR" class="uri">https://learning.nceas.ucsb.edu/2024-10-coreR</a>.</p></li>
 <li><p>Antoine Soetewey’s Stats and R blog at : https://statsandr.com/</p></li>
-<li><p>Este post lo escribí con la ayuda de Claude (la IA de Anthropic), a partir de mis propias ideas y experiencia.</p></li>
+<li><p>Ce post a été co-écrit avec Claude (l’IA d’Anthropic), à partir de mes idées originales et de mon expérience personnelle.</p></li>
 </ul></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -205,12 +212,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -253,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("\/es");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

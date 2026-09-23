@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/en/blog.html</loc>
-    <lastmod>2026-09-22T16:13:37.445Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/index.html</loc>
-    <lastmod>2026-09-22T16:13:37.594Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/projects/fapdra.html</loc>
-    <lastmod>2026-09-22T16:13:37.599Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/projects/guava.html</loc>
-    <lastmod>2026-09-22T16:13:37.602Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/projects/forests.html</loc>
-    <lastmod>2026-09-22T16:13:37.600Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/blogs/Errors.html</loc>
-    <lastmod>2026-09-22T16:13:37.446Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/blogs/Viz.html</loc>
-    <lastmod>2026-09-22T16:13:37.447Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/projects/botany1.html</loc>
-    <lastmod>2026-09-22T16:13:37.598Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/projects/wheat.html</loc>
-    <lastmod>2026-09-22T16:13:37.603Z</lastmod>
-  </url>
-  <url>
-    <loc>/en/projects/fspad.html</loc>
-    <lastmod>2026-09-22T16:13:37.601Z</lastmod>
+    <loc>/en/about.html</loc>
+    <lastmod>2026-09-23T13:06:04.099Z</lastmod>
   </url>
   <url>
     <loc>/en/projects.html</loc>
-    <lastmod>2026-09-22T16:13:37.605Z</lastmod>
+    <lastmod>2026-09-23T13:06:04.392Z</lastmod>
   </url>
   <url>
-    <loc>/en/about.html</loc>
-    <lastmod>2026-09-22T16:13:37.443Z</lastmod>
+    <loc>/en/projects/fspad.html</loc>
+    <lastmod>2026-09-23T13:06:04.387Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/projects/wheat.html</loc>
+    <lastmod>2026-09-23T13:06:04.391Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/projects/Errors.html</loc>
+    <lastmod>2026-09-23T13:06:04.381Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/projects/botany1.html</loc>
+    <lastmod>2026-09-23T13:06:04.383Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/contact.html</loc>
+    <lastmod>2026-09-23T13:06:04.101Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/projects/Viz.html</loc>
+    <lastmod>2026-09-23T13:06:04.382Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/projects/forests.html</loc>
+    <lastmod>2026-09-23T13:06:04.386Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/projects/guava.html</loc>
+    <lastmod>2026-09-23T13:06:04.390Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/projects/fapdra.html</loc>
+    <lastmod>2026-09-23T13:06:04.384Z</lastmod>
+  </url>
+  <url>
+    <loc>/en/index.html</loc>
+    <lastmod>2026-09-23T13:06:04.378Z</lastmod>
   </url>
 </urlset>

@@ -1,5 +1,6 @@
 ---
 title: "Data Viz: 5 Tips to Make Your Charts Talk"
+description: "Blog post"
 author: Ana Valladares
 date: "2026-09-10"
 image: /images/expvsexpl.png

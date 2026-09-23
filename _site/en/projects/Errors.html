@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="alternate" hreflang="fr" href="/blog.html" />
-<link rel="alternate" hreflang="es" href="/es/blog.es.html" />
-<link rel="alternate" hreflang="en" href="/en/blog.en.html" />
+<link rel="alternate" hreflang="fr" href="/projects/Errors.html" />
+<link rel="alternate" hreflang="es" href="/es/projects/Errors.es.html" />
+<link rel="alternate" hreflang="en" href="/en/projects/Errors.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.24">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Blog – Ana Valladares</title>
+<meta name="author" content="Ana Valladares">
+<meta name="dcterms.date" content="2026-09-22">
+<meta name="description" content="Blog post">
+<title>6 Common R Errors and How to Fix Them – Ana Valladares</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,11 +25,11 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script><script src="site_libs/quarto-listing/quarto-listing.js"></script><script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1f83f7d8597f3f03c6f00001647c4a31.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/quarto-nav/headroom.min.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script><script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1f83f7d8597f3f03c6f00001647c4a31.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -53,69 +56,16 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-image','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script><link rel="stylesheet" href="styles.css">
+}</script><link rel="stylesheet" href="../styles.css">
 </head>
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.PNG" alt="" class="navbar-logo light-content"><img src="./images/logo.PNG" alt="" class="navbar-logo dark-content"></a>
-    <a class="navbar-brand" href="./index.html">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo.PNG" alt="" class="navbar-logo light-content"><img src="../images/logo.PNG" alt="" class="navbar-logo dark-content"></a>
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ana Valladares</span>
     </a>
   </div>
@@ -127,24 +77,24 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
 <button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> English</button><ul class="dropdown-menu" id="languages-links">
-<li><a class="dropdown-item" href="/es/blog.html" id="language-link-es">Español</a></li>
-<li><a class="dropdown-item" href="/blog.html" id="language-link-fr">Français</a></li>
+<li><a class="dropdown-item" href="/es/projects/Errors.html" id="language-link-es">Español</a></li>
+<li><a class="dropdown-item" href="/projects/Errors.html" id="language-link-fr">Français</a></li>
 </ul>
 </div></li>
 <li class="nav-item">
-    <a class="nav-link" href="./about.html"> <i class="bi bi-person-circle" role="img">
+    <a class="nav-link" href="../about.html"> <i class="bi bi-person-circle" role="img">
 </i> 
 <span class="menu-text">About me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> <i class="bi bi-puzzle-fill" role="img">
+    <a class="nav-link" href="../projects.html"> <i class="bi bi-puzzle-fill" role="img">
 </i> 
-<span class="menu-text">Projects</span></a>
+<span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> <i class="bi bi-chat-heart-fill" role="img">
+    <a class="nav-link" href="../contact.html"> <i class="bi bi-chat-heart-fill" role="img">
 </i> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
 </div> <!-- /navcollapse -->
@@ -154,102 +104,95 @@ window.Quarto = {
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5>
-<div class="quarto-listing-category category-default">
-<div class="category" data-category="">All <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="Q29tbXVuaWNhdGlvbg==">Communication <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="RGF0YSUyMGhhbmRsaW5n">Data handling <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="RGF0YSUyMHZpeg==">Data viz <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="UlN0dWRpbw==">RStudio <span class="quarto-category-count">(1)</span>
-</div>
-</div>
-</div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">6 Common R Errors and How to Fix Them</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">RStudio</div>
+    <div class="quarto-category">Data handling</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Blog post
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ana Valladares </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 22, 2026</p>
+    </div>
+  </div>
   
     
   </div>
   
 
 
-</header><p>Here I want to share with you some tips about data analysis in R, Python or whatever I am using/learning… some coding tricks, some good references and some reflections as well (with a pinch of creativity).</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UlN0dWRpbyUyQ0RhdGElMjBoYW5kbGluZw==" data-listing-date-sort="1790024400000" data-listing-file-modified-sort="1790093617446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="800">
-<a href="./blogs/Errors.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/org.png" class="thumbnail-image card-img" style="height: 150px;" alt="Errors in R"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-6 Common R Errors and How to Fix Them
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UlN0dWRpbw=='); return false;">RStudio</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMGhhbmRsaW5n'); return false;">Data handling</div>
-
+</header><p>I remember when I was just starting out with R, I was very excited and hyped but the errors in my code were so frequent that I almost gave up learning. Sometimes, I even preferred to continue in Excel knowing it will take me many more hours than just solve my code!</p>
+<p>If that sounds familiar, you’re not alone. Most R errors come down to a handful of recurring issues.</p>
+<p>Here are 6 of the most common ones and ofc how to avoid them.<br></p>
+<section id="start-with-well-formatted-data" class="level4"><h4 class="anchored" data-anchor-id="start-with-well-formatted-data">1. Start With Well-Formatted Data</h4>
+<p>Before you write a single line of code, make sure your data is structured properly. Messy column names, merged cells, inconsistent formats, or mixed data types in a single column are a recipe for hours of debugging later. A clean, <strong>tidy dataset</strong> from the start will save you far more time than it costs you upfront.</p>
+<p>Try to follow these rules :</p>
+<ul>
+<li><p>one row = one statistical invidual - personne, objetc of study</p></li>
+<li><p>one column = one variable = one information</p></li>
+<li><p>not joint cells! from excel… <em>please!</em></p></li>
+</ul></section><section id="watch-your-naming-and-what-youve-actually-run" class="level4"><h4 class="anchored" data-anchor-id="watch-your-naming-and-what-youve-actually-run">2. Watch Your Naming — and What You’ve Actually Run</h4>
+<p>Misspelling a function, variable, dataset, or package name is one of the most common (and most overlooked) sources of errors.</p>
+<p>If you’re sure you spelled everything correctly but you still get <em>“object ‘…’ not found”</em>, check one thing first: did you actually run the code that defines it?</p>
+<p>Here’s the key thing to remember: writing code in an R script doesn’t mean it’s been executed. Unlike the console, a script only runs when you actually <strong>click Run</strong> (or use the keyboard shortcut). Until then, R has no idea that object exists.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="../images/Run.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
 </div>
-<div class="card-text listing-description delink">
-I remember when I was just starting out with R, I was very excited and hyped but the errors in my code were so frequent that I almost gave up learning. Sometimes, I even…
+</section><section id="write-your-code-in-a-script-not-the-console" class="level4"><h4 class="anchored" data-anchor-id="write-your-code-in-a-script-not-the-console">3. Write Your Code in a Script, Not the Console</h4>
+<p>Typing code directly into the console can feel quick and tempting, especially for one-off checks. But it’s not a great habit for real work, anything you run there isn’t saved.</p>
+<p>A better approach: write your code in an R Script. Run it from there, and you’ll be able to save your work, rerun it later, and share it with others (including future-you, who will thank present-you).</p>
+</section><section id="check-for-missing-parentheses-brackets-or-quotes" class="level4"><h4 class="anchored" data-anchor-id="check-for-missing-parentheses-brackets-or-quotes">4. Check for Missing Parentheses, Brackets, or Quotes</h4>
+<p>A tiny typo can bring your whole script to a halt. One of the most common culprits: a missing closing parenthesis ), curly brace }, square bracket ], or quotation mark. So sorry but you need to focus to detect them, normally R tries to give you a heads up, but you need to focus!</p>
+</section><section id="learn-to-read-rs-error-messages" class="level4"><h4 class="anchored" data-anchor-id="learn-to-read-rs-error-messages">5. Learn to Read R’s Error Messages</h4>
+<p>R’s error messages can feel cryptic at first, but most of them are trying to tell you something very specific. Here’s a quick guide to the ones you’ll run into most often:</p>
+<ul>
+<li><p><code>"could not find function '...'"</code>: Usually means the package isn’t loaded, or you’ve misspelled the function name. For example, typing boxsplot() instead of boxplot() will trigger exactly this error.</p></li>
+<li><p><code>"object not found"</code>: The object you’re referencing doesn’t exist yet, or is empty. See tip #2.</p></li>
+<li><p><code>"cannot open the connection"</code>: This usually means one of two things: R can’t find the file (often a typo in the file path), or a package failed to load because a system dependency is missing.</p></li>
+<li><p><code>"non-numeric argument to a binary operator"</code>: You’re mixing data types in a calculation, like trying to do math with a number and a character value.</p></li>
+</ul>
+<p>One more thing to keep in mind: R is case-sensitive. Data and data are two different objects to R — a small detail that causes a surprising number of headaches.</p>
+</section><section id="keep-your-working-directory-organized" class="level4"><h4 class="anchored" data-anchor-id="keep-your-working-directory-organized">6. Keep Your Working Directory Organized</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="../images/org.png" class="img-fluid figure-img" width="524"></p>
+<figcaption>Please do not have your desktop organized as the one on the left!</figcaption></figure>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Sep 22, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMHZpeiUyQ0NvbW11bmljYXRpb24=" data-listing-date-sort="1788987600000" data-listing-file-modified-sort="1790093617447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="824">
-<a href="./blogs/Viz.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/expvsexpl.png" class="thumbnail-image card-img" style="height: 150px;" alt="canva image by me"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data Viz: 5 Tips to Make Your Charts Talk
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMHZpeg=='); return false;">Data viz</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tbXVuaWNhdGlvbg=='); return false;">Communication</div>
-
-</div>
-<div class="card-text listing-description delink">
-You know your data inside out. You’ve been staring at it for weeks, maybe months. So when you build a chart, the message feels obvious to you.
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Sep 10, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<p>A messy working directory makes everything harder: finding files, sourcing scripts, loading data. Take the time to organize your project folder from the start — separate folders for raw data, scripts, and outputs go a long way toward avoiding “cannot open the connection” errors down the line.<br></p>
+<p>Debugging is a normal part of learning R and even experienced users run into these errors regularly. The difference is knowing how to read the message and where to look.</p>
+<p>At the end, practice is what you need to master all these ! So do not worry! The more you write your script the more you’ll learn from it!<br></p>
+<p>Want personalized support to work through your own R errors and analyses? I offer training and one-on-one coaching in R and data analysis, tailored to your data and your goals.</p>
+<p><strong><em>Get in touch to plan a session!</em></strong></p>
+<p><br>
+References :</p>
+<ul>
+<li><p>Camila Vargas Poulsen, Casey Ohara, Shayna Sura (2024), NCEAS coreR for Delta Science Program, October 2024, NCEAS Learning Hub. URL <a href="https://learning.nceas.ucsb.edu/2024-10-coreR" class="uri">https://learning.nceas.ucsb.edu/2024-10-coreR</a>.</p></li>
+<li><p>Antoine Soetewey’s Stats and R blog at : https://statsandr.com/</p></li>
+<li><p>This post was written with the help of Claude (Anthropic’s AI), based on my own original ideas and experience.</p></li>
+</ul></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();

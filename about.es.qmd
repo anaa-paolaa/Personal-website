@@ -18,11 +18,7 @@ about:
 
 Hola, soy Ana, una mexicana anclada en Madagascar —por ahora—. Soy una mujer de *muchas pasiones*, donde destacan la creatividad, la lógica y el deseo de transformar.\
 
-Aquí te comparto mi CV/Hoja de vida :
-
-```{=html}
-<a href="images/CV-Esp_2026.pdf" class="btn btn-primary" role="button" download="CV_AV_2026.pdf"> <i class="bi bi-file-earmark-pdf"></i> CV </a>
-```
+Aquí te comparto mi CV/Hoja de vida :<a href="images/CV-Esp_2026.pdf" class="btn btn-outline-success btn-sm" role="button" download="CV_AV_2026.pdf"> <i class="bi bi-file-earmark-pdf"></i> CV </a>
 
 Pero, para conocerme mejor, te invito a explorar algunas de *mis pasiones* :
 

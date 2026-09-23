@@ -1,5 +1,5 @@
 ---
-title: "Projets"
+title: "Portfolio"
 listing:
   contents: projects
   type: grid
@@ -13,4 +13,8 @@ listing:
   sort: "date desc" 
 ---
 
-C'est ici où je vais te montrer un peu de ma life comment coder/formatrice/analyste/freelancer...
+Salut ! Bienvenue dans mon univers. Voici un aperçu de ce que j'ai mis en place récemment et des réflexions que je note au fil de l'eau.
+
+Tu y trouveras les projets sur lesquels j'ai bossé en tant que data analyst, data coach ou freelance, ainsi que des retours d'expérience et des astuces sur l'analyse de données avec R, Python, ou n'importe quel outil que je suis en train de tester ou d'apprendre.
+
+*Bonne lecture !*

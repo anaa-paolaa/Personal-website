@@ -1,0 +1,30 @@
+---
+title: "Contact"
+toc: false
+---
+
+:::: {.text-center .mx-auto style="max-width: 800px; padding-top: 2rem;"}
+# Tu as un projet cool, une question qui te trotte dans la tête, ou juste envie de dire bonjour ?
+
+<p class="lead mt-3">
+
+J'adorerais échanger avec toi !
+
+</p>
+
+<p class="mb-4">
+
+Tu peux me trouver ici :
+
+</p>
+
+::: {.d-flex .flex-wrap .justify-content-center .gap-3 .mt-4}
+<a href="https://calendly.com/anapaodares/30min" target="_blank" class="btn btn-outline-secondary" role="button"> <i class="bi bi-calendar3"></i> Call </a>
+
+<a href="mailto:anapaodares@gmail.com" class="btn btn-outline-secondary" role="button"> <i class="bi bi-envelope-at-fill"></i> Email </a>
+
+<a href="https://www.linkedin.com/in/anapaolavalladares/" target="_blank" class="btn btn-outline-secondary" role="button"> <i class="bi bi-linkedin"></i> LinkedIn </a>
+
+<a href="https://github.com/anaa-paolaa" target="_blank" class="btn btn-outline-secondary" role="button"> <i class="bi bi-github"></i> GitHub </a>
+:::
+::::

@@ -1,14 +1,9 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/blogs/Errors.html",
-      "/blogs/Viz.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
+      "/projects/Errors.html",
+      "/projects/Viz.html",
       "/projects/botany1.html",
       "/projects/fspad.html",
       "/projects/fapdra.html",

@@ -1,5 +1,6 @@
 ---
 title: "6 errores típicos de R que todos cometemos y cómo arreglarlos"
+description: "Blog post"
 author: Ana Valladares
 date: "2026-09-22"
 image: /images/org.png

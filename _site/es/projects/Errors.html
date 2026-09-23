@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<link rel="alternate" hreflang="fr" href="/blogs/Viz.html" />
-<link rel="alternate" hreflang="es" href="/es/blogs/Viz.es.html" />
-<link rel="alternate" hreflang="en" href="/en/blogs/Viz.en.html" />
+<link rel="alternate" hreflang="fr" href="/projects/Errors.html" />
+<link rel="alternate" hreflang="es" href="/es/projects/Errors.es.html" />
+<link rel="alternate" hreflang="en" href="/en/projects/Errors.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.24">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Ana Valladares">
-<title>Data Viz : 5 trucos para que tus gráficos comuniquen – Ana Valladares</title>
+<meta name="description" content="Blog post">
+<title>6 errores típicos de R que todos cometemos y cómo arreglarlos – Ana Valladares</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,8 +76,8 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
 <button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Español</button><ul class="dropdown-menu" id="languages-links">
-<li><a class="dropdown-item" href="/en/blogs/Viz.html" id="language-link-en">English</a></li>
-<li><a class="dropdown-item" href="/blogs/Viz.html" id="language-link-fr">Français</a></li>
+<li><a class="dropdown-item" href="/en/projects/Errors.html" id="language-link-en">English</a></li>
+<li><a class="dropdown-item" href="/projects/Errors.html" id="language-link-fr">Français</a></li>
 </ul>
 </div></li>
 <li class="nav-item">
@@ -87,12 +88,12 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../projects.html"> <i class="bi bi-puzzle-fill" role="img">
 </i> 
-<span class="menu-text">Proyectos</span></a>
+<span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog.html"> <i class="bi bi-chat-heart-fill" role="img">
+    <a class="nav-link" href="../contact.html"> <i class="bi bi-chat-heart-fill" role="img">
 </i> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
 </div> <!-- /navcollapse -->
@@ -107,13 +108,18 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Data Viz : 5 trucos para que tus gráficos comuniquen</h1>
+<h1 class="title">6 errores típicos de R que todos cometemos y cómo arreglarlos</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Data viz</div>
-    <div class="quarto-category">Communicación</div>
+    <div class="quarto-category">RStudio</div>
+    <div class="quarto-category">Data handling</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Blog post
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -128,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">10 de septiembre de 2026</p>
+      <p class="date">22 de septiembre de 2026</p>
     </div>
   </div>
   
@@ -137,69 +143,48 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><p>Conoces tus datos al dedillo. Los has estado mirando durante semanas, quizás meses. Así que cuando armas un gráfico, el mensaje te parece obvio.</p>
-<p>Pero aquí está la trampa: <strong>tu audiencia no ha vivido con tus datos como tú.</strong> Lo que para ti, como experto/a, es cristalino, puede ser completamente confuso para ellos.</p>
-<p>Una buena visualización de datos no se trata de mostrar todo lo que encontraste, sino de simplificar y contar una historia que tu audiencia pueda seguir de verdad. Aquí tienes 5 consejos para lograrlo.</p>
-<section id="conoce-la-diferencia-gráficos-exploratorios-vs.-explicativos" class="level4"><h4 class="anchored" data-anchor-id="conoce-la-diferencia-gráficos-exploratorios-vs.-explicativos">1. Conoce la diferencia: gráficos exploratorios vs. explicativos</h4>
-<p>Empecemos por aquí, porque esto cambia todo lo demás.</p>
-<p>Los <strong>gráficos exploratorios</strong> son para ti. Te ayudan a ver los primeros patrones y tendencias en tus datos — valores atípicos, errores, unidades inconsistentes, distribuciones. Piensa en histogramas, boxplots, diagramas de dispersión. Rápidos, sin pulir, informativos. Nadie más necesita verlos.</p>
-<p>Los <strong>gráficos explicativos</strong> son para tu audiencia. Son los que pules y publicas — en un informe, una presentación, un artículo. Su único trabajo es transmitir un punto y llevar a tu audiencia directo a la conclusión. Si ignoras esta diferencia, corres el riesgo de mostrar gráficos exploratorios sin pulir a personas que no tienen el contexto para leerlos — y terminas haciéndole perder el tiempo a todos, incluido el tuyo.</p>
-<p>👉 Regla general: si es exploratorio, mantenlo rápido y sin pulir. Si es explicativo, cada elemento debe ganarse su lugar y usa un lenguaje firme y seguro a su alrededor.</p>
+</header><p>Recuerdo cuando estaba empezando con R: estaba muy entusiasmada, pero los errores en mi código eran tan frecuentes que estuve a punto de rendirme. A veces, incluso prefería seguir trabajando en Excel, ¡a sabiendas de que me costaría muchas más horas que simplemente solucionar mi código!</p>
+<p>Si esto te suena familiar, <strong>no estás solo.</strong> La mayoría de los errores en R se reducen a un puñado de problemas recurrentes. Aquí tienes 6 de los más comunes y, por supuesto, cómo evitarlos.</p>
+<section id="empieza-con-datos-bien-formateados" class="level4"><h4 class="anchored" data-anchor-id="empieza-con-datos-bien-formateados"><strong>1. Empieza con datos bien formateados</strong></h4>
+<p>Antes de escribir una sola línea de código, asegúrate de que tus datos estén estructurados correctamente. Nombres de columnas confusos, celdas combinadas, formatos inconsistentes o tipos de datos mezclados en una misma columna son la receta perfecta para pasar horas depurando errores más adelante. U<strong>n conjunto de datos limpio y ordenado desde el principio te ahorrará mucho más tiempo</strong> del que te cuesta prepararlo.</p>
+<p>Intenta seguir estas reglas:</p>
+<ul>
+<li><p><strong>Una fila</strong> = un individuo estadístico (persona, objeto de estudio, etc.).</p></li>
+<li><p><strong>Una columna</strong> = una variable = una información.</p></li>
+<li><p><strong>¡Nada de celdas combinadas!</strong> Olvídate de Excel por un momento, ¡por favor!</p></li>
+</ul></section><section id="cuidado-con-los-nombres-y-con-lo-que-realmente-has-ejecutado" class="level4"><h4 class="anchored" data-anchor-id="cuidado-con-los-nombres-y-con-lo-que-realmente-has-ejecutado"><strong>2. Cuidado con los nombres (y con lo que realmente has ejecutado)</strong></h4>
+<p>Escribir mal una función, una variable, un conjunto de datos o el nombre de un paquete es una de las fuentes de error más comunes (y que más se pasan por alto). Si estás seguro de haberlo escrito todo correctamente pero sigues recibiendo el mensaje <code>"object '...' not found"</code>, comprueba primero una cosa: ¿realmente has ejecutado el código que lo define?</p>
+<p>El punto clave a recordar es este: escribir código en un script de R no significa que se haya ejecutado. A diferencia de la consola, un script solo funciona cuando haces clic en “Run” (o usas el atajo de teclado). Hasta entonces, R no tiene ni idea de que ese objeto existe.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../images/expvsexpl.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="644"></p>
+<figure class="figure"><p><img src="../images/Run.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-</section><section id="aclara-tu-mensaje-primero" class="level4"><h4 class="anchored" data-anchor-id="aclara-tu-mensaje-primero">2. Aclara tu mensaje primero</h4>
-<p>Antes de abrir tu herramienta de hacer gráficos, pregúntate:</p>
+</section><section id="escribe-tu-código-en-un-script-no-en-la-consola" class="level4"><h4 class="anchored" data-anchor-id="escribe-tu-código-en-un-script-no-en-la-consola"><strong>3. Escribe tu código en un script, no en la consola</strong></h4>
+<p>Escribir código directamente en la consola puede parecer rápido y tentador, especialmente para comprobaciones puntuales. Sin embargo, no es un buen hábito para el trabajo real, ya que nada de lo que ejecutes allí se guarda. Un enfoque mucho mejor es escribir el código en un script de R. Si lo ejecutas desde ahí, podrás guardar tu trabajo, volver a ejecutarlo más tarde y compartirlo con otros (incluido tu “yo del futuro”, que te lo agradecerá).</p>
+</section><section id="revisa-si-faltan-paréntesis-corchetes-o-comillas" class="level4"><h4 class="anchored" data-anchor-id="revisa-si-faltan-paréntesis-corchetes-o-comillas"><strong>4. Revisa si faltan paréntesis, corchetes o comillas</strong></h4>
+<p>Un pequeño error tipográfico puede detener por completo tu script. Uno de los culpables más habituales es la falta de un paréntesis de cierre <code>)</code>, una llave <code>}</code>, un corchete <code>]</code> o unas comillas. Lamentablemente, necesitas mucha concentración para detectarlos; normalmente R intenta avisarte, ¡pero debes estar muy atento!</p>
+</section><section id="aprende-a-leer-los-mensajes-de-error-de-r" class="level4"><h4 class="anchored" data-anchor-id="aprende-a-leer-los-mensajes-de-error-de-r"><strong>5. Aprende a leer los mensajes de error de R</strong></h4>
+<p>Los mensajes de error de R pueden parecer crípticos al principio, pero la mayoría intenta decirte algo muy específico. Aquí tienes una guía rápida de los que te encontrarás con más frecuencia:</p>
 <ul>
-<li><p>¿Qué representan realmente estas variables, en términos simples?</p></li>
-<li><p>¿Quién es mi audiencia, y qué sabe ya?</p></li>
-<li><p>¿Qué quiero que mi audiencia reaccione a ver?</p></li>
+<li><p><code>"could not find function '...'"</code>: Por lo general, significa que el paquete no está cargado o que has escrito mal el nombre de la función. Por ejemplo, escribir <code>boxsplot()</code> en lugar de <code>boxplot()</code> provocará exactamente este error.</p></li>
+<li><p><code>"object not found"</code>: El objeto al que haces referencia aún no existe o está vacío (consulta el consejo nº 2).</p></li>
+<li><p><code>"cannot open the connection"</code>: Esto suele significar una de dos cosas: R no encuentra el archivo (a menudo por un error tipográfico en la ruta del archivo) o un paquete no se pudo cargar porque falta una dependencia del sistema.</p></li>
+<li><p><code>"non-numeric argument to a binary operator"</code>: Estás mezclando tipos de datos en un cálculo, como intentar hacer matemáticas con un número y un valor de texto (character).</p></li>
 </ul>
-<p>Una vez que tengas claro tu mensaje, usa tu gráfico para reforzarlo: agrega líneas objetivo, líneas de referencia o anotaciones que apunten directo a tu conclusión. Pero no te excedas : una anotación en cada punto de datos le quita sentido al propósito.</p>
-</section><section id="elige-el-gráfico-correcto-para-cada-caso" class="level4"><h4 class="anchored" data-anchor-id="elige-el-gráfico-correcto-para-cada-caso">3. Elige el gráfico correcto para cada caso</h4>
-<p>No todos los hallazgos necesitan un gráfico. A veces un solo número, una frase corta o una tabla simple comunica más rápido, por ejemplo, un porcentaje solo puede tener más impacto que un gráfico alrededor de él.</p>
-<p>Cuando sí necesites un gráfico, deja que tu objetivo decida el tipo:</p>
-<ul>
-<li><p><strong>Comparar categorías</strong> (más grande vs. más pequeño): los gráficos de barras verticales funcionan bien para pocas categorías; ordénalas de forma ascendente o descendente si ayuda a la historia.</p></li>
-<li><p><strong>Comparar muchas categorías, o sin un orden natural</strong>: las barras horizontales escalan mejor y se mantienen legibles.</p></li>
-<li><p><strong>Mostrar cambios en el tiempo</strong> (crecimiento, declive, tendencias): los gráficos de líneas son la opción clásica.</p></li>
-<li><p><strong>Mostrar partes de un total</strong>: las barras apiladas funcionan bien, especialmente entre categorías o en el tiempo.</p></li>
-<li><p><strong>Mostrar una sola proporción</strong> (esta parte vs. el resto): los famosos gráficos de pastel (pie charts), sí, esos tan criticados. Tienen mala fama porque comparar el tamaño de las porciones no es muy objetivo, y se vuelven ilegibles con más de 5–6 porciones. Pero para una sola proporción, bien etiquetada, todavía cumplen su función.</p></li>
-</ul></section><section id="simplifica-simplifica-simplifica" class="level4"><h4 class="anchored" data-anchor-id="simplifica-simplifica-simplifica">4. Simplifica, simplifica, simplifica</h4>
-<p>La sobrecomplicación es la forma más rápida de perder a tu audiencia. Ten cuidado con:</p>
-<ul>
-<li><p>Demasiadas líneas en un mismo gráfico</p></li>
-<li><p>Demasiados colores</p></li>
-<li><p>Los <strong>efectos 3D</strong> — distorsionan la percepción y hacen que comparar sea genuinamente más difícil. Evítalos, siempre.</p></li>
-</ul>
-<p>Pregúntate: ¿qué aporta realmente cada elemento? Si la respuesta es “nada”, elimínalo.</p>
-<p>Algunos hábitos prácticos:</p>
-<ul>
-<li><p>Conserva solo las etiquetas que tu audiencia realmente necesita.</p></li>
-<li><p>Elimina las líneas de cuadrícula y el ruido visual innecesario - simplifica lo que está detrás de tus datos, no solo los datos en sí.</p></li>
-<li><p>Empieza tu eje en 0 - a menos que tengas una razón específica y justificada para hacer zoom (por ejemplo, para resaltar un cambio marcado que comienza en un punto determinado).</p></li>
-<li><p>Usa las etiquetas con inteligencia - deben aclarar, no saturar.</p></li>
-</ul></section><section id="usa-el-color-con-intención" class="level4"><h4 class="anchored" data-anchor-id="usa-el-color-con-intención">5. Usa el color con intención</h4>
-<p>El color es una de tus herramientas más poderosas - y una de las más mal utilizadas. Olvídate de la paleta arcoíris y de tus colores favoritos. En su lugar, usa el color de forma estratégica para resaltar tu hallazgo, no para decorar tu gráfico.</p>
-<p>Algunos principios:</p>
-<ul>
-<li><p>Piensa en el contraste — tu dato clave debe destacar visualmente.</p></li>
-<li><p>Ten en cuenta el contexto: el rojo suele leerse como “peligro” o “alerta”, así que úsalo de forma deliberada, no por defecto. <strong>Tonos neutros como gris, negro o azul suelen ser una base más segura.</strong></p></li>
-<li><p>Sea cual sea tu elección, <strong>mantén la consistencia</strong> — la misma categoría debe tener siempre el mismo color a lo largo de tu informe o panel.</p></li>
-</ul>
-<hr>
-<p>¿Quieres pasar de gráficos “suficientes” a visuales que realmente hagan que la gente actúe sobre tus datos? Ofrezco formación y acompañamiento individual en R, Python y visualización de datos adaptado a tu campo, tus datos y tus objetivos.</p>
-<p>Así que si quieres pasar de esto a esto…</p>
+<p>Otra cosa a tener en cuenta: R distingue entre mayúsculas y minúsculas. Para R, <code>Data</code> y <code>data</code> son dos objetos completamente diferentes; un pequeño detalle que causa una cantidad sorprendente de dolores de cabeza.</p>
+</section><section id="mantén-organizado-tu-directorio-de-trabajo" class="level4"><h4 class="anchored" data-anchor-id="mantén-organizado-tu-directorio-de-trabajo"><strong>6. Mantén organizado tu directorio de trabajo</strong></h4>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="../images/graph.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="484"></p>
-</figure>
+<figure class="figure"><p><img src="../images/org.png" class="img-fluid figure-img" width="612"></p>
+<figcaption>¡Por favor, no tengas el escritorio tan desordenado como el de la izquierda!</figcaption></figure>
 </div>
-<p><strong>¡Contáctame para planear una sesión!</strong></p>
-<p>Referencias : </p>
+<p>Un directorio de trabajo caótico hace que todo sea más difícil: encontrar archivos, cargar scripts o importar datos. Tómate el tiempo necesario para organizar la carpeta de tu proyecto desde el principio. Disponer de carpetas separadas para los datos brutos, los scripts y los resultados te ayudará enormemente a evitar errores del tipo <code>"cannot open the connection"</code>.</p>
+<p>Depurar errores es una parte normal del aprendizaje en R, e incluso los usuarios experimentados se topan con ellos con regularidad. La diferencia radica en saber leer el mensaje y saber dónde buscar. Al final, <strong>¡la práctica es lo que necesitas para dominarlo todo!</strong> Así que no te preocupes: cuanto más escribas tus scripts, más aprenderás de ellos.</p>
+<p>¿Quieres apoyo personalizado para resolver tus errores de R y avanzar en tus análisis? Ofrezco formación y asesoría personalizada en R y análisis de datos, adaptada a tus propios datos y objetivos.</p>
+<p><strong>¡Ponte en contacto conmigo para planificar una sesión!</strong></p>
+<p>Referencias :</p>
 <ul>
-<li><p>CartONG, 2022. Boîte à outils visualisation de données. [en ligne : <a href="https://cartong.pages.gitlab.cartong.org/learning-corner/fr/8_further_data_visualization" class="uri">https://cartong.pages.gitlab.cartong.org/learning-corner/fr/8_further_data_visualization</a>]</p></li>
-<li><p>Storytelling data blog : <a href="http://storytellingwithdata.com/blog" class="uri">http://storytellingwithdata.com/blog</a></p></li>
+<li><p>Camila Vargas Poulsen, Casey Ohara, Shayna Sura (2024), NCEAS coreR for Delta Science Program, October 2024, NCEAS Learning Hub. URL <a href="https://learning.nceas.ucsb.edu/2024-10-coreR" class="uri">https://learning.nceas.ucsb.edu/2024-10-coreR</a>.</p></li>
+<li><p>Antoine Soetewey’s Stats and R blog at : https://statsandr.com/</p></li>
 <li><p>Este post lo escribí con la ayuda de Claude (la IA de Anthropic), a partir de mis propias ideas y experiencia.</p></li>
 </ul></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

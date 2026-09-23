@@ -1,5 +1,6 @@
 ---
 title: "Débuter sur R : Les 6 erreurs les plus fréquentes"
+description: "Blog post"
 author: Ana Valladares
 date: "2026-09-22"
 image: /images/org.png

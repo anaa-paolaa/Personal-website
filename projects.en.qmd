@@ -1,10 +1,11 @@
 ---
-title: "Projects"
+title: "Portfolio"
 listing:
   contents: projects
   type: grid
   fields: 
     - title
+    - description
     - date
     - image
     - categories
@@ -12,4 +13,8 @@ listing:
   sort: "date desc" 
 ---
 
-Hello, here I present you some of my projects I had or have been working on as a data analyst, data coach, freelancer, etc...
+Hello! Here is a look at what I've been building lately and the thoughts I write down along the way.
+
+You'll find a mix of projects I’ve worked on as a data analyst, data coach, and freelancer, alongside reflections and handy tips about data analysis in R, Python, or whatever I’m currently playing around with and learning.
+
+*Have a great read!*

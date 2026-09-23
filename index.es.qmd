@@ -40,7 +40,7 @@ Fácil
 para todos tus proyectos
 ::::::::::
 
-::::::::::::::::: grid
+:::::::::::::::: grid
 ::: g-col-12
 Me alegra mucho que estés aquí 🌸
 
@@ -92,19 +92,19 @@ Talleres y formaciones en R, Python o gestión de datos (lo que requieras) — p
 ::: card-body
 <p class="card-text">
 
-En mi blog comparto recursos, tutoriales y reflexiones — desde trucos de código hasta ideas que me inspiran a seguir aprendiendo juntos.
+En mi <a href="projects.qmd" style="color: #0056b3; text-decoration: underline;">blog</a> comparto recursos, tutoriales y reflexiones — desde trucos de código hasta ideas que me inspiran a seguir aprendiendo juntos.
 
 </p>
 :::
 :::::
 ::::::
+::::::::::::::::
 
 ::: g-col-12
 Siéntete libre de explorar mi sitio y contactarme, estaré feliz de conectar. ¡Nos vemos!
 
 *"Transformando datos complejos en algo simple, útil y confiable para todos."*
 :::
-:::::::::::::::::
 
 ```{=html}
 <!-- Calendly badge widget begin -->

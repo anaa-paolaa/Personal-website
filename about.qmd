@@ -18,11 +18,7 @@ about:
 
 Bonjour, je suis Ana, une mexicaine à Madagascar —pour l’instant—. Je suis une femme aux *multiples passions*, guidée par la créativité, la logique et l’envie de transformer.
 
-Ici, je vous partage mon resumé :
-
-```{=html}
-<a href="images/CV-Fr_2026.pdf" class="btn btn-primary" role="button" download="CV_AV_2026.pdf"> <i class="bi bi-file-earmark-pdf"></i> Resumé </a>
-```
+Ici, je vous partage mon resumé : <a href="images/CV-Fr_2026.pdf" class="btn btn-outline-success btn-sm" role="button" download="CV_AV_2026.pdf"> <i class="bi bi-file-earmark-pdf"></i> Resumé </a>
 
 Mais, pour mieux me connaître, je vous invite à explorer mes *multiples passions* :
 

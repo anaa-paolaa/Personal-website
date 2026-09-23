@@ -40,7 +40,7 @@ plus fun
 pour booster tes projets!
 ::::::::::
 
-::::::::::::::::: grid
+:::::::::::::::: grid
 ::: g-col-12
 Je suis ravie que tu sois ici ! 🌸
 
@@ -92,19 +92,19 @@ Ateliers et formations en R, Python ou gestion de données — pour optimiser vo
 ::: card-body
 <p class="card-text">
 
-Sur mon blog, je partage ressources, tutos et réflexions — des astuces de code aux idées qui m’inspirent.
+Sur mon <a href="projects.qmd" style="color: #0056b3; text-decoration: underline;">blog</a>, je partage ressources, tutos et réflexions — des astuces de code aux idées qui m’inspirent.
 
 </p>
 :::
 :::::
 ::::::
+::::::::::::::::
 
 ::: g-col-12
 N’hésite pas à explorer mon site et à me contacter, je serai ravie d’échanger avec toi. – À bientôt !
 
 *"Rendre les données complexes simples, utiles et fiables pour tous."*
 :::
-:::::::::::::::::
 
 ```{=html}
 <!-- Calendly badge widget begin -->
