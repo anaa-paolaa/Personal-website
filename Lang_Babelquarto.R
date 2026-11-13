@@ -22,3 +22,9 @@ render_website(project_path = Personal_website)
 servr::httw(path(Personal_website, "_site"))
 
 ## to know :  the source code is what we track in version control, not the built files. 
+
+## Git
+install.packages(c("usethis", "gitcreds"))   
+usethis::create_github_token()
+gitcreds::gitcreds_set()
+
