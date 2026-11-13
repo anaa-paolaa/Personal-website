@@ -38,6 +38,8 @@ jobs:
 
       # Render website (all languages)
       - name: Render website with babelquarto
+        env:
+          BABELQUARTO_CI_URL: https://av-stats.com
         run: Rscript -e 'babelquarto::render_website()'
         
      # Commit _site for Netlify

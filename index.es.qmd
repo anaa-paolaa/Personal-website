@@ -1,6 +1,27 @@
 ---
-title: "¡Hola y bienvenido!"
+title: "¡Bienvenido!"
+page-layout: custom
+toc: false
+body-classes: pagina-inicio
 ---
+
+::::::::::::::: {.band .band-lila .hero}
+:::::::::::::: band-inner
+::::::::::::: hero-flex
+::::::::::: hero-texto
+```{=html}
+<p class="hola"><span class="c1">Hola!</span> <span class="c2">Coucou!</span> <span class="c3">Hello!</span></p>
+```
+
+# ¡Bienvenido!
+
+```{=html}
+<svg class="wave" width="280" height="16" viewBox="0 0 244 16" aria-hidden="true">
+  <path d="M2 8 q15 -10 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0"
+        fill="none" stroke="#f19e8c" stroke-width="5" stroke-linecap="round"/>
+</svg>
+<p class="nombre">@Ana Valladares</p>
+```
 
 :::::::::: animated-text
 Transformar datos nunca había sido tan
@@ -40,15 +61,31 @@ Fácil
 para todos tus proyectos
 ::::::::::
 
+[Contáctame](contact.qmd){.btn .btn-primary}
+:::::::::::
+
+::: hero-logo
+```{=html}
+<div class="circulo"><img src="images/logo.PNG" alt="Logo Ana Valladares"></div>
+```
+:::
+:::::::::::::
+::::::::::::::
+:::::::::::::::
+
+:::::::::::::::::: band
+::::::::::::::::: band-inner
+## Cómo podemos trabajar juntos?
+
 :::::::::::::::: grid
 ::: g-col-12
-Me alegra mucho que estés aquí 🌸
+#### Me alegra mucho que estés aquí 🌸
 
-Bienvenid\@ a mi sitio personal — un espacio donde comparto mi amor por los datos, la creatividad y, por supuesto, por la enseñanza.
+#### Bienvenid\@ a mi sitio personal — un espacio donde comparto mi amor por los datos, la creatividad y, por supuesto, por la enseñanza.
 
-Aquí encontrarás contenido sobre R, Python, ciencia de datos y otras cosas que voy explorando en el camino.
+#### Aquí encontrarás contenido sobre R, Python, ciencia de datos y otras cosas que voy explorando en el camino.
 
-Si quieres saber cómo puedo ayudarte, aquí te muestro mis servicios:
+#### Si quieres saber cómo puedo ayudarte, aquí te muestro mis servicios:
 :::
 
 :::::: {.g-col-12 .g-col-md-4}
@@ -99,17 +136,39 @@ En mi <a href="projects.qmd" style="color: #0056b3; text-decoration: underline;"
 :::::
 ::::::
 ::::::::::::::::
+:::::::::::::::::
+::::::::::::::::::
 
-::: g-col-12
-Siéntete libre de explorar mi sitio y contactarme, estaré feliz de conectar. ¡Nos vemos!
+:::::: {.band .band-azul}
+::::: band-inner
+## Herramientas que utilizo
 
-*"Transformando datos complejos en algo simple, útil y confiable para todos."*
+::: pills
+[R]{.pill .p1} [Python]{.pill .p2} [Quarto]{.pill .p1} [RStudio]{.pill .p2} [SQL]{.pill .p1} [Tableau]{.pill .p2} [QGIS]{.pill .p1}
 :::
 
+::: cita
+*"Transformando datos complejos en algo simple, útil y confiable para todos"*
+:::
+
+[Mira mi portafolio](projects.qmd){.btn .btn-primary .btn-grande}
+:::::
+::::::
+
+:::: {.band .band-morada}
+::: band-inner
+## ¿ Quieres trabajar juntos ?
+
+### Siéntete libre de explorar mi sitio y contactarme, estaré feliz de conectar. ¡Nos vemos!
+
+[Contáctame](contact.qmd){.btn .btn-light}
+:::
+::::
+
+::: calendly-badge
 ```{=html}
-<!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/anapaodares/30min?primary_color=26c595', text: '📅 ¿Platicamos?', color: '#15d3a6', textColor: '#ffffff', branding: false }); }</script>
-<!-- Calendly badge widget end -->
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/anapaodares/30min?primary_color=26c595', text: '📅 ¿Platicamos?', color: '#6f42c1', textColor: '#ffffff', branding: false }); }</script>
 ```
+:::

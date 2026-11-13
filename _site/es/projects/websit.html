@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<link rel="alternate" hreflang="fr" href="/projects/websit.html" />
+<link rel="alternate" hreflang="es" href="/es/projects/websit.es.html" />
+<link rel="alternate" hreflang="en" href="/en/projects/websit.en.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Ana Valladares">
+<meta name="description" content="Publicación del blog">
+<title>No te pierdas con Quarto: guía para principiantes para crear tu sitio web con R – Ana Valladares</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script><script src="../site_libs/quarto-nav/headroom.min.js"></script><script src="../site_libs/clipboard/clipboard.min.js"></script><script src="../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../site_libs/quarto-search/fuse.min.js"></script><script src="../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../">
+<link href="../images/logo.PNG" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script><script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../site_libs/quarto-html/popper.min.js"></script><script src="../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../site_libs/quarto-html/anchor.min.js"></script><link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script><link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5cae6faaf14eec973b6501dbb5c657c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script><script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script><link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo.PNG" alt="" class="navbar-logo light-content"><img src="../images/logo.PNG" alt="" class="navbar-logo dark-content"></a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Ana Valladares</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item"><div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i> Español</button><ul class="dropdown-menu" id="languages-links">
+<li><a class="dropdown-item" href="/en/projects/websit.html" id="language-link-en">English</a></li>
+<li><a class="dropdown-item" href="/projects/websit.html" id="language-link-fr">Français</a></li>
+</ul>
+</div></li>
+<li class="nav-item">
+    <a class="nav-link" href="../about.html"> <i class="bi bi-person-circle" role="img">
+</i> 
+<span class="menu-text">Sobre mí</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../projects.html"> <i class="bi bi-puzzle-fill" role="img">
+</i> 
+<span class="menu-text">Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html"> <i class="bi bi-chat-heart-fill" role="img">
+</i> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+</div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">No te pierdas con Quarto: guía para principiantes para crear tu sitio web con R</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">RStudio</div>
+    <div class="quarto-category">Quarto</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Publicación del blog
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ana Valladares </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">14 de octubre de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header><p>Si dudas en lanzar tu propio sitio web para publicar tus ideas como blog, mostrar tu portafolio de proyectos de análisis de datos o simplemente tener un espacio donde escribir, déjame explicarte cómo construí este mismo blog. Yo también empecé con mucha incertidumbre (¡era mi primera vez!), pero con práctica y paciencia, ¡todo es posible!</p>
+<p>No soy diseñadora web. Mi formación es en <strong>análisis de datos</strong>, así que programar en RStudio fue mi aliado.</p>
+<p>Para entender cómo funciona un sitio web (y diseñar el tuyo), necesitarás aprender un poquito de <strong>HTML, CSS y JavaScript</strong>, pero no te preocupes: Quarto hace la mayor parte del trabajo pesado.</p>
+<section id="paso-1-elige-tu-aventura" class="level4"><h4 class="anchored" data-anchor-id="paso-1-elige-tu-aventura">Paso 1: Elige tu aventura</h4>
+<p>Quarto funciona con varios editores, así que puedes elegir Jupyter si te sientes más cómoda/o con Python, VS Code o, si eres fan de R como yo, empezarás así:</p>
+<ol type="1">
+<li>Instala <a href="https://cran.r-project.org/">R</a> y <a href="https://posit.co/download/rstudio-desktop/">RStudio</a>
+</li>
+<li>Instala <a href="https://quarto.org/docs/get-started/">Quarto</a>
+</li>
+<li>Crea un nuevo proyecto: <em>File → New Project → Quarto Website</em>
+</li>
+</ol></section><section id="paso-2-usa-el-editor-visual" class="level4"><h4 class="anchored" data-anchor-id="paso-2-usa-el-editor-visual">Paso 2: Usa el editor visual</h4>
+<p>Si usas RStudio, el <strong>Visual Editor</strong> (editor visual) es tu mejor amigo.</p>
+<p>Es <em>lo que ves es lo que obtienes</em>, así que funciona como Word: puedes poner texto en negrita, añadir títulos o insertar imágenes con botones.</p>
+<p>Luego haces clic en <strong>Render</strong> para ver una vista previa del resultado. Escribir mal el nombre de una función, variable, base de datos o paquete es una de las fuentes de error más comunes (y más pasadas por alto).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="../images/viewer.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section><section id="paso-3-conoce-_quarto.yml-tu-pequeño-chef" class="level4"><h4 class="anchored" data-anchor-id="paso-3-conoce-_quarto.yml-tu-pequeño-chef">Paso 3: Conoce <code>_quarto.yml</code>, tu pequeño chef</h4>
+<p>Lo primero que debes aprender es el archivo <code>_quarto.yml</code>. Piensa en él como un pequeño chef que pone todo en orden: decide <strong>qué</strong> muestras en tu sitio y <strong>cómo</strong> lo muestras. <em>Reúne todo</em>, así que cada página que creas queda conectada a través de este archivo de configuración.</p>
+<p>Puedes elegir entre muchos temas en el <a href="https://quarto.org/docs/output-formats/html-themes.html">sitio oficial de Quarto</a>. Yo usé el tema <strong>Minty</strong> para este blog.</p>
+<p>Pruébalo tú: <strong><em>elige un tema</em></strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="46" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 45;"><span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>viewof theme <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"minty"</span><span class="op">,</span> <span class="st">"cosmo"</span><span class="op">,</span> <span class="st">"flatly"</span><span class="op">,</span> <span class="st">"journal"</span><span class="op">,</span> <span class="st">"lux"</span><span class="op">,</span> <span class="st">"sketchy"</span><span class="op">,</span> <span class="st">"darkly"</span><span class="op">,</span> <span class="st">"pulse"</span>]<span class="op">,</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">label</span><span class="op">:</span> <span class="st">"Elige un tema:"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="st">"minty"</span>}</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<p>Este es el código que pondrías en tu <code>_quarto.yml</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="56" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 55;"><span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="sc">\`\`\`</span><span class="vs">yaml</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="vs">type: website</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="vs">website:</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="vs">  title: "Mi blog"</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="vs">  navbar:</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="vs">    left:</span></span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a><span class="vs">      - href: index.qmd</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="vs">        text: Inicio</span></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="vs">      - about.qmd</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="vs">format:</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="vs">  html:</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="vs">    theme: </span><span class="sc">${</span>theme<span class="sc">}</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="sc">\`\`\`</span></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<p>Cambia el tema en el menú desplegable y el código se actualiza automáticamente. ¡Cópialo!</p>
+</section><section id="paso-4-entiende-tus-archivos" class="level4"><h4 class="anchored" data-anchor-id="paso-4-entiende-tus-archivos">Paso 4: Entiende tus archivos</h4>
+<p>Cada página de tu sitio es un archivo <code>.qmd</code>. Un proyecto básico se ve así:</p>
+<pre><code>├── _quarto.yml         # Archivo de configuración del sitio
+├── about.qmd           # Página "Sobre mí"
+├── index.qmd           # Página de inicio
+├── my-website.Rproj    # Configuración del proyecto de RStudio
+└── styles.css          # Hoja de estilos CSS</code></pre>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>👆 Haz clic para saber qué hace cada archivo
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>
+<strong><code>_quarto.yml</code></strong>: el “chef”; controla la configuración de todo el sitio</li>
+<li>
+<strong><code>index.qmd</code></strong>: tu página de inicio (lo primero que ven los visitantes)</li>
+<li>
+<strong><code>about.qmd</code></strong>: una página para contar quién eres</li>
+<li>
+<strong><code>.Rproj</code></strong>: le dice a RStudio que esta carpeta es un proyecto</li>
+<li>
+<strong><code>styles.css</code></strong>: tu estilo personalizado, cuando quieras ir más allá de los temas</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section id="paso-5-un-sitio-multilingüe" class="level4"><h4 class="anchored" data-anchor-id="paso-5-un-sitio-multilingüe">Paso 5: Un sitio multilingüe</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="../images/multilang.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Nuestro blog está escrito en <strong>español, inglés y francés</strong>, porque dominamos los tres idiomas. Para lograrlo usé el paquete <strong><code>babelquarto</code></strong>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>¡Importante!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Con <code>babelquarto</code> <strong>no</strong> debes hacer clic en <em>Render Website</em>. En su lugar, ejecuta el código directamente en la consola:</p>
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>babelquarto<span class="sc">::</span><span class="fu">render_website</span>()</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<p>Esto te da una vista previa con todos los idiomas ya configurados.</p>
+</div>
+</div>
+<p>Detrás de escena, esto convierte todos tus archivos <code>.qmd</code> en <strong>archivos HTML</strong>, las piezas básicas de cualquier sitio web.</p>
+</section><section id="paso-6-dónde-vive-el-sitio-web" class="level4"><h4 class="anchored" data-anchor-id="paso-6-dónde-vive-el-sitio-web">Paso 6: ¿Dónde vive el sitio web?</h4>
+<p>Tu sitio web se genera en la carpeta <strong><code>_site</code></strong>. Incluso puedes hacer doble clic en cualquier archivo <code>.html</code> de ahí y abrirlo en tu navegador para ver cómo queda. Esta carpeta <strong>se actualiza cada vez que ejecutas el código</strong>.</p>
+</section><section id="tu-turno-mini-quiz-cuál-es-tu-configuración-ideal-de-quarto" class="level4"><h4 class="anchored" data-anchor-id="tu-turno-mini-quiz-cuál-es-tu-configuración-ideal-de-quarto">¡Tu turno! Mini quiz: ¿cuál es tu configuración ideal de Quarto?</h4>
+<p>Responde tres preguntas rápidas y te diré por dónde empezar.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="128" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 127;"><span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a>viewof q1 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"R / análisis de datos"</span><span class="op">,</span> <span class="st">"Python"</span><span class="op">,</span> <span class="st">"Soy nueva/o en programación"</span>]<span class="op">,</span></span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">label</span><span class="op">:</span> <span class="st">"1. ¿Cuál es tu experiencia?"</span>}</span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="136" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 135;"><span id="cb6-136"><a href="#cb6-136" aria-hidden="true" tabindex="-1"></a>viewof q2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
+<span id="cb6-137"><a href="#cb6-137" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Un blog personal"</span><span class="op">,</span> <span class="st">"Un portafolio de mi trabajo"</span><span class="op">,</span> <span class="st">"Apuntes de cursos o documentación"</span>]<span class="op">,</span></span>
+<span id="cb6-138"><a href="#cb6-138" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">label</span><span class="op">:</span> <span class="st">"2. ¿Para qué será tu sitio?"</span>}</span>
+<span id="cb6-139"><a href="#cb6-139" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="144" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 143;"><span id="cb7-144"><a href="#cb7-144" aria-hidden="true" tabindex="-1"></a>viewof q3 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">radio</span>(</span>
+<span id="cb7-145"><a href="#cb7-145" aria-hidden="true" tabindex="-1"></a>  [<span class="st">"Fresco y amigable"</span><span class="op">,</span> <span class="st">"Limpio y profesional"</span><span class="op">,</span> <span class="st">"Oscuro y llamativo"</span>]<span class="op">,</span></span>
+<span id="cb7-146"><a href="#cb7-146" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">label</span><span class="op">:</span> <span class="st">"3. ¿Qué estilo buscas?"</span>}</span>
+<span id="cb7-147"><a href="#cb7-147" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="152" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 151;"><span id="cb8-152"><a href="#cb8-152" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb8-153"><a href="#cb8-153" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="op">!</span>q1 <span class="op">||</span> <span class="op">!</span>q2 <span class="op">||</span> <span class="op">!</span>q3) {</span>
+<span id="cb8-154"><a href="#cb8-154" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;p&gt;&lt;em&gt;👆 Responde las tres preguntas para ver tu resultado.&lt;/em&gt;&lt;/p&gt;`</span><span class="op">;</span></span>
+<span id="cb8-155"><a href="#cb8-155" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-156"><a href="#cb8-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-157"><a href="#cb8-157" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Convierte texto con etiquetas (como &lt;code&gt;) en HTML real</span></span>
+<span id="cb8-158"><a href="#cb8-158" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> raw <span class="op">=</span> (s) <span class="kw">=&gt;</span> {</span>
+<span id="cb8-159"><a href="#cb8-159" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> el <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">"span"</span>)<span class="op">;</span></span>
+<span id="cb8-160"><a href="#cb8-160" aria-hidden="true" tabindex="-1"></a>    el<span class="op">.</span><span class="at">innerHTML</span> <span class="op">=</span> s<span class="op">;</span></span>
+<span id="cb8-161"><a href="#cb8-161" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> el<span class="op">;</span></span>
+<span id="cb8-162"><a href="#cb8-162" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb8-163"><a href="#cb8-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-164"><a href="#cb8-164" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> editors <span class="op">=</span> {</span>
+<span id="cb8-165"><a href="#cb8-165" aria-hidden="true" tabindex="-1"></a>    <span class="st">"R / análisis de datos"</span><span class="op">:</span> [<span class="st">"RStudio"</span><span class="op">,</span> <span class="st">"Crea un nuevo proyecto: File → New Project → Quarto Website."</span>]<span class="op">,</span></span>
+<span id="cb8-166"><a href="#cb8-166" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Python"</span><span class="op">:</span> [<span class="st">"Jupyter o VS Code"</span><span class="op">,</span> <span class="st">"Ejecuta &lt;code&gt;quarto create project website my-website&lt;/code&gt; en tu terminal."</span>]<span class="op">,</span></span>
+<span id="cb8-167"><a href="#cb8-167" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Soy nueva/o en programación"</span><span class="op">:</span> [<span class="st">"RStudio + Visual Editor"</span><span class="op">,</span> <span class="st">"Funciona como Word, así que puedes empezar a escribir de inmediato."</span>]</span>
+<span id="cb8-168"><a href="#cb8-168" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb8-169"><a href="#cb8-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-170"><a href="#cb8-170" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> themes <span class="op">=</span> {</span>
+<span id="cb8-171"><a href="#cb8-171" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Fresco y amigable"</span><span class="op">:</span> [<span class="st">"minty"</span><span class="op">,</span> <span class="st">"Claro, verde y acogedor. ¡Es el que yo uso!"</span>]<span class="op">,</span></span>
+<span id="cb8-172"><a href="#cb8-172" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Limpio y profesional"</span><span class="op">:</span> [<span class="st">"flatly"</span><span class="op">,</span> <span class="st">"Simple, moderno y fácil de leer."</span>]<span class="op">,</span></span>
+<span id="cb8-173"><a href="#cb8-173" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Oscuro y llamativo"</span><span class="op">:</span> [<span class="st">"darkly"</span><span class="op">,</span> <span class="st">"Fondo oscuro que hace resaltar tu contenido."</span>]</span>
+<span id="cb8-174"><a href="#cb8-174" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb8-175"><a href="#cb8-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-176"><a href="#cb8-176" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> pages <span class="op">=</span> {</span>
+<span id="cb8-177"><a href="#cb8-177" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Un blog personal"</span><span class="op">:</span> <span class="st">"Empieza con &lt;code&gt;index.qmd&lt;/code&gt; y una carpeta &lt;code&gt;posts/&lt;/code&gt;."</span><span class="op">,</span></span>
+<span id="cb8-178"><a href="#cb8-178" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Un portafolio de mi trabajo"</span><span class="op">:</span> <span class="st">"Usa una página de listado para mostrar tus proyectos como tarjetas."</span><span class="op">,</span></span>
+<span id="cb8-179"><a href="#cb8-179" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Apuntes de cursos o documentación"</span><span class="op">:</span> <span class="st">"Añade una barra de navegación lateral en &lt;code&gt;_quarto.yml&lt;/code&gt;."</span></span>
+<span id="cb8-180"><a href="#cb8-180" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb8-181"><a href="#cb8-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-182"><a href="#cb8-182" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [editor<span class="op">,</span> editorTip] <span class="op">=</span> editors[q1]<span class="op">;</span></span>
+<span id="cb8-183"><a href="#cb8-183" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [themeName<span class="op">,</span> themeTip] <span class="op">=</span> themes[q3]<span class="op">;</span></span>
+<span id="cb8-184"><a href="#cb8-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-185"><a href="#cb8-185" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;div style="border:2px solid #593196; border-radius:10px; padding:1em 1.5em; margin-top:1em;"&gt;</span></span>
+<span id="cb8-186"><a href="#cb8-186" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;h4&gt;🎉 Tu configuración recomendada&lt;/h4&gt;</span></span>
+<span id="cb8-187"><a href="#cb8-187" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;p&gt;&lt;strong&gt;Editor:&lt;/strong&gt; </span><span class="sc">${</span>editor<span class="sc">}</span><span class="vs">&lt;br&gt;&lt;small&gt;</span><span class="sc">${</span><span class="fu">raw</span>(editorTip)<span class="sc">}</span><span class="vs">&lt;/small&gt;&lt;/p&gt;</span></span>
+<span id="cb8-188"><a href="#cb8-188" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;p&gt;&lt;strong&gt;Tema:&lt;/strong&gt; &lt;code&gt;</span><span class="sc">${</span>themeName<span class="sc">}</span><span class="vs">&lt;/code&gt;&lt;br&gt;&lt;small&gt;</span><span class="sc">${</span>themeTip<span class="sc">}</span><span class="vs">&lt;/small&gt;&lt;/p&gt;</span></span>
+<span id="cb8-189"><a href="#cb8-189" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;p&gt;&lt;strong&gt;Primer paso:&lt;/strong&gt; </span><span class="sc">${</span><span class="fu">raw</span>(pages[q2])<span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb8-190"><a href="#cb8-190" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;p&gt;Añade esto a tu &lt;code&gt;_quarto.yml&lt;/code&gt;:&lt;/p&gt;</span></span>
+<span id="cb8-191"><a href="#cb8-191" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;pre&gt;&lt;code&gt;format:</span></span>
+<span id="cb8-192"><a href="#cb8-192" aria-hidden="true" tabindex="-1"></a><span class="vs">  html:</span></span>
+<span id="cb8-193"><a href="#cb8-193" aria-hidden="true" tabindex="-1"></a><span class="vs">    theme: </span><span class="sc">${</span>themeName<span class="sc">}</span><span class="vs">&lt;/code&gt;&lt;/pre&gt;</span></span>
+<span id="cb8-194"><a href="#cb8-194" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/div&gt;`</span><span class="op">;</span></span>
+<span id="cb8-195"><a href="#cb8-195" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<hr>
+<p>¿Qué editor elegiste y con qué tema te quedas?</p>
+<p><strong><em>¡Contáctame para planear una sesión!</em></strong></p>
+<p>Referencias:</p>
+<ul>
+<li>Jadey Ryan: <a href="https://jadeyryan.com/blog/2024-02-19_beginner-quarto-netlify/">Beginner Quarto + Netlify</a>
+</li>
+<li>Joel Nitta: <a href="https://www.joelnitta.com/posts/2024-12-06_babelquarto/#render">babelquarto</a>
+</li>
+<li><a href="https://quarto.org/docs/websites/">Documentación de Quarto Websites</a></li>
+<li>Esta publicación fue escrita con la ayuda de Claude (la IA de Anthropic), a partir de mis propias ideas y experiencia.</li>
+</ul></section></main><!-- /main --><script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiB0aGVtZSA9IElucHV0cy5zZWxlY3QoXG4gIFtcIm1pbnR5XCIsIFwiY29zbW9cIiwgXCJmbGF0bHlcIiwgXCJqb3VybmFsXCIsIFwibHV4XCIsIFwic2tldGNoeVwiLCBcImRhcmtseVwiLCBcInB1bHNlXCJdLFxuICB7bGFiZWw6IFwiRWxpZ2UgdW4gdGVtYTpcIiwgdmFsdWU6IFwibWludHlcIn1cbilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Im1kYFxuXFxgXFxgXFxgeWFtbFxudHlwZTogd2Vic2l0ZVxud2Vic2l0ZTpcbiAgdGl0bGU6IFwiTWkgYmxvZ1wiXG4gIG5hdmJhcjpcbiAgICBsZWZ0OlxuICAgICAgLSBocmVmOiBpbmRleC5xbWRcbiAgICAgICAgdGV4dDogSW5pY2lvXG4gICAgICAtIGFib3V0LnFtZFxuXG5mb3JtYXQ6XG4gIGh0bWw6XG4gICAgdGhlbWU6ICR7dGhlbWV9XG5cXGBcXGBcXGBcbmBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBxMSA9IElucHV0cy5yYWRpbyhcbiAgW1wiUiAvIGFuw6FsaXNpcyBkZSBkYXRvc1wiLCBcIlB5dGhvblwiLCBcIlNveSBudWV2YS9vIGVuIHByb2dyYW1hY2nDs25cIl0sXG4gIHtsYWJlbDogXCIxLiDCv0N1w6FsIGVzIHR1IGV4cGVyaWVuY2lhP1wifVxuKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHEyID0gSW5wdXRzLnJhZGlvKFxuICBbXCJVbiBibG9nIHBlcnNvbmFsXCIsIFwiVW4gcG9ydGFmb2xpbyBkZSBtaSB0cmFiYWpvXCIsIFwiQXB1bnRlcyBkZSBjdXJzb3MgbyBkb2N1bWVudGFjacOzblwiXSxcbiAge2xhYmVsOiBcIjIuIMK/UGFyYSBxdcOpIHNlcsOhIHR1IHNpdGlvP1wifVxuKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC01IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHEzID0gSW5wdXRzLnJhZGlvKFxuICBbXCJGcmVzY28geSBhbWlnYWJsZVwiLCBcIkxpbXBpbyB5IHByb2Zlc2lvbmFsXCIsIFwiT3NjdXJvIHkgbGxhbWF0aXZvXCJdLFxuICB7bGFiZWw6IFwiMy4gwr9RdcOpIGVzdGlsbyBidXNjYXM/XCJ9XG4pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTYiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ7XG4gIGlmICghcTEgfHwgIXEyIHx8ICFxMykge1xuICAgIHJldHVybiBodG1sYDxwPjxlbT7wn5GGIFJlc3BvbmRlIGxhcyB0cmVzIHByZWd1bnRhcyBwYXJhIHZlciB0dSByZXN1bHRhZG8uPC9lbT48L3A+YDtcbiAgfVxuXG4gIC8vIENvbnZpZXJ0ZSB0ZXh0byBjb24gZXRpcXVldGFzIChjb21vIDxjb2RlPikgZW4gSFRNTCByZWFsXG4gIGNvbnN0IHJhdyA9IChzKSA9PiB7XG4gICAgY29uc3QgZWwgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwic3BhblwiKTtcbiAgICBlbC5pbm5lckhUTUwgPSBzO1xuICAgIHJldHVybiBlbDtcbiAgfTtcblxuICBjb25zdCBlZGl0b3JzID0ge1xuICAgIFwiUiAvIGFuw6FsaXNpcyBkZSBkYXRvc1wiOiBbXCJSU3R1ZGlvXCIsIFwiQ3JlYSB1biBudWV2byBwcm95ZWN0bzogRmlsZSDihpIgTmV3IFByb2plY3Qg4oaSIFF1YXJ0byBXZWJzaXRlLlwiXSxcbiAgICBcIlB5dGhvblwiOiBbXCJKdXB5dGVyIG8gVlMgQ29kZVwiLCBcIkVqZWN1dGEgPGNvZGU+cXVhcnRvIGNyZWF0ZSBwcm9qZWN0IHdlYnNpdGUgbXktd2Vic2l0ZTwvY29kZT4gZW4gdHUgdGVybWluYWwuXCJdLFxuICAgIFwiU295IG51ZXZhL28gZW4gcHJvZ3JhbWFjacOzblwiOiBbXCJSU3R1ZGlvICsgVmlzdWFsIEVkaXRvclwiLCBcIkZ1bmNpb25hIGNvbW8gV29yZCwgYXPDrSBxdWUgcHVlZGVzIGVtcGV6YXIgYSBlc2NyaWJpciBkZSBpbm1lZGlhdG8uXCJdXG4gIH07XG5cbiAgY29uc3QgdGhlbWVzID0ge1xuICAgIFwiRnJlc2NvIHkgYW1pZ2FibGVcIjogW1wibWludHlcIiwgXCJDbGFybywgdmVyZGUgeSBhY29nZWRvci4gwqFFcyBlbCBxdWUgeW8gdXNvIVwiXSxcbiAgICBcIkxpbXBpbyB5IHByb2Zlc2lvbmFsXCI6IFtcImZsYXRseVwiLCBcIlNpbXBsZSwgbW9kZXJubyB5IGbDoWNpbCBkZSBsZWVyLlwiXSxcbiAgICBcIk9zY3VybyB5IGxsYW1hdGl2b1wiOiBbXCJkYXJrbHlcIiwgXCJGb25kbyBvc2N1cm8gcXVlIGhhY2UgcmVzYWx0YXIgdHUgY29udGVuaWRvLlwiXVxuICB9O1xuXG4gIGNvbnN0IHBhZ2VzID0ge1xuICAgIFwiVW4gYmxvZyBwZXJzb25hbFwiOiBcIkVtcGllemEgY29uIDxjb2RlPmluZGV4LnFtZDwvY29kZT4geSB1bmEgY2FycGV0YSA8Y29kZT5wb3N0cy88L2NvZGU+LlwiLFxuICAgIFwiVW4gcG9ydGFmb2xpbyBkZSBtaSB0cmFiYWpvXCI6IFwiVXNhIHVuYSBww6FnaW5hIGRlIGxpc3RhZG8gcGFyYSBtb3N0cmFyIHR1cyBwcm95ZWN0b3MgY29tbyB0YXJqZXRhcy5cIixcbiAgICBcIkFwdW50ZXMgZGUgY3Vyc29zIG8gZG9jdW1lbnRhY2nDs25cIjogXCJBw7FhZGUgdW5hIGJhcnJhIGRlIG5hdmVnYWNpw7NuIGxhdGVyYWwgZW4gPGNvZGU+X3F1YXJ0by55bWw8L2NvZGU+LlwiXG4gIH07XG5cbiAgY29uc3QgW2VkaXRvciwgZWRpdG9yVGlwXSA9IGVkaXRvcnNbcTFdO1xuICBjb25zdCBbdGhlbWVOYW1lLCB0aGVtZVRpcF0gPSB0aGVtZXNbcTNdO1xuXG4gIHJldHVybiBodG1sYDxkaXYgc3R5bGU9XCJib3JkZXI6MnB4IHNvbGlkICM1OTMxOTY7IGJvcmRlci1yYWRpdXM6MTBweDsgcGFkZGluZzoxZW0gMS41ZW07IG1hcmdpbi10b3A6MWVtO1wiPlxuICAgIDxoND7wn46JIFR1IGNvbmZpZ3VyYWNpw7NuIHJlY29tZW5kYWRhPC9oND5cbiAgICA8cD48c3Ryb25nPkVkaXRvcjo8L3N0cm9uZz4gJHtlZGl0b3J9PGJyPjxzbWFsbD4ke3JhdyhlZGl0b3JUaXApfTwvc21hbGw+PC9wPlxuICAgIDxwPjxzdHJvbmc+VGVtYTo8L3N0cm9uZz4gPGNvZGU+JHt0aGVtZU5hbWV9PC9jb2RlPjxicj48c21hbGw+JHt0aGVtZVRpcH08L3NtYWxsPjwvcD5cbiAgICA8cD48c3Ryb25nPlByaW1lciBwYXNvOjwvc3Ryb25nPiAke3JhdyhwYWdlc1txMl0pfTwvcD5cbiAgICA8cD5Bw7FhZGUgZXN0byBhIHR1IDxjb2RlPl9xdWFydG8ueW1sPC9jb2RlPjo8L3A+XG4gICAgPHByZT48Y29kZT5mb3JtYXQ6XG4gIGh0bWw6XG4gICAgdGhlbWU6ICR7dGhlbWVOYW1lfTwvY29kZT48L3ByZT5cbiAgPC9kaXY+YDtcbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgndGhlbWUnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncTEnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncTInKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncTMnKSJ9XX0=
+</script><script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../projects";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("\/es");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+       
+    </div>   
+    <div class="nav-footer-center">
+<p>Made with 💕, Quarto and RStudio</p>
+</div>
+    <div class="nav-footer-right">
+       
+    </div>
+  </div>
+</footer>
+</body>
+</html>

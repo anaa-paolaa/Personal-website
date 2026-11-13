@@ -1,5 +1,6 @@
 ---
 title: "Portfolio"
+page-layout: full
 listing:
   contents: projects
   type: grid

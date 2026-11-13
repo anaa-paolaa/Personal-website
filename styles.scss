@@ -3,9 +3,9 @@
 // Base Colors
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
+$purple:  #593196 !default;
 $pink:    #e83e8c !default;
-$red:     #dd6f5d !default;
+$red:     #f19e8c !default;
 $orange:  #f7c1b3 !default;
 $yellow:  #ffce67 !default;
 $green:   #56cc9d !default;
@@ -31,7 +31,7 @@ h3 {
 }
 
 h4, h5 {
-  color: $red;
+  color: $primary;
 }
 
 h6 {
@@ -49,10 +49,14 @@ div.quarto-about-jolla .about-link {
 
 //// About circular logo
 .navbar-brand img {
-      border-radius: 70%;
-      height: 90px; /* Adjust as needed */
-      width: 30px;  /* Adjust as needed */
-    }
+  width: 50px !important;
+  height: 50px !important;
+  max-height: none !important;   
+  aspect-ratio: 1 / 1;
+  object-fit: cover;           
+  border-radius: 50%;
+}
+
 
 //// About Links Hover
 div.quarto-about-jolla .about-link:hover {
@@ -81,6 +85,7 @@ div.quarto-post .listing-categories .listing-category, .quarto-category, .btn {
 
 //// About animated text-align
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
 
 .animated-text {
   font-family: 'Roboto', sans-serif;
@@ -114,7 +119,7 @@ div.quarto-post .listing-categories .listing-category, .quarto-category, .btn {
     }
 
     div div {
-      background: #78c2ad;
+      background: #f19e8c;
     }
 
     div:first-child div {
@@ -122,7 +127,7 @@ div.quarto-post .listing-categories .listing-category, .quarto-category, .btn {
     }
 
     div:last-child div {
-      background: #f3969a;
+      background: #6f42c1;
     }
   }
 
@@ -148,4 +153,157 @@ div.quarto-post .listing-categories .listing-category, .quarto-category, .btn {
 .card:hover {
   transform: translateY(-6px); /* cute lift effect */
   filter: brightness(1.15);    /* brightens the color */
+}
+
+// =====================================================
+// Color bands
+// =====================================================
+
+// Index page
+.pagina-inicio {
+  #title-block-header { display: none; }
+  main.content {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+// Bands
+.band { padding: 5rem 2rem; }
+.band-inner { max-width: 1100px; margin: 0 auto; }
+.band-lila   { background: #f3eefa; }
+.band-azul   { background: #e3f6fd; padding: 7rem 2rem; }
+.band-morada { background: $primary; color: #fff; text-align: center; }
+.band-morada h2 { color: #fff; }
+.band-morada h3 { color: #fff; }
+
+// Hero
+.hola { font-weight: 800; font-size: 1.5rem; letter-spacing: .04em; margin-bottom: .5rem; }
+.hola .c1 { color: $primary; }
+.hola .c2 { color: #6cc3d5; }
+.hola .c3 { color: #f19e8c; }
+
+.hero h1 { font-size: 3.5rem; font-weight: 800; margin: 0 0 .4rem; line-height: 1.05; }
+.wave { display: block; margin-bottom: .75rem; }
+.nombre { font-weight: 800; font-size: 1.75rem; color: $primary; margin: 0 0 1.25rem; }
+
+.hero-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hero-texto { flex: 1 1 420px; }
+.hero-logo  { flex: 1 1 280px; display: flex; justify-content: center; }
+
+.circulo {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: $primary;
+  box-shadow: 16px 16px 0 #6f42c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 800;
+  font-size: 4rem;
+}
+.circulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0;
+}
+
+// Animation_more
+.hero .animated-text {
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  width: auto;
+}
+
+// Botones: corrige el color que tu regla .btn dejaba en $secondary
+.btn.btn-primary { background: $primary; border-color: $primary; color: #fff; }
+.btn.btn-primary:hover { background: darken($primary, 8%); color: #fff; }
+.btn.btn-light { background: #fff; border-color: #fff; color: $primary; }
+.btn.btn-light:hover { background: #f3eefa; color: $primary; }
+.btn-grande { font-size: 1.25rem; padding: 1rem 2.25rem; }
+
+// Tarjetas de servicios
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.card-av {
+  background: #fff;
+  border: 2px solid $primary;
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: transform .2s;
+  &:hover { transform: translateY(-6px); }
+  h3 { margin-top: 0; font-size: 1.4rem; }
+  p:last-child { margin-bottom: 0; }
+}
+.card-av.azul     { border-color: #6cc3d5; }
+.card-av.amarilla { border-color: #f19e8c; }
+
+// Outils que j'utilise 
+.band-azul h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 2.5rem; }
+.pills p { display: flex; flex-wrap: wrap; gap: 1.1rem; }
+.pill {
+  background: #fff;
+  border-radius: 999px;
+  padding: .85rem 2.2rem;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+.pill.p1 { color: $primary; }
+.pill.p2 { color: #007aaa; }
+.cita {
+  font-size: 2rem;
+  font-style: italic;
+  max-width: 820px;
+  margin: 3rem auto 2rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.band h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 2.5rem; }
+.band h4 { font-family: "Edu NSW ACT Cursive", cursive; font-size: 1.5rem;
+font-weight: 800; margin-bottom: 2.5rem; }
+
+.band-morada h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 2.5rem; }
+
+// calendly-badge
+.calendly-badge-widget {
+  bottom: 25px !important;
+  right: 25px !important;
+  z-index: 9999 !important;
+}
+
+.calendly-badge-widget .calendly-badge-content {
+  font-size: 1.25rem !important;
+  height: 64px !important;
+  line-height: 64px !important;
+  padding: 0 32px !important;
+  border-radius: 32px !important;
+}
+
+// Cellphone
+@media (max-width: 600px) {
+  .calendly-badge-widget .calendly-badge-content {
+    font-size: 1rem !important;
+    height: 52px !important;
+    line-height: 52px !important;
+    padding: 0 22px !important;
+    border-radius: 26px !important;
+  }
 }

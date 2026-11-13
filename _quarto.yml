@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Ana Valladares"
+  site-url: "https://av-stats.com"
+  favicon: "images/logo.PNG" 
   page-footer: "Made with 💕, Quarto and RStudio"
   navbar:
     logo: "images/logo.PNG"
@@ -18,7 +20,7 @@ website:
 
 format:
   html:
-    theme: [minty, styles.scss]
+    theme: [pulse, styles.scss]
     toc: true
     css: styles.css
     

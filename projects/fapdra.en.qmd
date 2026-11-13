@@ -3,7 +3,7 @@ title: "Stats training with APDRA"
 description: "Training"
 author: Ana Valladares
 date: "2025-12-01"
-image: /images/apdra.PNG
+image: /images/apdra_p.png
 image-alt: "Formation-apdra picture"
 categories:
   - Data handling
