@@ -3,7 +3,7 @@ title: "Antes de programar: 5 preguntas para un buen comienzo en el análisis de
 description: "Blog post"
 author: Ana Valladares
 date: "2026-11-17"
-image: /images/quest.PNG
+image: /images/quest.png
 categories:
   - RStudio
   - Manejo de datos

@@ -28,3 +28,7 @@ install.packages(c("usethis", "gitcreds"))
 usethis::create_github_token()
 gitcreds::gitcreds_set()
 
+## Git in terminal 
+git add -A
+git commit -m "lo que cambiaste"
+git push

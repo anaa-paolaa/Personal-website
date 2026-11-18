@@ -3,7 +3,7 @@ title: "Avant de coder : 5 questions pour bien démarrer en analyse de données"
 description: "Blog post"
 author: Ana Valladares
 date: "2026-11-17"
-image: /images/quest.PNG
+image: /images/quest.png
 categories:
   - RStudio
   - Data handling

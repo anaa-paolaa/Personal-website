@@ -1,1 +1,1 @@
-Sitemap: https://av-stats.com/sitemap.xml
+Sitemap: /es/sitemap.xml

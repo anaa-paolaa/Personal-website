@@ -3,7 +3,7 @@ title: "Before coding: 5 questions for a strong start in data analysis"
 description: "Blog post"
 author: Ana Valladares
 date: "2026-11-17"
-image: /images/quest.PNG
+image: /images/quest.png
 categories:
   - RStudio
   - Data handling
