@@ -1,5 +1,4 @@
 ---
-title: "Welcome!"
 page-layout: custom
 toc: false
 body-classes: pagina-inicio
@@ -75,7 +74,7 @@ for all your projects!
 
 :::::::::::::::::: band
 ::::::::::::::::: band-inner
-## Comment je peux t'aider
+## How can I help you?
 
 :::::::::::::::: grid
 ::: g-col-12
@@ -139,31 +138,63 @@ On my <a href="projects.qmd" style="color: #0056b3; text-decoration: underline;"
 :::::::::::::::::
 ::::::::::::::::::
 
-:::::: {.band .band-azul}
-::::: band-inner
+::::: {.band .band-azul}
+:::: band-inner
 ## Tools that I use
 
 ::: pills
 [R]{.pill .p1} [Python]{.pill .p2} [Quarto]{.pill .p1} [RStudio]{.pill .p2} [SQL]{.pill .p1} [Tableau]{.pill .p2} [QGIS]{.pill .p1}
 :::
 
-::: cita
-*"Making complex data simple, useful, and reliable for everyone"*
-:::
-
 [See my portfolio](projects.qmd){.btn .btn-primary .btn-grande}
+::::
 :::::
-::::::
 
-:::: {.band .band-morada}
+:::: {.band .band-durazno}
 ::: band-inner
+## Our Network
+
+### Meet the organizations and collectives AV has had, and continues to have, the pleasure of working with.
+
+```{=html}
+<div class="partner-row partner-formatrice">
+  <div class="partner-label">
+    <div class="partner-role">Trainings</div>
+    <div class="partner-desc">In R and data analysis </div>
+  </div>
+  <div class="partner-tiles">
+    <div class="tile"><img src="images/apdra_l.png" alt="Logo APDRA"></div>
+    <div class="tile"><img src="images/dpspad_l.png" alt="Logo dpSPAD"></div>
+  </div>
+</div>
+
+<div class="partner-row partner-analyste">
+  <div class="partner-label">
+    <div class="partner-role">Data analyst</div>
+    <div class="partner-desc">Stats and reporting</div>
+  </div>
+  <div class="partner-tiles">
+    <div class="tile"><img src="images/crea_l.png" alt="Logo CREA"></div>
+    <div class="tile"><img src="images/arvalis_l.png" alt="Logo ARVALIS"></div>
+  </div>
+</div>
+```
+:::
+::::
+
+::::: {.band .band-morada}
+:::: band-inner
 ## Do you want to work together ?
 
 ### Please go around my site and do not hesitate to get in touch with me ! I'll be happy to have a chat – See you soon !
 
-[Contact me](contact.qmd){.btn .btn-light}
+::: cita
+*"Making complex data simple, useful, and reliable for everyone"*
 :::
+
+[Contact me](contact.qmd){.btn .btn-light}
 ::::
+:::::
 
 ::: calendly-badge
 ```{=html}

@@ -1,5 +1,4 @@
 ---
-title: "¡Bienvenido!"
 page-layout: custom
 toc: false
 body-classes: pagina-inicio
@@ -75,7 +74,7 @@ para todos tus proyectos
 
 :::::::::::::::::: band
 ::::::::::::::::: band-inner
-## Cómo podemos trabajar juntos?
+## ¿Cómo podemos trabajar juntos?
 
 :::::::::::::::: grid
 ::: g-col-12
@@ -147,19 +146,51 @@ En mi <a href="projects.qmd" style="color: #0056b3; text-decoration: underline;"
 [R]{.pill .p1} [Python]{.pill .p2} [Quarto]{.pill .p1} [RStudio]{.pill .p2} [SQL]{.pill .p1} [Tableau]{.pill .p2} [QGIS]{.pill .p1}
 :::
 
-::: cita
-*"Transformando datos complejos en algo simple, útil y confiable para todos"*
-:::
-
 [Mira mi portafolio](projects.qmd){.btn .btn-primary .btn-grande}
 :::::
 ::::::
+
+:::: {.band .band-durazno}
+::: band-inner
+## Nuestra red
+
+### Conoce los organismos y colectivos con los que AV ha tenido y tiene el placer de colaborar.
+
+```{=html}
+<div class="partner-row partner-formatrice">
+  <div class="partner-label">
+    <div class="partner-role">Talleres</div>
+    <div class="partner-desc">En R y manejo de datos</div>
+  </div>
+  <div class="partner-tiles">
+    <div class="tile cuadro"><img src="images/apdra_l.png" alt="Logo APDRA"></div>
+    <div class="tile cuadro"><img src="images/dpspad_l.png" alt="Logo dpSPAD"></div>
+  </div>
+</div>
+
+<div class="partner-row partner-analyste">
+  <div class="partner-label">
+    <div class="partner-role">Analista</div>
+    <div class="partner-desc">Análisis, stats y reportes</div>
+  </div>
+  <div class="partner-tiles">
+    <div class="tile"><img src="images/crea_l.png" alt="Logo CREA"></div>
+    <div class="tile"><img src="images/arvalis_l.png" alt="Logo ARVALIS"></div>
+  </div>
+</div>
+```
+:::
+::::
 
 :::: {.band .band-morada}
 ::: band-inner
 ## ¿ Quieres trabajar juntos ?
 
 ### Siéntete libre de explorar mi sitio y contactarme, estaré feliz de conectar. ¡Nos vemos!
+
+::: cita
+*"Transformando datos complejos en algo simple, útil y confiable para todos"*
+:::
 
 [Contáctame](contact.qmd){.btn .btn-light}
 :::

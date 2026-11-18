@@ -1,5 +1,4 @@
 ---
-title: "Bienvenue!"
 page-layout: custom
 toc: false
 body-classes: pagina-inicio
@@ -147,19 +146,51 @@ Sur mon <a href="projects.qmd" style="color: #0056b3; text-decoration: underline
 [R]{.pill .p1} [Python]{.pill .p2} [Quarto]{.pill .p1} [RStudio]{.pill .p2} [SQL]{.pill .p1} [Tableau]{.pill .p2} [QGIS]{.pill .p1}
 :::
 
-::: cita
-*« Rendre les données complexes simples, utiles et fiables pour tous. »*
-:::
-
 [Voir le portfolio](projects.qmd){.btn .btn-primary .btn-grande}
 :::::
 ::::::
+
+:::: {.band .band-durazno}
+::: band-inner
+## Notre réseau
+
+### Découvrez les organismes et collectifs avec lesquels AV a eu et a toujours le plaisir de collaborer.
+
+```{=html}
+<div class="partner-row partner-formatrice">
+  <div class="partner-label">
+    <div class="partner-role">Formatrice</div>
+    <div class="partner-desc">Formations en R et gestion de données</div>
+  </div>
+  <div class="partner-tiles">
+    <div class="tile cuadro"><img src="images/apdra_l.png" alt="Logo APDRA"></div>
+    <div class="tile cuadro"><img src="images/dpspad_l.png" alt="Logo dpSPAD"></div>
+  </div>
+</div>
+
+<div class="partner-row partner-analyste">
+  <div class="partner-label">
+    <div class="partner-role">Analyste de données</div>
+    <div class="partner-desc">Analyse, statistiques et reporting</div>
+  </div>
+  <div class="partner-tiles">
+    <div class="tile"><img src="images/crea_l.png" alt="Logo CREA"></div>
+    <div class="tile"><img src="images/arvalis_l.png" alt="Logo ARVALIS"></div>
+  </div>
+</div>
+```
+:::
+::::
 
 :::: {.band .band-morada}
 ::: band-inner
 ## On travaille ensemble ?
 
 ### N'hésite pas à explorer mon site et à me contacter, je serai ravie d'échanger avec toi. – À bientôt !
+
+::: cita
+*« Rendre les données complexes simples, utiles et fiables pour tous. »*
+:::
 
 [Me contacter](contact.qmd){.btn .btn-light}
 :::

@@ -307,3 +307,63 @@ font-weight: 800; margin-bottom: 2.5rem; }
     border-radius: 26px !important;
   }
 }
+
+
+// logos
+.band-durazno { background: #fdf0ec; }
+
+.partner-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2.5rem;
+  align-items: center;
+  padding: 1.75rem 0;
+  border-top: 2px solid #f19e8c;
+}
+.partner-analyste { border-top-color: #6cc3d5; }
+
+.partner-label { flex: 1 1 220px; }
+.partner-role {
+  font-weight: 800;
+  font-size: .85rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: $primary;
+}
+.partner-desc {
+  font-size: 1rem;
+  color: $gray-700;
+  margin-top: .25rem;
+}
+
+.partner-tiles {
+  flex: 3 1 460px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  gap: 1rem;
+}
+
+.tile {
+  background: #fff;
+  border-radius: 16px;
+  width: 210px;
+  height: 110px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(89, 49, 150, .08);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+    margin: 0;
+  }
+  &.cuadro {
+    width: 150px;
+    height: 150px;
+    padding: 12px;
+  }
+}
